@@ -1,0 +1,32 @@
+[0.093s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic -- -j8 -l8
+[0.207s] Consolidate compiler generated dependencies of target driver_ultrasonic_stub
+[0.215s] Consolidate compiler generated dependencies of target driver_ultrasonic_hw
+[0.244s] [ 16%] Building CXX object CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o
+[0.256s] [ 33%] Building CXX object CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o
+[9.889s] [ 50%] Linking CXX executable driver_ultrasonic_hw
+[10.077s] [ 66%] Linking CXX executable driver_ultrasonic_stub
+[10.369s] [ 83%] Built target driver_ultrasonic_hw
+[10.476s] [100%] Built target driver_ultrasonic_stub
+[10.492s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic -- -j8 -l8
+[10.509s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic
+[10.518s] -- Install configuration: ""
+[10.520s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_stub
+[10.522s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_stub" to ""
+[10.522s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_hw
+[10.525s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_hw" to ""
+[10.526s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/package_run_dependencies/driver_ultrasonic
+[10.527s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/parent_prefix_path/driver_ultrasonic
+[10.528s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/ament_prefix_path.sh
+[10.529s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/ament_prefix_path.dsv
+[10.530s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/path.sh
+[10.531s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/path.dsv
+[10.531s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.bash
+[10.531s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.sh
+[10.531s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.zsh
+[10.533s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.dsv
+[10.533s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.dsv
+[10.533s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/packages/driver_ultrasonic
+[10.533s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/cmake/driver_ultrasonicConfig.cmake
+[10.533s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/cmake/driver_ultrasonicConfig-version.cmake
+[10.533s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.xml
+[10.536s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic

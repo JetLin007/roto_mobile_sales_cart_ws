@@ -1,0 +1,22 @@
+Consolidate compiler generated dependencies of target comm_mqtt_cloud
+[ 50%] Building CXX object CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o
+[100%] Linking CXX executable comm_mqtt_cloud
+[100%] Built target comm_mqtt_cloud
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/lib/comm_mqtt_cloud/comm_mqtt_cloud
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/lib/comm_mqtt_cloud/comm_mqtt_cloud" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/ament_index/resource_index/package_run_dependencies/comm_mqtt_cloud
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/ament_index/resource_index/parent_prefix_path/comm_mqtt_cloud
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/ament_index/resource_index/packages/comm_mqtt_cloud
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/cmake/comm_mqtt_cloudConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/cmake/comm_mqtt_cloudConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/package.xml

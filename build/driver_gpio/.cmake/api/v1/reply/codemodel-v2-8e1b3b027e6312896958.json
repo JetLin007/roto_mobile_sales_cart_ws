@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-18e874c34c73b8b468be.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "driver_gpio",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "driver_gpio_hw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-driver_gpio_hw-0cca835a365c686ef6fc.json",
+					"name" : "driver_gpio_hw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "driver_gpio_stub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-driver_gpio_stub-f93cc0e897ee2843425f.json",
+					"name" : "driver_gpio_stub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "driver_gpio_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-driver_gpio_uninstall-440f299b631d87996464.json",
+					"name" : "driver_gpio_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-00f84a279f3564683305.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio",
+		"source" : "/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

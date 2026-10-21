@@ -1,0 +1,20 @@
+Consolidate compiler generated dependencies of target comm_webrtc
+[100%] Built target comm_webrtc
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/lib/comm_webrtc/comm_webrtc
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/lib/comm_webrtc/comm_webrtc" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/package_run_dependencies/comm_webrtc
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/parent_prefix_path/comm_webrtc
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/packages/comm_webrtc
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/cmake/comm_webrtcConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/cmake/comm_webrtcConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/package.xml

@@ -1,0 +1,9 @@
+[0.236s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_private': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_private -- -j8 -l8
+[0.504s] Consolidate compiler generated dependencies of target comm_mqtt_private
+[0.565s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o
+[17.241s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In member function ‘virtual void MqttPrivateBridge::delivery_complete(mqtt::delivery_token_ptr)’:
+[17.241s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:91:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+[17.244s]    91 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[17.244s]       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[58.346s] [100%] Linking CXX executable comm_mqtt_private
+[59.742s] [100%] Built target comm_mqtt_private

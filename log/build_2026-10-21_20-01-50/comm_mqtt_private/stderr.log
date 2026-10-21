@@ -1,0 +1,26 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:63:8: error: ‘void MqttPrivateBridge::message_arrived(mqtt::const_message_ptr)’ marked ‘override’, but does not override
+   63 |   void message_arrived(mqtt::const_message_ptr msg) override {
+      |        ^~~~~~~~~~~~~~~
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:86:8: error: ‘void MqttPrivateBridge::connection_lost(const string&)’ marked ‘override’, but does not override
+   86 |   void connection_lost(const std::string & cause) override {
+      |        ^~~~~~~~~~~~~~~
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:90:8: error: ‘void MqttPrivateBridge::delivery_complete(mqtt::delivery_token_ptr)’ marked ‘override’, but does not override
+   90 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+      |        ^~~~~~~~~~~~~~~~~
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In constructor ‘MqttPrivateBridge::MqttPrivateBridge()’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:56:32: error: cannot convert ‘MqttPrivateBridge’ to ‘mqtt::callback&’
+   56 |     mqtt_client_->set_callback(*this);
+      |                                ^~~~~
+      |                                |
+      |                                MqttPrivateBridge
+In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:5:
+/usr/local/include/mqtt/client.h:299:45: note:   initializing argument 1 of ‘virtual void mqtt::client::set_callback(mqtt::callback&)’
+  299 |         virtual void set_callback(callback& cb);
+      |                                   ~~~~~~~~~~^~
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In member function ‘void MqttPrivateBridge::delivery_complete(mqtt::delivery_token_ptr)’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:90:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+   90 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+gmake[2]: *** [CMakeFiles/comm_mqtt_private.dir/build.make:76: CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_private.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

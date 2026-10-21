@@ -1,0 +1,16 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/lib/comm_remote_handle/comm_remote_handle
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/ament_index/resource_index/package_run_dependencies/comm_remote_handle
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/ament_index/resource_index/parent_prefix_path/comm_remote_handle
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/ament_index/resource_index/packages/comm_remote_handle
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/cmake/comm_remote_handleConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/cmake/comm_remote_handleConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/package.xml

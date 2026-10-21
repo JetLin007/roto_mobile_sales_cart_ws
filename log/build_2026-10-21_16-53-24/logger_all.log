@@ -1,0 +1,229 @@
+[0.465s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'driver_ultrasonic']
+[0.465s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['driver_ultrasonic'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f1c1df497b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1c1df49270>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1c1df49270>>, mixin_verb=('build',))
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.218s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/roto/workspace/roto_mobile_sales_cart_ws'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.251s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extensions ['ignore', 'ignore_ament_install']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'ignore'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'ignore_ament_install'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extensions ['colcon_pkg']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'colcon_pkg'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extensions ['colcon_meta']
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'colcon_meta'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extensions ['ros']
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'ros'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extensions ['cmake', 'python']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'cmake'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'python'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extensions ['python_setup_py']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/app_layer) by extension 'python_setup_py'
+[1.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extensions ['ignore', 'ignore_ament_install']
+[1.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'ignore'
+[1.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'ignore_ament_install'
+[1.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extensions ['colcon_pkg']
+[1.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'colcon_pkg'
+[1.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extensions ['colcon_meta']
+[1.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'colcon_meta'
+[1.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extensions ['ros']
+[1.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'ros'
+[1.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extensions ['cmake', 'python']
+[1.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'cmake'
+[1.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'python'
+[1.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extensions ['python_setup_py']
+[1.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/comm_layer) by extension 'python_setup_py'
+[1.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extensions ['ignore', 'ignore_ament_install']
+[1.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'ignore'
+[1.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'ignore_ament_install'
+[1.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extensions ['colcon_pkg']
+[1.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'colcon_pkg'
+[1.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extensions ['colcon_meta']
+[1.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'colcon_meta'
+[1.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extensions ['ros']
+[1.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'ros'
+[1.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extensions ['cmake', 'python']
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'cmake'
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'python'
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extensions ['python_setup_py']
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer) by extension 'python_setup_py'
+[1.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extensions ['ignore', 'ignore_ament_install']
+[1.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extension 'ignore'
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extension 'ignore_ament_install'
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extensions ['colcon_pkg']
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extension 'colcon_pkg'
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extensions ['colcon_meta']
+[1.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extension 'colcon_meta'
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extensions ['ros']
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_bms) by extension 'ros'
+[1.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/driver_layer/driver_bms' with type 'ros.ament_cmake' and name 'driver_bms'
+[1.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extensions ['ignore', 'ignore_ament_install']
+[1.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extension 'ignore'
+[1.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extension 'ignore_ament_install'
+[1.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extensions ['colcon_pkg']
+[1.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extension 'colcon_pkg'
+[1.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extensions ['colcon_meta']
+[1.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extension 'colcon_meta'
+[1.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extensions ['ros']
+[1.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_can_chassis) by extension 'ros'
+[1.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/driver_layer/driver_can_chassis' with type 'ros.ament_cmake' and name 'driver_can_chassis'
+[1.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extensions ['ignore', 'ignore_ament_install']
+[1.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extension 'ignore'
+[1.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extension 'ignore_ament_install'
+[1.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extensions ['colcon_pkg']
+[1.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extension 'colcon_pkg'
+[1.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extensions ['colcon_meta']
+[1.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extension 'colcon_meta'
+[1.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extensions ['ros']
+[1.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gpio) by extension 'ros'
+[1.286s] DEBUG:colcon.colcon_core.package_identification:Package 'src/driver_layer/driver_gpio' with type 'ros.ament_cmake' and name 'driver_gpio'
+[1.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extensions ['ignore', 'ignore_ament_install']
+[1.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extension 'ignore'
+[1.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extension 'ignore_ament_install'
+[1.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extensions ['colcon_pkg']
+[1.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extension 'colcon_pkg'
+[1.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extensions ['colcon_meta']
+[1.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extension 'colcon_meta'
+[1.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extensions ['ros']
+[1.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_gps) by extension 'ros'
+[1.290s] DEBUG:colcon.colcon_core.package_identification:Package 'src/driver_layer/driver_gps' with type 'ros.ament_cmake' and name 'driver_gps'
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extensions ['ignore', 'ignore_ament_install']
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extension 'ignore'
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extension 'ignore_ament_install'
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extensions ['colcon_pkg']
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extension 'colcon_pkg'
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extensions ['colcon_meta']
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extension 'colcon_meta'
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extensions ['ros']
+[1.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/driver_layer/driver_ultrasonic) by extension 'ros'
+[1.295s] DEBUG:colcon.colcon_core.package_identification:Package 'src/driver_layer/driver_ultrasonic' with type 'ros.ament_cmake' and name 'driver_ultrasonic'
+[1.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ignore'
+[1.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ignore_ament_install'
+[1.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['colcon_pkg']
+[1.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'colcon_pkg'
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['colcon_meta']
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'colcon_meta'
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extensions ['ros']
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_msgs) by extension 'ros'
+[1.299s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_msgs' with type 'ros.ament_cmake' and name 'robot_msgs'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extensions ['ignore', 'ignore_ament_install']
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'ignore'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'ignore_ament_install'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extensions ['colcon_pkg']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'colcon_pkg'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extensions ['colcon_meta']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'colcon_meta'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extensions ['ros']
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'ros'
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extensions ['cmake', 'python']
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'cmake'
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'python'
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extensions ['python_setup_py']
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_tools) by extension 'python_setup_py'
+[1.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.379s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_msgs' in 'src/robot_msgs'
+[1.379s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'driver_bms' in 'src/driver_layer/driver_bms'
+[1.380s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'driver_can_chassis' in 'src/driver_layer/driver_can_chassis'
+[1.380s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'driver_gpio' in 'src/driver_layer/driver_gpio'
+[1.380s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'driver_gps' in 'src/driver_layer/driver_gps'
+[1.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.386s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/roto/workspace/roto_mobile_sales_cart_ws/install
+[1.390s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[1.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'cmake_args' from command line to 'None'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'cmake_target' from command line to 'None'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'cmake_clean_cache' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'cmake_clean_first' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'cmake_force_configure' from command line to 'False'
+[1.500s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'ament_cmake_args' from command line to 'None'
+[1.500s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'catkin_cmake_args' from command line to 'None'
+[1.500s] Level 5:colcon.colcon_core.verb:set package 'driver_ultrasonic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.500s] DEBUG:colcon.colcon_core.verb:Building package 'driver_ultrasonic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic', 'merge_install': False, 'path': '/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic', 'symlink_install': False, 'test_result_base': None}
+[1.500s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.503s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic' with build type 'ament_cmake'
+[1.504s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic'
+[1.509s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic -- -j8 -l8
+[9.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic -- -j8 -l8
+[9.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(driver_ultrasonic)
+[9.431s] Level 1:colcon.colcon_core.environment:checking '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic' for CMake module files
+[9.432s] Level 1:colcon.colcon_core.environment:checking '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic' for CMake config files
+[9.433s] Level 1:colcon.colcon_core.environment:checking '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/bin'
+[9.433s] Level 1:colcon.colcon_core.environment:checking '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/pkgconfig/driver_ultrasonic.pc'
+[9.433s] Level 1:colcon.colcon_core.environment:checking '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/python3.10/site-packages'
+[9.434s] Level 1:colcon.colcon_core.environment:checking '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/bin'
+[9.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.ps1'
+[9.436s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.dsv'
+[9.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.sh'
+[9.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.bash'
+[9.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.zsh'
+[9.441s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/colcon-core/packages/driver_ultrasonic)
+[9.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[9.452s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.483s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.484s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.484s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.484s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.484s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[9.484s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.485s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/local_setup.ps1'
+[9.488s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roto/workspace/roto_mobile_sales_cart_ws/install/_local_setup_util_ps1.py'
+[9.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/setup.ps1'
+[9.492s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/local_setup.sh'
+[9.493s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roto/workspace/roto_mobile_sales_cart_ws/install/_local_setup_util_sh.py'
+[9.493s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/setup.sh'
+[9.495s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/local_setup.bash'
+[9.496s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/setup.bash'
+[9.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/local_setup.zsh'
+[9.498s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roto/workspace/roto_mobile_sales_cart_ws/install/setup.zsh'

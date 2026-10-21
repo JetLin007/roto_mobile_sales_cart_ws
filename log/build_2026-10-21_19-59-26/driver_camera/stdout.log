@@ -1,0 +1,6 @@
+Consolidate compiler generated dependencies of target driver_camera_stub
+Consolidate compiler generated dependencies of target driver_camera_hw
+[ 16%] Building CXX object CMakeFiles/driver_camera_hw.dir/src/camera_hw_impl.cpp.o
+[ 66%] Built target driver_camera_stub
+[ 83%] Linking CXX executable driver_camera_hw
+[100%] Built target driver_camera_hw

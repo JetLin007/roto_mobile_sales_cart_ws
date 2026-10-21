@@ -1,0 +1,128 @@
+[0.056s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/app_status_report': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/app_status_report -- -j8 -l8
+[0.098s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.391s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.483s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.486s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.497s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.523s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.546s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.629s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.639s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.715s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.096s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[8.635s] -- Configuring done
+[8.724s] -- Generating done
+[8.755s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/app_status_report
+[8.960s] [ 50%] Building CXX object CMakeFiles/app_status_report_node.dir/status_report_node.cpp.o
+[40.113s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:76:36: error: ‘String’ is not a member of ‘std_msgs::msg’
+[40.204s]    76 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_report_;
+[40.205s]       |                                    ^~~~~~
+[40.210s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:76:42: error: template argument 1 is invalid
+[40.210s]    76 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_report_;
+[40.211s]       |                                          ^
+[40.211s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:76:45: error: expected ‘;’ at end of member declaration
+[40.211s]    76 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_report_;
+[40.211s]       |                                             ^~~~~~~~~
+[40.219s]       |                                                      ;
+[40.219s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:76:55: error: ‘pub_report_’ does not name a type
+[40.219s]    76 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_report_;
+[40.219s]       |                                                       ^~~~~~~~~~~
+[40.220s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp: In constructor ‘StatusReportNode::StatusReportNode()’:
+[40.230s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:31:5: error: ‘pub_report_’ was not declared in this scope; did you mean ‘publish_report’?
+[40.231s]    31 |     pub_report_ = this->create_publisher<std_msgs::msg::String>("/status/report", 10);
+[40.231s]       |     ^~~~~~~~~~~
+[40.231s]       |     publish_report
+[40.231s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:31:57: error: ‘String’ is not a member of ‘std_msgs::msg’
+[40.232s]    31 |     pub_report_ = this->create_publisher<std_msgs::msg::String>("/status/report", 10);
+[40.232s]       |                                                         ^~~~~~
+[40.244s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:31:64: error: no matching function for call to ‘StatusReportNode::create_publisher<<expression error> >(const char [15], int)’
+[40.245s]    31 |     pub_report_ = this->create_publisher<std_msgs::msg::String>("/status/report", 10);
+[40.246s]       |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+[40.246s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[40.246s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[40.246s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[40.247s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:1:
+[40.247s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[40.247s]   195 |   create_publisher(
+[40.247s]       |   ^~~~~~~~~~~~~~~~
+[40.248s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[40.248s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:31:64: error: template argument 1 is invalid
+[40.248s]    31 |     pub_report_ = this->create_publisher<std_msgs::msg::String>("/status/report", 10);
+[40.249s]       |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+[40.249s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp: In member function ‘void StatusReportNode::publish_report()’:
+[40.249s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:68:20: error: ‘String’ is not a member of ‘std_msgs::msg’
+[40.249s]    68 |     std_msgs::msg::String msg;
+[40.250s]       |                    ^~~~~~
+[40.250s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:69:5: error: ‘msg’ was not declared in this scope
+[40.250s]    69 |     msg.data = j.dump();
+[40.255s]       |     ^~~
+[40.255s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:69:5: note: suggested alternatives:
+[40.255s] In file included from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7,
+[40.257s]                  from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+[40.258s]                  from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+[40.258s]                  from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:33,
+[40.258s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+[40.259s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[40.259s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[40.259s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[40.259s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[40.260s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[40.260s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[40.260s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[40.261s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[40.261s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[40.261s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:1:
+[40.262s] /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:28:11: note:   ‘builtin_interfaces::msg’
+[40.262s]    28 | namespace msg
+[40.262s]       |           ^~~
+[40.268s] In file included from /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7,
+[40.268s]                  from /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28,
+[40.269s]                  from /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30,
+[40.271s]                  from /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45,
+[40.283s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25,
+[40.283s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[40.283s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[40.284s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[40.284s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[40.284s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[40.284s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[40.284s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[40.288s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:1:
+[40.290s] /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:28:11: note:   ‘rcl_interfaces::msg’
+[40.291s]    28 | namespace msg
+[40.293s]       |           ^~~
+[40.293s] In file included from /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:24,
+[40.293s]                  from /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7,
+[40.296s]                  from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21,
+[40.296s]                  from /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,
+[40.297s]                  from /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50,
+[40.297s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25,
+[40.297s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[40.297s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[40.298s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[40.298s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[40.298s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[40.303s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[40.304s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[40.304s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:1:
+[40.304s] /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:28:11: note:   ‘statistics_msgs::msg’
+[40.305s]    28 | namespace msg
+[40.305s]       |           ^~~
+[40.305s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__struct.hpp:21,
+[40.305s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/bms_status.hpp:7,
+[40.305s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:2:
+[40.306s] /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:32:11: note:   ‘std_msgs::msg’
+[40.315s]    32 | namespace msg
+[40.315s]       |           ^~~
+[40.315s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/bms_status.hpp:7,
+[40.315s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:2:
+[40.316s] /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__struct.hpp:32:11: note:   ‘robot_msgs::msg’
+[40.316s]    32 | namespace msg
+[40.316s]       |           ^~~
+[40.316s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_status_report_node/status_report_node.cpp:70:5: error: ‘pub_report_’ was not declared in this scope; did you mean ‘publish_report’?
+[40.317s]    70 |     pub_report_->publish(msg);
+[40.317s]       |     ^~~~~~~~~~~
+[40.317s]       |     publish_report
+[59.417s] gmake[2]: *** [CMakeFiles/app_status_report_node.dir/build.make:76: CMakeFiles/app_status_report_node.dir/status_report_node.cpp.o] Error 1
+[59.417s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/app_status_report_node.dir/all] Error 2
+[59.421s] gmake: *** [Makefile:146: all] Error 2

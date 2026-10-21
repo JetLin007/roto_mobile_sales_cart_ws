@@ -1,0 +1,16 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/lib/app_ota_manager/app_ota_manager_node
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/ament_index/resource_index/package_run_dependencies/app_ota_manager
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/ament_index/resource_index/parent_prefix_path/app_ota_manager
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/ament_index/resource_index/packages/app_ota_manager
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/cmake/app_ota_managerConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/cmake/app_ota_managerConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_ota_manager/share/app_ota_manager/package.xml

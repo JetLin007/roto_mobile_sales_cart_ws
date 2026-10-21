@@ -1,0 +1,59 @@
+[0.062s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud -- -j8 -l8
+[0.154s] Consolidate compiler generated dependencies of target comm_mqtt_cloud
+[0.212s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o
+[11.161s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:75:8: error: ‘void MqttCloudBridge::connection_lost(const string&)’ marked ‘override’, but does not override
+[11.162s]    75 |   void connection_lost(const std::string & cause) override {
+[11.162s]       |        ^~~~~~~~~~~~~~~
+[11.162s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:79:8: error: ‘void MqttCloudBridge::message_arrived(mqtt::const_message_ptr)’ marked ‘override’, but does not override
+[11.162s]    79 |   void message_arrived(mqtt::const_message_ptr msg) override {
+[11.163s]       |        ^~~~~~~~~~~~~~~
+[11.163s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:84:8: error: ‘void MqttCloudBridge::delivery_complete(mqtt::delivery_token_ptr)’ marked ‘override’, but does not override
+[11.163s]    84 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[11.163s]       |        ^~~~~~~~~~~~~~~~~
+[11.190s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In constructor ‘MqttCloudBridge::MqttCloudBridge()’:
+[11.190s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:37:19: error: ‘using element_type = class mqtt::client’ {aka ‘class mqtt::client’} has no member named ‘set_message_callback’
+[11.191s]    37 |     mqtt_client_->set_message_callback([this](mqtt::const_message_ptr msg) {
+[11.191s]       |                   ^~~~~~~~~~~~~~~~~~~~
+[11.191s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In lambda function:
+[11.191s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:38:13: error: ‘class MqttCloudBridge’ has no member named ‘on_message’
+[11.191s]    38 |       this->on_message(msg);
+[11.192s]       |             ^~~~~~~~~~
+[11.192s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In constructor ‘MqttCloudBridge::MqttCloudBridge()’:
+[11.192s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:40:19: error: ‘using element_type = class mqtt::client’ {aka ‘class mqtt::client’} has no member named ‘set_connection_lost_callback’
+[11.192s]    40 |     mqtt_client_->set_connection_lost_callback([this](const std::string & cause) {
+[11.192s]       |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.195s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In lambda function:
+[11.197s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:41:13: error: ‘class MqttCloudBridge’ has no member named ‘on_connection_lost’; did you mean ‘connection_lost’?
+[11.198s]    41 |       this->on_connection_lost(cause);
+[11.198s]       |             ^~~~~~~~~~~~~~~~~~
+[11.198s]       |             connection_lost
+[11.198s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In constructor ‘MqttCloudBridge::MqttCloudBridge()’:
+[11.198s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:49:17: error: no matching function for call to ‘mqtt::connect_options::set_ssl(bool)’
+[11.199s]    49 |     opts.set_ssl(true);
+[11.199s]       |     ~~~~~~~~~~~~^~~~~~
+[11.199s] In file included from /usr/local/include/mqtt/iasync_client.h:33,
+[11.199s]                  from /usr/local/include/mqtt/async_client.h:41,
+[11.200s]                  from /usr/local/include/mqtt/client.h:27,
+[11.201s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:6:
+[11.202s] /usr/local/include/mqtt/connect_options.h:223:14: note: candidate: ‘void mqtt::connect_options::set_ssl(const mqtt::ssl_options&)’
+[11.202s]   223 |         void set_ssl(const ssl_options& ssl);
+[11.203s]       |              ^~~~~~~
+[11.203s] /usr/local/include/mqtt/connect_options.h:223:41: note:   no known conversion for argument 1 from ‘bool’ to ‘const mqtt::ssl_options&’
+[11.203s]   223 |         void set_ssl(const ssl_options& ssl);
+[11.203s]       |                      ~~~~~~~~~~~~~~~~~~~^~~
+[11.204s] /usr/local/include/mqtt/connect_options.h:231:14: note: candidate: ‘void mqtt::connect_options::set_ssl(mqtt::ssl_options&&)’
+[11.205s]   231 |         void set_ssl(ssl_options&& ssl);
+[11.205s]       |              ^~~~~~~
+[11.205s] /usr/local/include/mqtt/connect_options.h:231:36: note:   no known conversion for argument 1 from ‘bool’ to ‘mqtt::ssl_options&&’
+[11.206s]   231 |         void set_ssl(ssl_options&& ssl);
+[11.206s]       |                      ~~~~~~~~~~~~~~^~~
+[11.206s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:50:32: error: base operand of ‘->’ has non-pointer type ‘mqtt::connect_response’
+[11.206s]    50 |     mqtt_client_->connect(opts)->wait();
+[11.206s]       |                                ^~
+[11.267s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In member function ‘void MqttCloudBridge::delivery_complete(mqtt::delivery_token_ptr)’:
+[11.268s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:84:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+[11.268s]    84 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[11.268s]       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[25.243s] gmake[2]: *** [CMakeFiles/comm_mqtt_cloud.dir/build.make:76: CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o] Error 1
+[25.243s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_cloud.dir/all] Error 2
+[25.244s] gmake: *** [Makefile:146: all] Error 2

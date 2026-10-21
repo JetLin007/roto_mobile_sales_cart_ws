@@ -1,0 +1,16 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/lib/app_status_report/app_status_report_node
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/ament_index/resource_index/package_run_dependencies/app_status_report
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/ament_index/resource_index/parent_prefix_path/app_status_report
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/ament_index/resource_index/packages/app_status_report
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/cmake/app_status_reportConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/cmake/app_status_reportConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/package.xml

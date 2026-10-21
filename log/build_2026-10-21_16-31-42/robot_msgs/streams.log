@@ -1,0 +1,381 @@
+[0.019s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/robot_msgs -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs
+[0.127s] -- The C compiler identification is GNU 11.4.0
+[0.325s] -- The CXX compiler identification is GNU 11.4.0
+[0.449s] -- Detecting C compiler ABI info
+[0.557s] -- Detecting C compiler ABI info - done
+[0.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.565s] -- Detecting C compile features
+[0.566s] -- Detecting C compile features - done
+[0.570s] -- Detecting CXX compiler ABI info
+[0.677s] -- Detecting CXX compiler ABI info - done
+[0.685s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.685s] -- Detecting CXX compile features
+[0.685s] -- Detecting CXX compile features - done
+[0.687s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.832s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.956s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.958s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.964s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.052s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.087s] -- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)
+[1.476s] -- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.752s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.227s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.233s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.457s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.457s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.457s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.458s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.488s] -- Found PythonExtra: .so  
+[2.723s] -- Configuring done
+[2.833s] -- Generating done
+[2.860s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs
+[2.873s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/robot_msgs -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs
+[2.876s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs -- -j8 -l8
+[2.938s] [  1%] Generating C code for ROS interfaces
+[2.951s] [  4%] Generating C++ code for ROS interfaces
+[2.951s] [  4%] Generating Rust code for ROS interfaces
+[2.966s] [  4%] Built target ament_cmake_python_copy_robot_msgs
+[3.672s] running egg_info
+[3.674s] creating robot_msgs.egg-info
+[3.675s] writing robot_msgs.egg-info/PKG-INFO
+[3.676s] writing dependency_links to robot_msgs.egg-info/dependency_links.txt
+[3.677s] writing top-level names to robot_msgs.egg-info/top_level.txt
+[3.677s] writing manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[3.684s] reading manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[3.685s] writing manifest file 'robot_msgs.egg-info/SOURCES.txt'
+[3.744s] [  4%] Built target ament_cmake_python_build_robot_msgs_egg
+[4.660s] [  4%] Built target robot_msgs__rs
+[5.210s] [  4%] Built target robot_msgs__cpp
+[5.236s] [  6%] Generating C++ introspection for ROS interfaces
+[5.236s] [  6%] Generating C++ type support for eProsima Fast-RTPS
+[5.244s] [  8%] Generating C++ type support dispatch for ROS interfaces
+[5.246s] [  9%] Building C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/msg/detail/gps_fix__functions.c.o
+[5.246s] [ 11%] Building C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/msg/detail/bms_status__functions.c.o
+[5.256s] [ 12%] Building C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/msg/detail/chassis_cmd__functions.c.o
+[5.256s] [ 13%] Building C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/msg/detail/order_event__functions.c.o
+[5.256s] [ 15%] Building C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/msg/detail/alarm__functions.c.o
+[5.425s] [ 16%] Building C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/msg/detail/chassis_state__functions.c.o
+[5.584s] [ 18%] Linking C shared library librobot_msgs__rosidl_generator_c.so
+[5.832s] [ 18%] Built target robot_msgs__rosidl_generator_c
+[5.869s] [ 19%] Generating C type support for eProsima Fast-RTPS
+[5.870s] [ 20%] Generating C introspection for ROS interfaces
+[5.875s] [ 22%] Generating C type support dispatch for ROS interfaces
+[7.824s] [ 23%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/msg/gps_fix__type_support.cpp.o
+[7.836s] [ 25%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/msg/bms_status__type_support.cpp.o
+[7.836s] [ 26%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/msg/order_event__type_support.cpp.o
+[8.501s] [ 27%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/msg/detail/gps_fix__type_support.cpp.o
+[8.905s] [ 29%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/msg/gps_fix__type_support.cpp.o
+[8.935s] [ 30%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/msg/detail/dds_fastrtps/gps_fix__type_support.cpp.o
+[9.051s] [ 31%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/msg/bms_status__type_support.cpp.o
+[9.235s] [ 33%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/msg/alarm__type_support.cpp.o
+[9.244s] [ 34%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/msg/order_event__type_support.cpp.o
+[9.256s] [ 36%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/msg/detail/dds_fastrtps/bms_status__type_support.cpp.o
+[9.344s] [ 37%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/msg/detail/bms_status__type_support.cpp.o
+[9.363s] [ 38%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/msg/alarm__type_support.cpp.o
+[9.432s] [ 40%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/msg/detail/gps_fix__type_support.c.o
+[9.528s] [ 41%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/msg/chassis_cmd__type_support.cpp.o
+[9.583s] [ 43%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/msg/detail/bms_status__type_support.c.o
+[9.612s] [ 44%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/msg/chassis_state__type_support.cpp.o
+[9.700s] [ 45%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/msg/detail/gps_fix__type_support_c.cpp.o
+[9.717s] [ 47%] Linking CXX shared library librobot_msgs__rosidl_typesupport_c.so
+[9.728s] [ 48%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/msg/detail/order_event__type_support.c.o
+[9.924s] [ 50%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/msg/detail/alarm__type_support.c.o
+[10.074s] [ 51%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/msg/detail/chassis_cmd__type_support.c.o
+[10.125s] [ 51%] Built target robot_msgs__rosidl_typesupport_c
+[10.185s] [ 52%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/msg/detail/chassis_state__type_support.c.o
+[10.281s] [ 54%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/msg/detail/bms_status__type_support_c.cpp.o
+[10.337s] [ 55%] Linking C shared library librobot_msgs__rosidl_typesupport_introspection_c.so
+[10.442s] [ 56%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/msg/chassis_cmd__type_support.cpp.o
+[10.543s] [ 58%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/msg/detail/dds_fastrtps/order_event__type_support.cpp.o
+[10.608s] [ 58%] Built target robot_msgs__rosidl_typesupport_introspection_c
+[10.672s] [ 59%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/msg/detail/order_event__type_support_c.cpp.o
+[10.902s] [ 61%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/msg/detail/alarm__type_support_c.cpp.o
+[10.988s] [ 62%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/msg/detail/chassis_cmd__type_support_c.cpp.o
+[10.992s] [ 63%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/msg/detail/order_event__type_support.cpp.o
+[11.395s] [ 65%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/msg/chassis_state__type_support.cpp.o
+[11.754s] [ 66%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/msg/detail/dds_fastrtps/alarm__type_support.cpp.o
+[11.924s] [ 68%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/msg/detail/dds_fastrtps/chassis_cmd__type_support.cpp.o
+[12.232s] [ 69%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/msg/detail/alarm__type_support.cpp.o
+[12.362s] [ 70%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/msg/detail/chassis_state__type_support_c.cpp.o
+[12.365s] [ 72%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/msg/detail/dds_fastrtps/chassis_state__type_support.cpp.o
+[12.376s] [ 73%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/msg/detail/chassis_cmd__type_support.cpp.o
+[12.575s] [ 75%] Linking CXX shared library librobot_msgs__rosidl_typesupport_cpp.so
+[12.796s] [ 76%] Building CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/msg/detail/chassis_state__type_support.cpp.o
+[12.856s] [ 76%] Built target robot_msgs__rosidl_typesupport_cpp
+[13.610s] [ 77%] Linking CXX shared library librobot_msgs__rosidl_typesupport_fastrtps_c.so
+[13.915s] [ 79%] Linking CXX shared library librobot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[13.923s] [ 79%] Built target robot_msgs__rosidl_typesupport_fastrtps_c
+[14.217s] [ 80%] Linking CXX shared library librobot_msgs__rosidl_typesupport_introspection_cpp.so
+[14.254s] [ 80%] Built target robot_msgs__rosidl_typesupport_fastrtps_cpp
+[14.392s] [ 80%] Built target robot_msgs__rosidl_typesupport_introspection_cpp
+[14.429s] [ 80%] Built target robot_msgs
+[14.466s] [ 81%] Generating Python code for ROS interfaces
+[16.853s] [ 81%] Built target robot_msgs__py
+[16.882s] [ 84%] Building C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/msg/_chassis_cmd_s.c.o
+[16.882s] [ 84%] Building C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/msg/_order_event_s.c.o
+[16.883s] [ 86%] Building C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/msg/_gps_fix_s.c.o
+[16.883s] [ 87%] Building C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/msg/_bms_status_s.c.o
+[16.884s] [ 88%] Building C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/msg/_alarm_s.c.o
+[16.885s] [ 90%] Building C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/msg/_chassis_state_s.c.o
+[17.196s] [ 91%] Linking C shared library rosidl_generator_py/robot_msgs/librobot_msgs__rosidl_generator_py.so
+[17.302s] [ 91%] Built target robot_msgs__rosidl_generator_py
+[17.334s] [ 94%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[17.334s] [ 94%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c.o
+[17.334s] [ 95%] Building C object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[17.526s] [ 97%] Linking C shared library rosidl_generator_py/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.536s] [ 98%] Linking C shared library rosidl_generator_py/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.541s] [100%] Linking C shared library rosidl_generator_py/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.634s] [100%] Built target robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[17.634s] [100%] Built target robot_msgs__rosidl_typesupport_c__pyext
+[17.637s] [100%] Built target robot_msgs__rosidl_typesupport_introspection_c__pyext
+[17.653s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs -- -j8 -l8
+[17.668s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs
+[17.678s] -- Install configuration: ""
+[17.681s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_msgs
+[17.681s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[17.682s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[17.682s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[17.683s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__functions.h
+[17.685s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__functions.c
+[17.687s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__type_support.h
+[17.688s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__struct.h
+[17.689s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__functions.h
+[17.689s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__functions.h
+[17.689s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__functions.h
+[17.689s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__type_support.h
+[17.689s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__struct.h
+[17.690s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__struct.h
+[17.690s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__type_support.h
+[17.691s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__functions.c
+[17.692s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__struct.h
+[17.692s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__type_support.h
+[17.693s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__type_support.h
+[17.693s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__functions.c
+[17.694s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__functions.c
+[17.694s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__struct.h
+[17.695s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__functions.h
+[17.696s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__type_support.h
+[17.697s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__functions.h
+[17.698s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__functions.c
+[17.698s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__struct.h
+[17.699s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__functions.c
+[17.699s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/bms_status.h
+[17.700s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/order_event.h
+[17.700s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_c__visibility_control.h
+[17.701s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/gps_fix.h
+[17.702s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/chassis_state.h
+[17.704s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/chassis_cmd.h
+[17.704s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/alarm.h
+[17.705s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/library_path.sh
+[17.706s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/library_path.dsv
+[17.707s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so
+[17.708s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so" to ""
+[17.708s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[17.709s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[17.711s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[17.713s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__rosidl_typesupport_fastrtps_c.h
+[17.713s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__rosidl_typesupport_fastrtps_c.h
+[17.714s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__rosidl_typesupport_fastrtps_c.h
+[17.714s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__rosidl_typesupport_fastrtps_c.h
+[17.715s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__rosidl_typesupport_fastrtps_c.h
+[17.715s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__rosidl_typesupport_fastrtps_c.h
+[17.716s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.716s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so
+[17.716s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[17.716s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[17.716s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[17.716s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[17.716s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__rosidl_typesupport_introspection_c.h
+[17.716s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__rosidl_typesupport_introspection_c.h
+[17.717s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__type_support.c
+[17.717s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__rosidl_typesupport_introspection_c.h
+[17.717s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__type_support.c
+[17.717s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__rosidl_typesupport_introspection_c.h
+[17.717s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__type_support.c
+[17.718s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__type_support.c
+[17.718s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__rosidl_typesupport_introspection_c.h
+[17.718s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__type_support.c
+[17.719s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__type_support.c
+[17.720s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__rosidl_typesupport_introspection_c.h
+[17.720s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.720s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so
+[17.721s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[17.722s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so
+[17.723s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so" to ""
+[17.723s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[17.724s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[17.726s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/order_event.hpp
+[17.726s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[17.726s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__builder.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__struct.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__type_support.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__traits.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__type_support.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__struct.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__type_support.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__struct.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__builder.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__struct.hpp
+[17.727s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__type_support.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__traits.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__traits.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__type_support.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__builder.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__builder.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__builder.hpp
+[17.728s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__traits.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__builder.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__struct.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__traits.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__struct.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__type_support.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__traits.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/chassis_state.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/bms_status.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/gps_fix.hpp
+[17.729s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/alarm.hpp
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/chassis_cmd.hpp
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.730s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[17.730s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[17.730s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/dds_fastrtps
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__rosidl_typesupport_fastrtps_cpp.hpp
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__rosidl_typesupport_fastrtps_cpp.hpp
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__rosidl_typesupport_fastrtps_cpp.hpp
+[17.730s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__rosidl_typesupport_fastrtps_cpp.hpp
+[17.731s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__rosidl_typesupport_fastrtps_cpp.hpp
+[17.731s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.731s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[17.731s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.731s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs
+[17.731s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg
+[17.731s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail
+[17.731s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__rosidl_typesupport_introspection_cpp.hpp
+[17.731s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__type_support.cpp
+[17.731s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__type_support.cpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__rosidl_typesupport_introspection_cpp.hpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/alarm__rosidl_typesupport_introspection_cpp.hpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_cmd__type_support.cpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__type_support.cpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/bms_status__rosidl_typesupport_introspection_cpp.hpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__type_support.cpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/gps_fix__rosidl_typesupport_introspection_cpp.hpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/chassis_state__type_support.cpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/include/robot_msgs/robot_msgs/msg/detail/order_event__rosidl_typesupport_introspection_cpp.hpp
+[17.732s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so
+[17.732s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so
+[17.733s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so" to ""
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/pythonpath.sh
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/pythonpath.dsv
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.1.0-py3.10.egg-info
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[17.733s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[17.734s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs
+[17.734s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/librobot_msgs__rosidl_generator_py.so
+[17.734s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.734s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py
+[17.734s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.734s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_alarm_s.c
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_order_event.py
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_chassis_cmd.py
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_bms_status.py
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_chassis_cmd_s.c
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_bms_status_s.c
+[17.735s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_chassis_state.py
+[17.736s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/__init__.py
+[17.736s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_order_event_s.c
+[17.736s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_gps_fix_s.c
+[17.736s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_gps_fix.py
+[17.737s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_alarm.py
+[17.737s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_chassis_state_s.c
+[17.737s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c
+[17.737s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[17.737s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.737s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.808s] Listing '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs'...
+[17.809s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py'...
+[17.809s] Listing '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg'...
+[17.809s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/__init__.py'...
+[17.810s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_alarm.py'...
+[17.810s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_bms_status.py'...
+[17.810s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_chassis_cmd.py'...
+[17.811s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_chassis_state.py'...
+[17.811s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_gps_fix.py'...
+[17.812s] Compiling '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/msg/_order_event.py'...
+[17.826s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.828s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[17.828s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.829s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[17.829s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.830s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[17.831s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so
+[17.831s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so" to ""
+[17.832s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust
+[17.832s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/src
+[17.836s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/src/lib.rs
+[17.836s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/src/msg.rs
+[17.836s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/src/msg
+[17.837s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/src/msg/rmw.rs
+[17.837s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/Cargo.toml
+[17.837s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/rust/build.rs
+[17.838s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/GpsFix.idl
+[17.838s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/BmsStatus.idl
+[17.839s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/OrderEvent.idl
+[17.840s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/Alarm.idl
+[17.840s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/ChassisCmd.idl
+[17.841s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/ChassisState.idl
+[17.841s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/GpsFix.msg
+[17.841s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/BmsStatus.msg
+[17.841s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/OrderEvent.msg
+[17.842s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/Alarm.msg
+[17.842s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/ChassisCmd.msg
+[17.842s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/msg/ChassisState.msg
+[17.844s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/ament_index/resource_index/package_run_dependencies/robot_msgs
+[17.845s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/ament_index/resource_index/parent_prefix_path/robot_msgs
+[17.845s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.sh
+[17.846s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.dsv
+[17.846s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/path.sh
+[17.847s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/environment/path.dsv
+[17.847s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/local_setup.bash
+[17.847s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/local_setup.sh
+[17.847s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/local_setup.zsh
+[17.848s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/local_setup.dsv
+[17.849s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/package.dsv
+[17.850s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/ament_index/resource_index/packages/robot_msgs
+[17.851s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport.cmake
+[17.851s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport-noconfig.cmake
+[17.852s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[17.853s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.853s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[17.854s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.855s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport.cmake
+[17.855s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[17.855s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cppExport.cmake
+[17.856s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.857s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.857s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[17.859s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.859s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport.cmake
+[17.859s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[17.860s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport.cmake
+[17.860s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[17.860s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake-extras.cmake
+[17.860s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.861s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.861s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[17.862s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[17.865s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.866s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.866s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[17.867s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig.cmake
+[17.868s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig-version.cmake
+[17.869s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/package.xml
+[17.871s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs

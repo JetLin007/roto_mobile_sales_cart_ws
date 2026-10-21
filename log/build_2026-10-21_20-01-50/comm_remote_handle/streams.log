@@ -1,0 +1,29 @@
+[0.077s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8
+[0.192s] [ 50%] Building CXX object CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o
+[26.582s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:42:8: error: ‘void RemoteHandle::message_arrived(mqtt::const_message_ptr)’ marked ‘override’, but does not override
+[26.584s]    42 |   void message_arrived(mqtt::const_message_ptr msg) override {
+[26.584s]       |        ^~~~~~~~~~~~~~~
+[26.585s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:58:8: error: ‘void RemoteHandle::connection_lost(const string&)’ marked ‘override’, but does not override
+[26.585s]    58 |   void connection_lost(const std::string & cause) override {
+[26.585s]       |        ^~~~~~~~~~~~~~~
+[26.593s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:62:8: error: ‘void RemoteHandle::delivery_complete(mqtt::delivery_token_ptr)’ marked ‘override’, but does not override
+[26.594s]    62 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[26.595s]       |        ^~~~~~~~~~~~~~~~~
+[26.629s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In constructor ‘RemoteHandle::RemoteHandle()’:
+[26.629s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:34:32: error: cannot convert ‘RemoteHandle’ to ‘mqtt::callback&’
+[26.629s]    34 |     mqtt_client_->set_callback(*this);
+[26.629s]       |                                ^~~~~
+[26.630s]       |                                |
+[26.630s]       |                                RemoteHandle
+[26.630s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:3:
+[26.630s] /usr/local/include/mqtt/client.h:299:45: note:   initializing argument 1 of ‘virtual void mqtt::client::set_callback(mqtt::callback&)’
+[26.631s]   299 |         virtual void set_callback(callback& cb);
+[26.631s]       |                                   ~~~~~~~~~~^~
+[26.668s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In member function ‘void RemoteHandle::delivery_complete(mqtt::delivery_token_ptr)’:
+[26.669s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:62:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+[26.669s]    62 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[26.669s]       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[45.173s] gmake[2]: *** [CMakeFiles/comm_remote_handle.dir/build.make:76: CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o] Error 1
+[45.176s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_remote_handle.dir/all] Error 2
+[45.193s] gmake: *** [Makefile:146: all] Error 2
+[45.364s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8

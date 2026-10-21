@@ -1,0 +1,20 @@
+Consolidate compiler generated dependencies of target sim_tablet
+[100%] Built target sim_tablet
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/lib/sim_tablet/sim_tablet
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/lib/sim_tablet/sim_tablet" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/ament_index/resource_index/package_run_dependencies/sim_tablet
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/ament_index/resource_index/parent_prefix_path/sim_tablet
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/ament_index/resource_index/packages/sim_tablet
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/cmake/sim_tabletConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/cmake/sim_tabletConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet/share/sim_tablet/package.xml

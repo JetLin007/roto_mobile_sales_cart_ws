@@ -1,0 +1,20 @@
+[ 50%] Built target driver_camera_hw
+[100%] Built target driver_camera_stub
+-- Install configuration: ""
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_stub
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_hw
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/package_run_dependencies/driver_camera
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/parent_prefix_path/driver_camera
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/ament_prefix_path.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/path.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/path.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.bash
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.zsh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/package.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/packages/driver_camera
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/cmake/driver_cameraConfig.cmake
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/cmake/driver_cameraConfig-version.cmake
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/package.xml

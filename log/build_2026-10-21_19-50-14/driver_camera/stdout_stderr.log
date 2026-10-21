@@ -1,0 +1,24 @@
+Consolidate compiler generated dependencies of target driver_camera_stub
+Consolidate compiler generated dependencies of target driver_camera_hw
+[ 50%] Built target driver_camera_stub
+[100%] Built target driver_camera_hw
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_stub
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_stub" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_hw
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_hw" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/package_run_dependencies/driver_camera
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/parent_prefix_path/driver_camera
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/packages/driver_camera
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/cmake/driver_cameraConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/cmake/driver_cameraConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/package.xml

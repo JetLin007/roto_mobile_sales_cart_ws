@@ -1,0 +1,28 @@
+[ 16%] Building CXX object CMakeFiles/driver_bms_stub.dir/src/bms_driver_base.cpp.o
+[ 33%] Building CXX object CMakeFiles/driver_bms_stub.dir/src/bms_stub_impl.cpp.o
+[ 50%] Building CXX object CMakeFiles/driver_bms_hw.dir/src/bms_hw_impl.cpp.o
+[ 66%] Building CXX object CMakeFiles/driver_bms_hw.dir/src/bms_driver_base.cpp.o
+[ 83%] Linking CXX executable driver_bms_stub
+[100%] Linking CXX executable driver_bms_hw
+[100%] Built target driver_bms_stub
+[100%] Built target driver_bms_hw
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/lib/driver_bms/driver_bms_stub
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/lib/driver_bms/driver_bms_stub" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/lib/driver_bms/driver_bms_hw
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/lib/driver_bms/driver_bms_hw" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/ament_index/resource_index/package_run_dependencies/driver_bms
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/ament_index/resource_index/parent_prefix_path/driver_bms
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/ament_index/resource_index/packages/driver_bms
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/cmake/driver_bmsConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/cmake/driver_bmsConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/package.xml

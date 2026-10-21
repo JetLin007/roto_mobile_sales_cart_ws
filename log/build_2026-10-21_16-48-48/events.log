@@ -1,0 +1,216 @@
+[0.000000] (-) TimerEvent: {}
+[0.000493] (-) JobUnselected: {'identifier': 'driver_bms'}
+[0.000765] (-) JobUnselected: {'identifier': 'driver_gpio'}
+[0.000831] (-) JobUnselected: {'identifier': 'driver_gps'}
+[0.001193] (-) JobUnselected: {'identifier': 'driver_ultrasonic'}
+[0.001337] (-) JobUnselected: {'identifier': 'robot_msgs'}
+[0.002008] (driver_can_chassis) JobQueued: {'identifier': 'driver_can_chassis', 'dependencies': OrderedDict([('robot_msgs', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs')])}
+[0.002254] (driver_can_chassis) JobStarted: {'identifier': 'driver_can_chassis'}
+[0.079394] (driver_can_chassis) JobProgress: {'identifier': 'driver_can_chassis', 'progress': 'cmake'}
+[0.081380] (driver_can_chassis) Command: {'cmd': ['/usr/bin/cmake', '/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis', '-DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis'], 'cwd': '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roto'), ('GIT_ASKPASS', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/roto'), ('OLDPWD', '/home/roto/workspace/roto_mobile_sales_cart_ws'), ('TERM_PROGRAM_VERSION', '1.142.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-131c4711-cac7-450c-b089-e695255c5506.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roto'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1659_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.2.47.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/WSL/:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PC/AppData/Local/Microsoft/WindowsApps:/snap/bin:/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-002972f183d325c6.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/roto/.vscode-server/data/User/workspaceStorage/3a1782012c7f0a1f37817941eac0fedb/ms-python.python/pythonrc.py'), ('PERF_EXEC_PATH', '/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28af350e27.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis'), ('COPILOT_DEBUG_NONCE', '2bc3f894536d98a0fa74189ec26bd55e'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:'), ('CMAKE_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099350] (-) TimerEvent: {}
+[0.102279] (driver_can_chassis) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199472] (-) TimerEvent: {}
+[0.243572] (driver_can_chassis) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299589] (-) TimerEvent: {}
+[0.317407] (driver_can_chassis) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.319718] (driver_can_chassis) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.326162] (driver_can_chassis) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.335461] (driver_can_chassis) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.347974] (driver_can_chassis) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.381263] (driver_can_chassis) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.382511] (driver_can_chassis) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.399703] (-) TimerEvent: {}
+[0.499925] (-) TimerEvent: {}
+[0.600162] (-) TimerEvent: {}
+[0.700440] (-) TimerEvent: {}
+[0.800677] (-) TimerEvent: {}
+[0.900948] (-) TimerEvent: {}
+[1.001210] (-) TimerEvent: {}
+[1.101432] (-) TimerEvent: {}
+[1.201659] (-) TimerEvent: {}
+[1.301898] (-) TimerEvent: {}
+[1.402121] (-) TimerEvent: {}
+[1.502353] (-) TimerEvent: {}
+[1.602613] (-) TimerEvent: {}
+[1.702843] (-) TimerEvent: {}
+[1.803074] (-) TimerEvent: {}
+[1.903294] (-) TimerEvent: {}
+[2.003528] (-) TimerEvent: {}
+[2.103762] (-) TimerEvent: {}
+[2.204007] (-) TimerEvent: {}
+[2.304281] (-) TimerEvent: {}
+[2.384686] (driver_can_chassis) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.404414] (-) TimerEvent: {}
+[2.437885] (driver_can_chassis) StdoutLine: {'line': b'-- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)\n'}
+[2.504522] (-) TimerEvent: {}
+[2.521286] (driver_can_chassis) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.536972] (driver_can_chassis) StdoutLine: {'line': b'-- Generating done\n'}
+[2.542833] (driver_can_chassis) StdoutLine: {'line': b'-- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis\n'}
+[2.549213] (driver_can_chassis) CommandEnded: {'returncode': 0}
+[2.551043] (driver_can_chassis) JobProgress: {'identifier': 'driver_can_chassis', 'progress': 'build'}
+[2.551120] (driver_can_chassis) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis', '--', '-j8', '-l8'], 'cwd': '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roto'), ('GIT_ASKPASS', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/roto'), ('OLDPWD', '/home/roto/workspace/roto_mobile_sales_cart_ws'), ('TERM_PROGRAM_VERSION', '1.142.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-131c4711-cac7-450c-b089-e695255c5506.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roto'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1659_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.2.47.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/WSL/:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PC/AppData/Local/Microsoft/WindowsApps:/snap/bin:/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-002972f183d325c6.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/roto/.vscode-server/data/User/workspaceStorage/3a1782012c7f0a1f37817941eac0fedb/ms-python.python/pythonrc.py'), ('PERF_EXEC_PATH', '/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28af350e27.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis'), ('COPILOT_DEBUG_NONCE', '2bc3f894536d98a0fa74189ec26bd55e'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:'), ('CMAKE_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble')]), 'shell': False}
+[2.599889] (driver_can_chassis) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_driver_base.cpp.o\n'}
+[2.600174] (driver_can_chassis) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o\n'}
+[2.601525] (driver_can_chassis) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_driver_base.cpp.o\n'}
+[2.601753] (driver_can_chassis) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_stub_impl.cpp.o\n'}
+[2.604737] (-) TimerEvent: {}
+[2.704985] (-) TimerEvent: {}
+[2.805238] (-) TimerEvent: {}
+[2.905486] (-) TimerEvent: {}
+[3.005794] (-) TimerEvent: {}
+[3.106032] (-) TimerEvent: {}
+[3.206322] (-) TimerEvent: {}
+[3.306567] (-) TimerEvent: {}
+[3.406856] (-) TimerEvent: {}
+[3.507219] (-) TimerEvent: {}
+[3.607492] (-) TimerEvent: {}
+[3.707761] (-) TimerEvent: {}
+[3.808006] (-) TimerEvent: {}
+[3.908296] (-) TimerEvent: {}
+[4.008559] (-) TimerEvent: {}
+[4.108850] (-) TimerEvent: {}
+[4.209213] (-) TimerEvent: {}
+[4.309479] (-) TimerEvent: {}
+[4.409746] (-) TimerEvent: {}
+[4.510065] (-) TimerEvent: {}
+[4.610364] (-) TimerEvent: {}
+[4.710694] (-) TimerEvent: {}
+[4.811016] (-) TimerEvent: {}
+[4.911281] (-) TimerEvent: {}
+[5.011569] (-) TimerEvent: {}
+[5.111907] (-) TimerEvent: {}
+[5.212163] (-) TimerEvent: {}
+[5.312472] (-) TimerEvent: {}
+[5.412782] (-) TimerEvent: {}
+[5.513046] (-) TimerEvent: {}
+[5.613313] (-) TimerEvent: {}
+[5.713633] (-) TimerEvent: {}
+[5.813882] (-) TimerEvent: {}
+[5.914144] (-) TimerEvent: {}
+[6.014404] (-) TimerEvent: {}
+[6.114760] (-) TimerEvent: {}
+[6.148998] (driver_can_chassis) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis/src/chassis_hw_impl.cpp: In member function \xe2\x80\x98void driver_can_chassis::ChassisHw::open_can(const string&)\xe2\x80\x99:\n'}
+[6.149287] (driver_can_chassis) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis/src/chassis_hw_impl.cpp:55:20: error: \xe2\x80\x98SIOCGIFINDEX\xe2\x80\x99 was not declared in this scope\n'}
+[6.149463] (driver_can_chassis) StderrLine: {'line': b'   55 |     ioctl(can_fd_, SIOCGIFINDEX, &ifr);\n'}
+[6.149611] (driver_can_chassis) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~\n'}
+[6.156318] (driver_can_chassis) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis/src/chassis_hw_impl.cpp:55:5: error: \xe2\x80\x98ioctl\xe2\x80\x99 was not declared in this scope\n'}
+[6.156709] (driver_can_chassis) StderrLine: {'line': b'   55 |     ioctl(can_fd_, SIOCGIFINDEX, &ifr);\n'}
+[6.156989] (driver_can_chassis) StderrLine: {'line': b'      |     ^~~~~\n'}
+[6.214920] (-) TimerEvent: {}
+[6.315181] (-) TimerEvent: {}
+[6.415460] (-) TimerEvent: {}
+[6.515776] (-) TimerEvent: {}
+[6.616091] (-) TimerEvent: {}
+[6.716492] (-) TimerEvent: {}
+[6.816799] (-) TimerEvent: {}
+[6.917099] (-) TimerEvent: {}
+[7.017426] (-) TimerEvent: {}
+[7.117809] (-) TimerEvent: {}
+[7.218173] (-) TimerEvent: {}
+[7.318466] (-) TimerEvent: {}
+[7.418821] (-) TimerEvent: {}
+[7.519140] (-) TimerEvent: {}
+[7.619411] (-) TimerEvent: {}
+[7.719710] (-) TimerEvent: {}
+[7.820024] (-) TimerEvent: {}
+[7.920359] (-) TimerEvent: {}
+[8.020698] (-) TimerEvent: {}
+[8.120983] (-) TimerEvent: {}
+[8.221358] (-) TimerEvent: {}
+[8.321712] (-) TimerEvent: {}
+[8.422100] (-) TimerEvent: {}
+[8.522486] (-) TimerEvent: {}
+[8.622773] (-) TimerEvent: {}
+[8.723052] (-) TimerEvent: {}
+[8.823448] (-) TimerEvent: {}
+[8.923803] (-) TimerEvent: {}
+[9.024155] (-) TimerEvent: {}
+[9.124467] (-) TimerEvent: {}
+[9.224763] (-) TimerEvent: {}
+[9.325075] (-) TimerEvent: {}
+[9.425425] (-) TimerEvent: {}
+[9.525817] (-) TimerEvent: {}
+[9.626091] (-) TimerEvent: {}
+[9.726475] (-) TimerEvent: {}
+[9.826754] (-) TimerEvent: {}
+[9.927010] (-) TimerEvent: {}
+[10.027322] (-) TimerEvent: {}
+[10.127666] (-) TimerEvent: {}
+[10.227994] (-) TimerEvent: {}
+[10.328264] (-) TimerEvent: {}
+[10.428520] (-) TimerEvent: {}
+[10.528792] (-) TimerEvent: {}
+[10.629067] (-) TimerEvent: {}
+[10.729388] (-) TimerEvent: {}
+[10.829681] (-) TimerEvent: {}
+[10.930024] (-) TimerEvent: {}
+[11.030314] (-) TimerEvent: {}
+[11.130597] (-) TimerEvent: {}
+[11.220866] (driver_can_chassis) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/driver_can_chassis_hw.dir/build.make:90: CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o] Error 1\n'}
+[11.221428] (driver_can_chassis) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/driver_can_chassis_hw.dir/all] Error 2\n'}
+[11.221538] (driver_can_chassis) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[11.230730] (-) TimerEvent: {}
+[11.330991] (-) TimerEvent: {}
+[11.431282] (-) TimerEvent: {}
+[11.531602] (-) TimerEvent: {}
+[11.631850] (-) TimerEvent: {}
+[11.732174] (-) TimerEvent: {}
+[11.832475] (-) TimerEvent: {}
+[11.932849] (-) TimerEvent: {}
+[12.033176] (-) TimerEvent: {}
+[12.133461] (-) TimerEvent: {}
+[12.233714] (-) TimerEvent: {}
+[12.334041] (-) TimerEvent: {}
+[12.434299] (-) TimerEvent: {}
+[12.534533] (-) TimerEvent: {}
+[12.634808] (-) TimerEvent: {}
+[12.735129] (-) TimerEvent: {}
+[12.835381] (-) TimerEvent: {}
+[12.935634] (-) TimerEvent: {}
+[13.035879] (-) TimerEvent: {}
+[13.136114] (-) TimerEvent: {}
+[13.236360] (-) TimerEvent: {}
+[13.336635] (-) TimerEvent: {}
+[13.436898] (-) TimerEvent: {}
+[13.537130] (-) TimerEvent: {}
+[13.637366] (-) TimerEvent: {}
+[13.737643] (-) TimerEvent: {}
+[13.837859] (-) TimerEvent: {}
+[13.938158] (-) TimerEvent: {}
+[14.038448] (-) TimerEvent: {}
+[14.138729] (-) TimerEvent: {}
+[14.239034] (-) TimerEvent: {}
+[14.339293] (-) TimerEvent: {}
+[14.439587] (-) TimerEvent: {}
+[14.539896] (-) TimerEvent: {}
+[14.640212] (-) TimerEvent: {}
+[14.740554] (-) TimerEvent: {}
+[14.840844] (-) TimerEvent: {}
+[14.941145] (-) TimerEvent: {}
+[15.041495] (-) TimerEvent: {}
+[15.141825] (-) TimerEvent: {}
+[15.242085] (-) TimerEvent: {}
+[15.342337] (-) TimerEvent: {}
+[15.442609] (-) TimerEvent: {}
+[15.542852] (-) TimerEvent: {}
+[15.643104] (-) TimerEvent: {}
+[15.743341] (-) TimerEvent: {}
+[15.843646] (-) TimerEvent: {}
+[15.943873] (-) TimerEvent: {}
+[16.044099] (-) TimerEvent: {}
+[16.144338] (-) TimerEvent: {}
+[16.244710] (-) TimerEvent: {}
+[16.344979] (-) TimerEvent: {}
+[16.444198] (driver_can_chassis) StdoutLine: {'line': b'[ 83%] Linking CXX executable driver_can_chassis_stub\n'}
+[16.445151] (-) TimerEvent: {}
+[16.545390] (-) TimerEvent: {}
+[16.645649] (-) TimerEvent: {}
+[16.745917] (-) TimerEvent: {}
+[16.846175] (-) TimerEvent: {}
+[16.946442] (-) TimerEvent: {}
+[17.013129] (driver_can_chassis) StdoutLine: {'line': b'[ 83%] Built target driver_can_chassis_stub\n'}
+[17.014266] (driver_can_chassis) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.016570] (driver_can_chassis) CommandEnded: {'returncode': 2}
+[17.030789] (driver_can_chassis) JobEnded: {'identifier': 'driver_can_chassis', 'rc': 2}
+[17.041548] (-) EventReactorShutdown: {}

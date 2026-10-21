@@ -1,0 +1,145 @@
+[0.162s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet
+[0.520s] -- The C compiler identification is GNU 11.4.0
+[1.712s] -- The CXX compiler identification is GNU 11.4.0
+[2.333s] -- Detecting C compiler ABI info
+[2.834s] -- Detecting C compiler ABI info - done
+[2.874s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.880s] -- Detecting C compile features
+[2.903s] -- Detecting C compile features - done
+[2.950s] -- Detecting CXX compiler ABI info
+[3.537s] -- Detecting CXX compiler ABI info - done
+[3.576s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.577s] -- Detecting CXX compile features
+[3.577s] -- Detecting CXX compile features - done
+[3.585s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.377s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.960s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[5.635s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.662s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.731s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.864s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.013s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.504s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.511s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.957s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[10.099s] -- Found FastRTPS: /opt/ros/humble/include  
+[13.076s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.139s] -- Looking for pthread.h
+[13.655s] -- Looking for pthread.h - found
+[13.655s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[14.183s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[14.184s] -- Found Threads: TRUE  
+[14.502s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[14.827s] -- Configuring done
+[14.890s] -- Generating done
+[14.915s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet
+[14.961s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_tablet
+[14.978s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet -- -j8 -l8
+[15.293s] [ 50%] Building CXX object CMakeFiles/sim_tablet.dir/sim_tablet_node.cpp.o
+[25.859s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:27: error: ‘std_srvs’ was not declared in this scope
+[25.869s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.869s]       |                           ^~~~~~~~
+[25.870s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:58: error: template argument 1 is invalid
+[25.870s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.870s]       |                                                          ^
+[25.871s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:27: error: ‘std_srvs’ was not declared in this scope
+[25.871s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.871s]       |                           ^~~~~~~~
+[25.871s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:58: error: template argument 1 is invalid
+[25.872s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.872s]       |                                                          ^
+[25.896s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:27: error: ‘std_srvs’ was not declared in this scope
+[25.897s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.897s]       |                           ^~~~~~~~
+[25.900s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:58: error: template argument 1 is invalid
+[25.900s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.900s]       |                                                          ^
+[25.901s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:11: error: invalid template-id
+[25.911s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.912s]       |           ^~~
+[25.912s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:27: error: ‘std_srvs’ has not been declared
+[25.913s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.913s]       |                           ^~~~~~~~
+[25.919s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:47:5: error: class template placeholder ‘std::shared_ptr’ not permitted in this context
+[25.919s]    47 |     const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+[25.919s]       |     ^~~~~
+[25.933s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:21: error: ‘std_srvs’ was not declared in this scope
+[25.933s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[25.933s]       |                     ^~~~~~~~
+[25.935s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:53: error: template argument 1 is invalid
+[25.935s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[25.935s]       |                                                     ^
+[25.973s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:21: error: ‘std_srvs’ was not declared in this scope
+[25.974s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[25.974s]       |                     ^~~~~~~~
+[25.979s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:53: error: template argument 1 is invalid
+[25.979s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[25.994s]       |                                                     ^
+[26.027s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:21: error: ‘std_srvs’ was not declared in this scope
+[26.027s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[26.028s]       |                     ^~~~~~~~
+[26.028s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:53: error: template argument 1 is invalid
+[26.028s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[26.028s]       |                                                     ^
+[26.029s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:5: error: invalid template-id
+[26.029s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[26.029s]       |     ^~~
+[26.029s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:21: error: ‘std_srvs’ has not been declared
+[26.029s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[26.030s]       |                     ^~~~~~~~
+[26.030s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:48:5: error: class template placeholder ‘std::shared_ptr’ not permitted in this context
+[26.030s]    48 |     std::shared_ptr<std_srvs::srv::Trigger::Response> res)
+[26.035s]       |     ^~~
+[26.106s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:56:19: error: ‘std_srvs’ was not declared in this scope
+[26.106s]    56 |   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_trigger_;
+[26.107s]       |                   ^~~~~~~~
+[26.108s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:56:41: error: template argument 1 is invalid
+[26.108s]    56 |   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_trigger_;
+[26.109s]       |                                         ^
+[26.109s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:56:44: error: expected ‘;’ at end of member declaration
+[26.109s]    56 |   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_trigger_;
+[26.109s]       |                                            ^~~~~~~~~
+[26.110s]       |                                                     ;
+[26.123s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:56:54: error: ‘srv_trigger_’ does not name a type
+[26.123s]    56 |   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_trigger_;
+[26.123s]       |                                                      ^~~~~~~~~~~~
+[26.324s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp: In constructor ‘SimTabletNode::SimTabletNode()’:
+[26.325s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:25:5: error: ‘srv_trigger_’ was not declared in this scope
+[26.325s]    25 |     srv_trigger_ = this->create_service<std_srvs::srv::Trigger>(
+[26.328s]       |     ^~~~~~~~~~~~
+[26.364s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:25:41: error: ‘std_srvs’ was not declared in this scope
+[26.365s]    25 |     srv_trigger_ = this->create_service<std_srvs::srv::Trigger>(
+[26.365s]       |                                         ^~~~~~~~
+[26.366s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:25:26: error: parse error in template argument list
+[26.367s]    25 |     srv_trigger_ = this->create_service<std_srvs::srv::Trigger>(
+[26.368s]       |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[26.402s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:25:64: error: no matching function for call to ‘SimTabletNode::create_service<<expression error> >(const char [23], std::_Bind_helper<false, void (SimTabletNode::*)(...), SimTabletNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)’
+[26.403s]    25 |     srv_trigger_ = this->create_service<std_srvs::srv::Trigger>(
+[26.403s]       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[26.403s]    26 |       "/sim_tablet/send_order",
+[26.404s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~                                 
+[26.404s]    27 |       std::bind(&SimTabletNode::trigger_callback, this, std::placeholders::_1, std::placeholders::_2));
+[26.404s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[26.406s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[26.407s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[26.407s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[26.407s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:1:
+[26.408s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3: note: candidate: ‘template<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)’
+[26.408s]   267 |   create_service(
+[26.408s]       |   ^~~~~~~~~~~~~~
+[26.416s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3: note:   template argument deduction/substitution failed:
+[26.416s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:25:64: error: template argument 1 is invalid
+[26.416s]    25 |     srv_trigger_ = this->create_service<std_srvs::srv::Trigger>(
+[26.417s]       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[26.417s]    26 |       "/sim_tablet/send_order",
+[26.417s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~                                 
+[26.417s]    27 |       std::bind(&SimTabletNode::trigger_callback, this, std::placeholders::_1, std::placeholders::_2));
+[26.417s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[26.458s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp: In member function ‘void SimTabletNode::trigger_callback(...)’:
+[26.458s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/sim_tools/sim_tablet/sim_tablet_node.cpp:51:5: error: ‘res’ was not declared in this scope
+[26.458s]    51 |     res->success = true;
+[26.459s]       |     ^~~
+[30.416s] gmake[2]: *** [CMakeFiles/sim_tablet.dir/build.make:76: CMakeFiles/sim_tablet.dir/sim_tablet_node.cpp.o] Error 1
+[30.418s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sim_tablet.dir/all] Error 2
+[30.418s] gmake: *** [Makefile:146: all] Error 2
+[30.581s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/sim_tablet -- -j8 -l8

@@ -1,0 +1,256 @@
+[0.042s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic -- -j8 -l8
+[0.083s] Consolidate compiler generated dependencies of target driver_ultrasonic_hw
+[0.083s] Consolidate compiler generated dependencies of target driver_ultrasonic_stub
+[0.096s] [ 16%] Building CXX object CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o
+[0.098s] [ 33%] Building CXX object CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o
+[3.394s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:
+[3.395s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:36: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.395s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.396s]       |                                    ^~~~~
+[3.396s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:41: error: template argument 1 is invalid
+[3.396s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.396s]       |                                         ^
+[3.397s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: error: expected ‘;’ at end of member declaration
+[3.397s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.397s]       |                                            ^~~~~~~~~
+[3.398s]       |                                                     ;
+[3.398s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:54: error: ‘pub_front_’ does not name a type
+[3.398s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.398s]       |                                                      ^~~~~~~~~~
+[3.398s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:36: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.398s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.399s]       |                                    ^~~~~
+[3.399s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:41: error: template argument 1 is invalid
+[3.399s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.399s]       |                                         ^
+[3.399s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: expected ‘;’ at end of member declaration
+[3.399s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.399s]       |                                            ^~~~~~~~~
+[3.400s]       |                                                     ;
+[3.400s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: redeclaration of ‘int driver_ultrasonic::UltrasonicDriverBase::SharedPtr’
+[3.400s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: note: previous declaration ‘int driver_ultrasonic::UltrasonicDriverBase::SharedPtr’
+[3.400s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.400s]       |                                            ^~~~~~~~~
+[3.401s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:54: error: ‘pub_rear_’ does not name a type
+[3.401s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.401s]       |                                                      ^~~~~~~~~
+[3.407s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.407s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:36: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.407s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.408s]       |                                    ^~~~~
+[3.408s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:41: error: template argument 1 is invalid
+[3.408s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.408s]       |                                         ^
+[3.409s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: error: expected ‘;’ at end of member declaration
+[3.409s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.409s]       |                                            ^~~~~~~~~
+[3.409s]       |                                                     ;
+[3.410s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:54: error: ‘pub_front_’ does not name a type
+[3.410s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.410s]       |                                                      ^~~~~~~~~~
+[3.411s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In constructor ‘driver_ultrasonic::UltrasonicDriverBase::UltrasonicDriverBase(const string&)’:
+[3.411s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:5: error: ‘pub_front_’ was not declared in this scope
+[3.411s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.411s]       |     ^~~~~~~~~~
+[3.411s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:36: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.412s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.412s]       |                                    ^~~~~
+[3.412s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:41: error: template argument 1 is invalid
+[3.412s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.412s]       |                                         ^
+[3.412s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: expected ‘;’ at end of member declaration
+[3.412s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.412s]       |                                            ^~~~~~~~~
+[3.412s]       |                                                     ;
+[3.413s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: redeclaration of ‘int driver_ultrasonic::UltrasonicDriverBase::SharedPtr’
+[3.413s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: note: previous declaration ‘int driver_ultrasonic::UltrasonicDriverBase::SharedPtr’
+[3.413s]    42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;
+[3.413s]       |                                            ^~~~~~~~~
+[3.413s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:56: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.413s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.414s]       |                                                        ^~~~~
+[3.414s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: no matching function for call to ‘driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [18], int)’
+[3.414s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.414s]       |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[3.414s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[3.414s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[3.414s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.414s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,
+[3.415s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:
+[3.415s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[3.415s]   195 |   create_publisher(
+[3.415s]       |   ^~~~~~~~~~~~~~~~
+[3.415s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[3.415s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:
+[3.415s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: template argument 1 is invalid
+[3.416s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.416s]       |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[3.416s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:54: error: ‘pub_rear_’ does not name a type
+[3.416s]    43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;
+[3.416s]       |                                                      ^~~~~~~~~
+[3.418s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:5: error: ‘pub_rear_’ was not declared in this scope
+[3.418s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.418s]       |     ^~~~~~~~~
+[3.419s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:55: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.419s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.419s]       |                                                       ^~~~~
+[3.419s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: no matching function for call to ‘driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [17], int)’
+[3.419s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.420s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[3.420s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[3.420s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[3.420s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.420s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,
+[3.421s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:
+[3.421s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[3.421s]   195 |   create_publisher(
+[3.421s]       |   ^~~~~~~~~~~~~~~~
+[3.421s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[3.421s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:
+[3.422s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: template argument 1 is invalid
+[3.422s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.422s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[3.422s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In constructor ‘driver_ultrasonic::UltrasonicDriverBase::UltrasonicDriverBase(const string&)’:
+[3.422s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:5: error: ‘pub_front_’ was not declared in this scope
+[3.422s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.423s]       |     ^~~~~~~~~~
+[3.423s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:56: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.423s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.423s]       |                                                        ^~~~~
+[3.423s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: no matching function for call to ‘driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [18], int)’
+[3.423s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.423s]       |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[3.424s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[3.424s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[3.424s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.424s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,
+[3.424s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.424s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[3.424s]   195 |   create_publisher(
+[3.424s]       |   ^~~~~~~~~~~~~~~~
+[3.424s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[3.424s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.424s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: template argument 1 is invalid
+[3.424s]    19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);
+[3.424s]       |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+[3.429s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:5: error: ‘pub_rear_’ was not declared in this scope
+[3.429s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.429s]       |     ^~~~~~~~~
+[3.429s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:55: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.430s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.430s]       |                                                       ^~~~~
+[3.430s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: no matching function for call to ‘driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [17], int)’
+[3.430s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.430s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[3.430s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[3.430s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[3.430s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.430s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,
+[3.430s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.430s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[3.430s]   195 |   create_publisher(
+[3.430s]       |   ^~~~~~~~~~~~~~~~
+[3.430s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[3.431s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.431s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: template argument 1 is invalid
+[3.431s]    20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);
+[3.431s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+[3.435s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In member function ‘void driver_ultrasonic::UltrasonicDriverBase::publish_loop()’:
+[3.435s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:33:20: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.435s]    33 |     std_msgs::msg::UInt8 msg_f;
+[3.435s]       |                    ^~~~~
+[3.442s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:34:5: error: ‘msg_f’ was not declared in this scope
+[3.442s]    34 |     msg_f.data = front;
+[3.442s]       |     ^~~~~
+[3.449s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In member function ‘void driver_ultrasonic::UltrasonicDriverBase::publish_loop()’:
+[3.449s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:33:20: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.449s]    33 |     std_msgs::msg::UInt8 msg_f;
+[3.449s]       |                    ^~~~~
+[3.454s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:35:5: error: ‘pub_front_’ was not declared in this scope
+[3.454s]    35 |     pub_front_->publish(msg_f);
+[3.454s]       |     ^~~~~~~~~~
+[3.455s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:37:20: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.455s]    37 |     std_msgs::msg::UInt8 msg_r;
+[3.455s]       |                    ^~~~~
+[3.457s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:34:5: error: ‘msg_f’ was not declared in this scope
+[3.457s]    34 |     msg_f.data = front;
+[3.457s]       |     ^~~~~
+[3.462s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:38:5: error: ‘msg_r’ was not declared in this scope
+[3.462s]    38 |     msg_r.data = rear;
+[3.462s]       |     ^~~~~
+[3.465s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:35:5: error: ‘pub_front_’ was not declared in this scope
+[3.465s]    35 |     pub_front_->publish(msg_f);
+[3.465s]       |     ^~~~~~~~~~
+[3.466s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:37:20: error: ‘UInt8’ is not a member of ‘std_msgs::msg’
+[3.466s]    37 |     std_msgs::msg::UInt8 msg_r;
+[3.466s]       |                    ^~~~~
+[3.470s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:39:5: error: ‘pub_rear_’ was not declared in this scope
+[3.470s]    39 |     pub_rear_->publish(msg_r);
+[3.470s]       |     ^~~~~~~~~
+[3.474s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:38:5: error: ‘msg_r’ was not declared in this scope
+[3.474s]    38 |     msg_r.data = rear;
+[3.474s]       |     ^~~~~
+[3.480s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:39:5: error: ‘pub_rear_’ was not declared in this scope
+[3.480s]    39 |     pub_rear_->publish(msg_r);
+[3.481s]       |     ^~~~~~~~~
+[3.484s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[3.484s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[3.484s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[3.484s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[3.484s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[3.484s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[3.484s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[3.485s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[3.485s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[3.485s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[3.485s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.485s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,
+[3.485s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.485s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp: In constructor ‘driver_ultrasonic::UltrasonicHw::UltrasonicHw()’:
+[3.485s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:12:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+[3.485s]    12 |     RCLCPP_INFO(this->get_logger(), "driver_ultrasonic_hw GPIO pins: front=%d, rear=%d",
+[3.485s]       |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.485s]    13 |       this->get_parameter("front_gpio_pin").as_int(),
+[3.485s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.485s]       |                                                   |
+[3.485s]       |                                                   int64_t {aka long int}
+[3.485s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:12:77: note: format string is defined here
+[3.485s]    12 |     RCLCPP_INFO(this->get_logger(), "driver_ultrasonic_hw GPIO pins: front=%d, rear=%d",
+[3.486s]       |                                                                            ~^
+[3.486s]       |                                                                             |
+[3.486s]       |                                                                             int
+[3.486s]       |                                                                            %ld
+[3.486s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[3.486s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.486s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,
+[3.487s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:
+[3.487s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:12:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+[3.487s]    12 |     RCLCPP_INFO(this->get_logger(), "driver_ultrasonic_hw GPIO pins: front=%d, rear=%d",
+[3.487s]       |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.487s]    13 |       this->get_parameter("front_gpio_pin").as_int(),
+[3.487s]    14 |       this->get_parameter("rear_gpio_pin").as_int());
+[3.487s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.487s]       |                                                  |
+[3.488s]       |                                                  int64_t {aka long int}
+[3.488s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:12:86: note: format string is defined here
+[3.488s]    12 |     RCLCPP_INFO(this->get_logger(), "driver_ultrasonic_hw GPIO pins: front=%d, rear=%d",
+[3.488s]       |                                                                                     ~^
+[3.488s]       |                                                                                      |
+[3.488s]       |                                                                                      int
+[3.488s]       |                                                                                     %ld
+[4.184s] gmake[2]: *** [CMakeFiles/driver_ultrasonic_hw.dir/build.make:90: CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o] Error 1
+[4.184s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/driver_ultrasonic_hw.dir/all] Error 2
+[4.184s] gmake[1]: *** Waiting for unfinished jobs....
+[4.275s] gmake[2]: *** [CMakeFiles/driver_ultrasonic_stub.dir/build.make:90: CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o] Error 1
+[4.275s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/driver_ultrasonic_stub.dir/all] Error 2
+[4.275s] gmake: *** [Makefile:146: all] Error 2
+[4.278s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic -- -j8 -l8

@@ -1,0 +1,40 @@
+[0.041s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_webrtc -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc
+[0.166s] -- The C compiler identification is GNU 11.4.0
+[0.428s] -- The CXX compiler identification is GNU 11.4.0
+[0.514s] -- Detecting C compiler ABI info
+[0.629s] -- Detecting C compiler ABI info - done
+[0.643s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.644s] -- Detecting C compile features
+[0.651s] -- Detecting C compile features - done
+[0.651s] -- Detecting CXX compiler ABI info
+[0.811s] -- Detecting CXX compiler ABI info - done
+[0.827s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.827s] -- Detecting CXX compile features
+[0.827s] -- Detecting CXX compile features - done
+[0.829s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.033s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.149s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[1.239s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.243s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.251s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.267s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.291s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.357s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.361s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.741s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.060s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.603s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.611s] -- Looking for pthread.h
+[2.724s] -- Looking for pthread.h - found
+[2.724s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.837s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.839s] -- Found Threads: TRUE  
+[2.910s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.129s] -- Configuring done
+[3.171s] -- Generating done
+[3.187s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc
+[3.230s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_webrtc -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc
+[3.232s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc -- -j8 -l8
+[3.375s] [ 50%] Building CXX object CMakeFiles/comm_webrtc.dir/src/webrtc_node.cpp.o
+[41.827s] [100%] Linking CXX executable comm_webrtc
+[43.109s] [100%] Built target comm_webrtc

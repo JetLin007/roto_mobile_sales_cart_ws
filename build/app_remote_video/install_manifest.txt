@@ -1,0 +1,16 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/lib/app_remote_video/app_remote_video_node
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/ament_index/resource_index/package_run_dependencies/app_remote_video
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/ament_index/resource_index/parent_prefix_path/app_remote_video
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/ament_index/resource_index/packages/app_remote_video
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/cmake/app_remote_videoConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/cmake/app_remote_videoConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_remote_video/share/app_remote_video/package.xml

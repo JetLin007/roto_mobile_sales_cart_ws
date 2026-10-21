@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-73d72ac78f44393a19af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "driver_bms",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "driver_bms_hw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-driver_bms_hw-9720f7a98b4e1f546cdd.json",
+					"name" : "driver_bms_hw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "driver_bms_stub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-driver_bms_stub-afa1364a583624696033.json",
+					"name" : "driver_bms_stub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "driver_bms_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-driver_bms_uninstall-314bb82949436453a3ee.json",
+					"name" : "driver_bms_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c5ece40f69bc17383114.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_bms",
+		"source" : "/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_bms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

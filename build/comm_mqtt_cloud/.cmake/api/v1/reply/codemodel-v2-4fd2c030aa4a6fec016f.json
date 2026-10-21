@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-706e6d541d9e1cc6b345.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "comm_mqtt_cloud",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "comm_mqtt_cloud::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-comm_mqtt_cloud-7b9b33b70b586f6c8120.json",
+					"name" : "comm_mqtt_cloud",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "comm_mqtt_cloud_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-comm_mqtt_cloud_uninstall-08ecc4a57a5270a6af1a.json",
+					"name" : "comm_mqtt_cloud_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-69397992238d7afb90ec.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud",
+		"source" : "/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,27 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In constructor ‘MqttCloudBridge::MqttCloudBridge()’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:42:17: error: no matching function for call to ‘mqtt::connect_options::set_ssl(bool)’
+   42 |     opts.set_ssl(true);
+      |     ~~~~~~~~~~~~^~~~~~
+In file included from /usr/local/include/mqtt/iasync_client.h:33,
+                 from /usr/local/include/mqtt/async_client.h:41,
+                 from /usr/local/include/mqtt/client.h:27,
+                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:6:
+/usr/local/include/mqtt/connect_options.h:223:14: note: candidate: ‘void mqtt::connect_options::set_ssl(const mqtt::ssl_options&)’
+  223 |         void set_ssl(const ssl_options& ssl);
+      |              ^~~~~~~
+/usr/local/include/mqtt/connect_options.h:223:41: note:   no known conversion for argument 1 from ‘bool’ to ‘const mqtt::ssl_options&’
+  223 |         void set_ssl(const ssl_options& ssl);
+      |                      ~~~~~~~~~~~~~~~~~~~^~~
+/usr/local/include/mqtt/connect_options.h:231:14: note: candidate: ‘void mqtt::connect_options::set_ssl(mqtt::ssl_options&&)’
+  231 |         void set_ssl(ssl_options&& ssl);
+      |              ^~~~~~~
+/usr/local/include/mqtt/connect_options.h:231:36: note:   no known conversion for argument 1 from ‘bool’ to ‘mqtt::ssl_options&&’
+  231 |         void set_ssl(ssl_options&& ssl);
+      |                      ~~~~~~~~~~~~~~^~~
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In member function ‘virtual void MqttCloudBridge::delivery_complete(mqtt::delivery_token_ptr)’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:77:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+   77 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+gmake[2]: *** [CMakeFiles/comm_mqtt_cloud.dir/build.make:76: CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_cloud.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

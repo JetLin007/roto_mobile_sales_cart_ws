@@ -1,0 +1,16 @@
+[0.086s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_private': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_private -- -j8 -l8
+[0.217s] Consolidate compiler generated dependencies of target comm_mqtt_private
+[0.252s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o
+[8.745s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In constructor ‘MqttPrivateBridge::MqttPrivateBridge()’:
+[8.745s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:44:32: error: cannot convert ‘std::shared_ptr<MqttCallbackHandler>’ to ‘mqtt::callback&’
+[8.746s]    44 |     mqtt_client_->set_callback(cb);
+[8.746s]       |                                ^~
+[8.746s]       |                                |
+[8.746s]       |                                std::shared_ptr<MqttCallbackHandler>
+[8.747s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:5:
+[8.747s] /usr/local/include/mqtt/async_client.h:265:37: note:   initializing argument 1 of ‘virtual void mqtt::async_client::set_callback(mqtt::callback&)’
+[8.747s]   265 |         void set_callback(callback& cb) override;
+[8.748s]       |                           ~~~~~~~~~~^~
+[20.301s] gmake[2]: *** [CMakeFiles/comm_mqtt_private.dir/build.make:76: CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o] Error 1
+[20.301s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_private.dir/all] Error 2
+[20.302s] gmake: *** [Makefile:146: all] Error 2

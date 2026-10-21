@@ -1,0 +1,22 @@
+Consolidate compiler generated dependencies of target comm_remote_handle
+[ 50%] Building CXX object CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o
+[100%] Linking CXX executable comm_remote_handle
+[100%] Built target comm_remote_handle
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/lib/comm_remote_handle/comm_remote_handle
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/lib/comm_remote_handle/comm_remote_handle" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/ament_index/resource_index/package_run_dependencies/comm_remote_handle
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/ament_index/resource_index/parent_prefix_path/comm_remote_handle
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/ament_index/resource_index/packages/comm_remote_handle
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/cmake/comm_remote_handleConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/cmake/comm_remote_handleConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_remote_handle/share/comm_remote_handle/package.xml

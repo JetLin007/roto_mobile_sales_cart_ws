@@ -1,0 +1,20 @@
+[ 50%] Built target driver_bms_stub
+[100%] Built target driver_bms_hw
+-- Install configuration: ""
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/lib/driver_bms/driver_bms_stub
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/lib/driver_bms/driver_bms_hw
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/ament_index/resource_index/package_run_dependencies/driver_bms
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/ament_index/resource_index/parent_prefix_path/driver_bms
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/ament_prefix_path.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/path.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/environment/path.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.bash
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.zsh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/package.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/ament_index/resource_index/packages/driver_bms
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/cmake/driver_bmsConfig.cmake
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/cmake/driver_bmsConfig-version.cmake
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_bms/share/driver_bms/package.xml

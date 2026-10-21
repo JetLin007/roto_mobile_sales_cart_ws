@@ -1,0 +1,20 @@
+Consolidate compiler generated dependencies of target app_status_report_node
+[100%] Built target app_status_report_node
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/lib/app_status_report/app_status_report_node
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/lib/app_status_report/app_status_report_node" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/ament_index/resource_index/package_run_dependencies/app_status_report
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/ament_index/resource_index/parent_prefix_path/app_status_report
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/ament_index/resource_index/packages/app_status_report
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/cmake/app_status_reportConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/cmake/app_status_reportConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/app_status_report/share/app_status_report/package.xml

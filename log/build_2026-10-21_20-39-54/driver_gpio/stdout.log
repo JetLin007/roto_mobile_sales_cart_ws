@@ -1,0 +1,20 @@
+[ 50%] Built target driver_gpio_hw
+[100%] Built target driver_gpio_stub
+-- Install configuration: ""
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/lib/driver_gpio/driver_gpio_stub
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/lib/driver_gpio/driver_gpio_hw
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/ament_index/resource_index/package_run_dependencies/driver_gpio
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/ament_index/resource_index/parent_prefix_path/driver_gpio
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/ament_prefix_path.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/path.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/path.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.bash
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.sh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.zsh
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/package.dsv
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/ament_index/resource_index/packages/driver_gpio
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/cmake/driver_gpioConfig.cmake
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/cmake/driver_gpioConfig-version.cmake
+-- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/package.xml

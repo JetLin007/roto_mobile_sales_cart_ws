@@ -1,0 +1,30 @@
+[0.222s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud -- -j8 -l8
+[0.526s] Consolidate compiler generated dependencies of target comm_mqtt_cloud
+[0.616s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o
+[17.141s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In constructor ‘MqttCloudBridge::MqttCloudBridge()’:
+[17.141s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:42:17: error: no matching function for call to ‘mqtt::connect_options::set_ssl(bool)’
+[17.142s]    42 |     opts.set_ssl(true);
+[17.142s]       |     ~~~~~~~~~~~~^~~~~~
+[17.143s] In file included from /usr/local/include/mqtt/iasync_client.h:33,
+[17.143s]                  from /usr/local/include/mqtt/async_client.h:41,
+[17.143s]                  from /usr/local/include/mqtt/client.h:27,
+[17.143s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:6:
+[17.144s] /usr/local/include/mqtt/connect_options.h:223:14: note: candidate: ‘void mqtt::connect_options::set_ssl(const mqtt::ssl_options&)’
+[17.144s]   223 |         void set_ssl(const ssl_options& ssl);
+[17.144s]       |              ^~~~~~~
+[17.145s] /usr/local/include/mqtt/connect_options.h:223:41: note:   no known conversion for argument 1 from ‘bool’ to ‘const mqtt::ssl_options&’
+[17.145s]   223 |         void set_ssl(const ssl_options& ssl);
+[17.145s]       |                      ~~~~~~~~~~~~~~~~~~~^~~
+[17.145s] /usr/local/include/mqtt/connect_options.h:231:14: note: candidate: ‘void mqtt::connect_options::set_ssl(mqtt::ssl_options&&)’
+[17.146s]   231 |         void set_ssl(ssl_options&& ssl);
+[17.146s]       |              ^~~~~~~
+[17.146s] /usr/local/include/mqtt/connect_options.h:231:36: note:   no known conversion for argument 1 from ‘bool’ to ‘mqtt::ssl_options&&’
+[17.155s]   231 |         void set_ssl(ssl_options&& ssl);
+[17.156s]       |                      ~~~~~~~~~~~~~~^~~
+[17.258s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In member function ‘virtual void MqttCloudBridge::delivery_complete(mqtt::delivery_token_ptr)’:
+[17.259s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:77:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+[17.260s]    77 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[17.260s]       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[42.367s] gmake[2]: *** [CMakeFiles/comm_mqtt_cloud.dir/build.make:76: CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o] Error 1
+[42.368s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_cloud.dir/all] Error 2
+[42.369s] gmake: *** [Makefile:146: all] Error 2

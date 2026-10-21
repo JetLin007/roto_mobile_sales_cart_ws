@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1ff02c4a67124fd88b0b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "app_remote_video",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "app_remote_video_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_remote_video_node-61f1ef6a293e9e2139a4.json",
+					"name" : "app_remote_video_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_remote_video_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_remote_video_uninstall-c5dd14ac2b3792d468a0.json",
+					"name" : "app_remote_video_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-78c360c1dd1d0e45d344.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/roto/workspace/roto_mobile_sales_cart_ws/build/app_remote_video",
+		"source" : "/home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_remote_video_node"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

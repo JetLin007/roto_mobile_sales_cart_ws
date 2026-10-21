@@ -1,0 +1,40 @@
+[0.142s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/app_alarm_warn': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_alarm_warn_node -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_alarm_warn
+[0.559s] -- The C compiler identification is GNU 11.4.0
+[1.279s] -- The CXX compiler identification is GNU 11.4.0
+[1.708s] -- Detecting C compiler ABI info
+[2.198s] -- Detecting C compiler ABI info - done
+[2.271s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.272s] -- Detecting C compile features
+[2.275s] -- Detecting C compile features - done
+[2.290s] -- Detecting CXX compiler ABI info
+[2.684s] -- Detecting CXX compiler ABI info - done
+[2.717s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.719s] -- Detecting CXX compile features
+[2.723s] -- Detecting CXX compile features - done
+[2.733s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.490s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.856s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[4.142s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.154s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.180s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.226s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.283s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.464s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.474s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.310s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.568s] -- Found FastRTPS: /opt/ros/humble/include  
+[10.007s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.043s] -- Looking for pthread.h
+[10.391s] -- Looking for pthread.h - found
+[10.393s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.720s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.720s] -- Found Threads: TRUE  
+[10.981s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[11.437s] -- Configuring done
+[11.496s] -- Generating done
+[11.515s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/app_alarm_warn
+[11.551s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/app_alarm_warn' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_alarm_warn_node -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_alarm_warn
+[11.554s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/app_alarm_warn': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/app_alarm_warn -- -j8 -l8
+[11.751s] [ 50%] Building CXX object CMakeFiles/app_alarm_warn_node.dir/alarm_warn_node.cpp.o
+[41.753s] [100%] Linking CXX executable app_alarm_warn_node
+[43.254s] [100%] Built target app_alarm_warn_node

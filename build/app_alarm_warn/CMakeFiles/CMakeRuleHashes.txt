@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+9c7b257c52afbaa5b7d918cc377624d6 CMakeFiles/app_alarm_warn_uninstall

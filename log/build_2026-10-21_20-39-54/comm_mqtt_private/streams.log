@@ -1,0 +1,45 @@
+[0.092s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_private': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_private -- -j8 -l8
+[0.299s] Consolidate compiler generated dependencies of target comm_mqtt_private
+[0.429s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o
+[10.673s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In constructor ‘MqttPrivateBridge::MqttPrivateBridge()’:
+[10.673s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:49:43: error: ‘client’ is not a member of ‘mqtt’
+[10.674s]    49 |     mqtt_client_ = std::make_shared<mqtt::client>(
+[10.674s]       |                                           ^~~~~~
+[10.674s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:49:50: error: no matching function for call to ‘make_shared<<expression error> >(std::__cxx11::basic_string<char>, std::string&)’
+[10.674s]    49 |     mqtt_client_ = std::make_shared<mqtt::client>(
+[10.675s]       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[10.676s]    50 |       "tcp://" + broker + ":" + std::to_string(port), client_id);
+[10.676s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[10.676s] In file included from /usr/include/c++/11/memory:77,
+[10.676s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[10.676s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:1:
+[10.677s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+[10.677s]   875 |     make_shared(_Args&&... __args)
+[10.677s]       |     ^~~~~~~~~~~
+[10.677s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+[10.677s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:49:50: error: template argument 1 is invalid
+[10.677s]    49 |     mqtt_client_ = std::make_shared<mqtt::client>(
+[10.677s]       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[10.678s]    50 |       "tcp://" + broker + ":" + std::to_string(port), client_id);
+[10.678s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[10.678s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:58:32: error: cannot convert ‘std::shared_ptr<MqttCallbackHandler>’ to ‘mqtt::callback&’
+[10.678s]    58 |     mqtt_client_->set_callback(cb);
+[10.679s]       |                                ^~
+[10.679s]       |                                |
+[10.679s]       |                                std::shared_ptr<MqttCallbackHandler>
+[10.679s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:5:
+[10.679s] /usr/local/include/mqtt/async_client.h:265:37: note:   initializing argument 1 of ‘virtual void mqtt::async_client::set_callback(mqtt::callback&)’
+[10.679s]   265 |         void set_callback(callback& cb) override;
+[10.680s]       |                           ~~~~~~~~~~^~
+[10.705s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:83:32: error: cannot convert ‘MqttPrivateBridge’ to ‘mqtt::callback&’
+[10.705s]    83 |     mqtt_client_->set_callback(*this);
+[10.706s]       |                                ^~~~~
+[10.706s]       |                                |
+[10.706s]       |                                MqttPrivateBridge
+[10.707s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:5:
+[10.707s] /usr/local/include/mqtt/async_client.h:265:37: note:   initializing argument 1 of ‘virtual void mqtt::async_client::set_callback(mqtt::callback&)’
+[10.707s]   265 |         void set_callback(callback& cb) override;
+[10.707s]       |                           ~~~~~~~~~~^~
+[21.650s] gmake[2]: *** [CMakeFiles/comm_mqtt_private.dir/build.make:76: CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o] Error 1
+[21.651s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_private.dir/all] Error 2
+[21.651s] gmake: *** [Makefile:146: all] Error 2

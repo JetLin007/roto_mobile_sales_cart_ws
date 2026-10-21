@@ -1,0 +1,22 @@
+[0.034s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc -- -j8 -l8
+[0.160s] [100%] Built target comm_webrtc
+[0.212s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc -- -j8 -l8
+[0.236s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc
+[0.254s] -- Install configuration: ""
+[0.255s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/lib/comm_webrtc/comm_webrtc
+[0.255s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/package_run_dependencies/comm_webrtc
+[0.260s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/parent_prefix_path/comm_webrtc
+[0.262s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/ament_prefix_path.sh
+[0.265s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/ament_prefix_path.dsv
+[0.265s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/path.sh
+[0.267s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/path.dsv
+[0.267s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.bash
+[0.269s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.sh
+[0.270s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.zsh
+[0.271s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.dsv
+[0.271s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/package.dsv
+[0.271s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/packages/comm_webrtc
+[0.271s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/cmake/comm_webrtcConfig.cmake
+[0.277s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/cmake/comm_webrtcConfig-version.cmake
+[0.277s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/package.xml
+[0.279s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc

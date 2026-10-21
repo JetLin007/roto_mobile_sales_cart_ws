@@ -1,0 +1,150 @@
+[0.000000] (-) TimerEvent: {}
+[0.001658] (-) JobUnselected: {'identifier': 'driver_bms'}
+[0.001779] (-) JobUnselected: {'identifier': 'driver_can_chassis'}
+[0.001831] (-) JobUnselected: {'identifier': 'driver_gpio'}
+[0.001872] (-) JobUnselected: {'identifier': 'driver_gps'}
+[0.001911] (-) JobUnselected: {'identifier': 'robot_msgs'}
+[0.001957] (driver_ultrasonic) JobQueued: {'identifier': 'driver_ultrasonic', 'dependencies': OrderedDict([('robot_msgs', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs')])}
+[0.002012] (driver_ultrasonic) JobStarted: {'identifier': 'driver_ultrasonic'}
+[0.090012] (driver_ultrasonic) JobProgress: {'identifier': 'driver_ultrasonic', 'progress': 'cmake'}
+[0.092010] (driver_ultrasonic) JobProgress: {'identifier': 'driver_ultrasonic', 'progress': 'build'}
+[0.093452] (driver_ultrasonic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic', '--', '-j8', '-l8'], 'cwd': '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roto'), ('GIT_ASKPASS', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/roto'), ('OLDPWD', '/home/roto/workspace/roto_mobile_sales_cart_ws'), ('TERM_PROGRAM_VERSION', '1.142.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-131c4711-cac7-450c-b089-e695255c5506.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roto'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1659_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.2.47.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/WSL/:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PC/AppData/Local/Microsoft/WindowsApps:/snap/bin:/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-002972f183d325c6.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/roto/.vscode-server/data/User/workspaceStorage/3a1782012c7f0a1f37817941eac0fedb/ms-python.python/pythonrc.py'), ('PERF_EXEC_PATH', '/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28af350e27.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic'), ('COPILOT_DEBUG_NONCE', '2bc3f894536d98a0fa74189ec26bd55e'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:'), ('CMAKE_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble')]), 'shell': False}
+[0.095390] (-) TimerEvent: {}
+[0.195928] (-) TimerEvent: {}
+[0.208263] (driver_ultrasonic) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target driver_ultrasonic_stub\n'}
+[0.216496] (driver_ultrasonic) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target driver_ultrasonic_hw\n'}
+[0.246015] (driver_ultrasonic) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o\n'}
+[0.257556] (driver_ultrasonic) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o\n'}
+[0.296942] (-) TimerEvent: {}
+[0.397251] (-) TimerEvent: {}
+[0.497596] (-) TimerEvent: {}
+[0.597907] (-) TimerEvent: {}
+[0.698195] (-) TimerEvent: {}
+[0.798495] (-) TimerEvent: {}
+[0.898804] (-) TimerEvent: {}
+[0.999152] (-) TimerEvent: {}
+[1.099515] (-) TimerEvent: {}
+[1.199887] (-) TimerEvent: {}
+[1.300298] (-) TimerEvent: {}
+[1.400653] (-) TimerEvent: {}
+[1.501001] (-) TimerEvent: {}
+[1.601344] (-) TimerEvent: {}
+[1.701634] (-) TimerEvent: {}
+[1.801980] (-) TimerEvent: {}
+[1.902304] (-) TimerEvent: {}
+[2.002725] (-) TimerEvent: {}
+[2.103115] (-) TimerEvent: {}
+[2.203516] (-) TimerEvent: {}
+[2.303817] (-) TimerEvent: {}
+[2.404221] (-) TimerEvent: {}
+[2.504550] (-) TimerEvent: {}
+[2.604884] (-) TimerEvent: {}
+[2.705272] (-) TimerEvent: {}
+[2.805628] (-) TimerEvent: {}
+[2.905971] (-) TimerEvent: {}
+[3.006331] (-) TimerEvent: {}
+[3.106694] (-) TimerEvent: {}
+[3.207006] (-) TimerEvent: {}
+[3.307289] (-) TimerEvent: {}
+[3.407649] (-) TimerEvent: {}
+[3.507983] (-) TimerEvent: {}
+[3.608274] (-) TimerEvent: {}
+[3.708570] (-) TimerEvent: {}
+[3.808880] (-) TimerEvent: {}
+[3.909216] (-) TimerEvent: {}
+[4.009507] (-) TimerEvent: {}
+[4.109814] (-) TimerEvent: {}
+[4.210115] (-) TimerEvent: {}
+[4.310496] (-) TimerEvent: {}
+[4.410761] (-) TimerEvent: {}
+[4.511040] (-) TimerEvent: {}
+[4.611321] (-) TimerEvent: {}
+[4.711690] (-) TimerEvent: {}
+[4.812062] (-) TimerEvent: {}
+[4.912398] (-) TimerEvent: {}
+[5.012717] (-) TimerEvent: {}
+[5.113010] (-) TimerEvent: {}
+[5.213360] (-) TimerEvent: {}
+[5.313688] (-) TimerEvent: {}
+[5.414007] (-) TimerEvent: {}
+[5.514295] (-) TimerEvent: {}
+[5.614598] (-) TimerEvent: {}
+[5.714945] (-) TimerEvent: {}
+[5.815278] (-) TimerEvent: {}
+[5.915664] (-) TimerEvent: {}
+[6.015956] (-) TimerEvent: {}
+[6.116283] (-) TimerEvent: {}
+[6.216571] (-) TimerEvent: {}
+[6.316941] (-) TimerEvent: {}
+[6.417277] (-) TimerEvent: {}
+[6.517555] (-) TimerEvent: {}
+[6.617921] (-) TimerEvent: {}
+[6.718374] (-) TimerEvent: {}
+[6.818850] (-) TimerEvent: {}
+[6.919240] (-) TimerEvent: {}
+[7.019647] (-) TimerEvent: {}
+[7.119962] (-) TimerEvent: {}
+[7.220374] (-) TimerEvent: {}
+[7.320677] (-) TimerEvent: {}
+[7.420951] (-) TimerEvent: {}
+[7.521228] (-) TimerEvent: {}
+[7.621537] (-) TimerEvent: {}
+[7.721854] (-) TimerEvent: {}
+[7.822089] (-) TimerEvent: {}
+[7.922354] (-) TimerEvent: {}
+[8.022585] (-) TimerEvent: {}
+[8.122926] (-) TimerEvent: {}
+[8.223237] (-) TimerEvent: {}
+[8.323562] (-) TimerEvent: {}
+[8.423866] (-) TimerEvent: {}
+[8.524181] (-) TimerEvent: {}
+[8.624562] (-) TimerEvent: {}
+[8.724867] (-) TimerEvent: {}
+[8.825228] (-) TimerEvent: {}
+[8.925550] (-) TimerEvent: {}
+[9.025910] (-) TimerEvent: {}
+[9.126382] (-) TimerEvent: {}
+[9.230033] (-) TimerEvent: {}
+[9.333118] (-) TimerEvent: {}
+[9.433521] (-) TimerEvent: {}
+[9.533957] (-) TimerEvent: {}
+[9.634375] (-) TimerEvent: {}
+[9.734985] (-) TimerEvent: {}
+[9.835460] (-) TimerEvent: {}
+[9.890731] (driver_ultrasonic) StdoutLine: {'line': b'[ 50%] Linking CXX executable driver_ultrasonic_hw\n'}
+[9.935667] (-) TimerEvent: {}
+[10.036098] (-) TimerEvent: {}
+[10.078375] (driver_ultrasonic) StdoutLine: {'line': b'[ 66%] Linking CXX executable driver_ultrasonic_stub\n'}
+[10.136299] (-) TimerEvent: {}
+[10.236726] (-) TimerEvent: {}
+[10.337073] (-) TimerEvent: {}
+[10.370944] (driver_ultrasonic) StdoutLine: {'line': b'[ 83%] Built target driver_ultrasonic_hw\n'}
+[10.437235] (-) TimerEvent: {}
+[10.478045] (driver_ultrasonic) StdoutLine: {'line': b'[100%] Built target driver_ultrasonic_stub\n'}
+[10.493172] (driver_ultrasonic) CommandEnded: {'returncode': 0}
+[10.494868] (driver_ultrasonic) JobProgress: {'identifier': 'driver_ultrasonic', 'progress': 'install'}
+[10.509362] (driver_ultrasonic) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic'], 'cwd': '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roto'), ('GIT_ASKPASS', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/roto'), ('OLDPWD', '/home/roto/workspace/roto_mobile_sales_cart_ws'), ('TERM_PROGRAM_VERSION', '1.142.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-131c4711-cac7-450c-b089-e695255c5506.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roto'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1659_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.2.47.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/WSL/:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PC/AppData/Local/Microsoft/WindowsApps:/snap/bin:/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-002972f183d325c6.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/roto/.vscode-server/data/User/workspaceStorage/3a1782012c7f0a1f37817941eac0fedb/ms-python.python/pythonrc.py'), ('PERF_EXEC_PATH', '/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28af350e27.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic'), ('COPILOT_DEBUG_NONCE', '2bc3f894536d98a0fa74189ec26bd55e'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:'), ('CMAKE_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble')]), 'shell': False}
+[10.520022] (driver_ultrasonic) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.521364] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_stub\n'}
+[10.523786] (driver_ultrasonic) StdoutLine: {'line': b'-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_stub" to ""\n'}
+[10.523985] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_hw\n'}
+[10.526370] (driver_ultrasonic) StdoutLine: {'line': b'-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_hw" to ""\n'}
+[10.528171] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/package_run_dependencies/driver_ultrasonic\n'}
+[10.528799] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/parent_prefix_path/driver_ultrasonic\n'}
+[10.529664] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/ament_prefix_path.sh\n'}
+[10.530475] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/ament_prefix_path.dsv\n'}
+[10.531060] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/path.sh\n'}
+[10.532160] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/path.dsv\n'}
+[10.532612] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.bash\n'}
+[10.532766] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.sh\n'}
+[10.533374] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.zsh\n'}
+[10.533532] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.dsv\n'}
+[10.534665] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.dsv\n'}
+[10.534865] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/packages/driver_ultrasonic\n'}
+[10.534969] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/cmake/driver_ultrasonicConfig.cmake\n'}
+[10.535057] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/cmake/driver_ultrasonicConfig-version.cmake\n'}
+[10.535153] (driver_ultrasonic) StdoutLine: {'line': b'-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.xml\n'}
+[10.537035] (driver_ultrasonic) CommandEnded: {'returncode': 0}
+[10.538648] (-) TimerEvent: {}
+[10.571843] (driver_ultrasonic) JobEnded: {'identifier': 'driver_ultrasonic', 'rc': 0}
+[10.573490] (-) EventReactorShutdown: {}

@@ -1,0 +1,20 @@
+Consolidate compiler generated dependencies of target sim_chassis
+[100%] Built target sim_chassis
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/lib/sim_chassis/sim_chassis
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/lib/sim_chassis/sim_chassis" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/ament_index/resource_index/package_run_dependencies/sim_chassis
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/ament_index/resource_index/parent_prefix_path/sim_chassis
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/ament_index/resource_index/packages/sim_chassis
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/cmake/sim_chassisConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/cmake/sim_chassisConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/sim_chassis/share/sim_chassis/package.xml

@@ -1,0 +1,293 @@
+[0.000000] (-) TimerEvent: {}
+[0.000542] (-) JobUnselected: {'identifier': 'driver_bms'}
+[0.001365] (-) JobUnselected: {'identifier': 'driver_can_chassis'}
+[0.001491] (-) JobUnselected: {'identifier': 'driver_gpio'}
+[0.002039] (-) JobUnselected: {'identifier': 'driver_gps'}
+[0.002828] (-) JobUnselected: {'identifier': 'robot_msgs'}
+[0.003204] (driver_ultrasonic) JobQueued: {'identifier': 'driver_ultrasonic', 'dependencies': OrderedDict([('robot_msgs', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs')])}
+[0.003536] (driver_ultrasonic) JobStarted: {'identifier': 'driver_ultrasonic'}
+[0.067467] (driver_ultrasonic) JobProgress: {'identifier': 'driver_ultrasonic', 'progress': 'cmake'}
+[0.070089] (driver_ultrasonic) JobProgress: {'identifier': 'driver_ultrasonic', 'progress': 'build'}
+[0.071251] (driver_ultrasonic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic', '--', '-j8', '-l8'], 'cwd': '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roto'), ('GIT_ASKPASS', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/roto'), ('OLDPWD', '/home/roto/workspace/roto_mobile_sales_cart_ws'), ('TERM_PROGRAM_VERSION', '1.142.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-131c4711-cac7-450c-b089-e695255c5506.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'roto'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/1659_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/roto/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/roto/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/bin:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.2.47.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/WSL/:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PC/AppData/Local/Microsoft/WindowsApps:/snap/bin:/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/roto/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-002972f183d325c6.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/roto/.vscode-server/data/User/workspaceStorage/3a1782012c7f0a1f37817941eac0fedb/ms-python.python/pythonrc.py'), ('PERF_EXEC_PATH', '/usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2/libexec/perf-core'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-28af350e27.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_ultrasonic'), ('COPILOT_DEBUG_NONCE', '2bc3f894536d98a0fa74189ec26bd55e'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:'), ('CMAKE_PREFIX_PATH', '/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099447] (-) TimerEvent: {}
+[0.144666] (driver_ultrasonic) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target driver_ultrasonic_stub\n'}
+[0.145200] (driver_ultrasonic) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target driver_ultrasonic_hw\n'}
+[0.171127] (driver_ultrasonic) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o\n'}
+[0.172236] (driver_ultrasonic) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o\n'}
+[0.199639] (-) TimerEvent: {}
+[0.300042] (-) TimerEvent: {}
+[0.400367] (-) TimerEvent: {}
+[0.500707] (-) TimerEvent: {}
+[0.601070] (-) TimerEvent: {}
+[0.701853] (-) TimerEvent: {}
+[0.802776] (-) TimerEvent: {}
+[0.903332] (-) TimerEvent: {}
+[1.003775] (-) TimerEvent: {}
+[1.104242] (-) TimerEvent: {}
+[1.205182] (-) TimerEvent: {}
+[1.305607] (-) TimerEvent: {}
+[1.405953] (-) TimerEvent: {}
+[1.506277] (-) TimerEvent: {}
+[1.606633] (-) TimerEvent: {}
+[1.707038] (-) TimerEvent: {}
+[1.807389] (-) TimerEvent: {}
+[1.907738] (-) TimerEvent: {}
+[2.008030] (-) TimerEvent: {}
+[2.108379] (-) TimerEvent: {}
+[2.208712] (-) TimerEvent: {}
+[2.309065] (-) TimerEvent: {}
+[2.409421] (-) TimerEvent: {}
+[2.509825] (-) TimerEvent: {}
+[2.610169] (-) TimerEvent: {}
+[2.710501] (-) TimerEvent: {}
+[2.810908] (-) TimerEvent: {}
+[2.911304] (-) TimerEvent: {}
+[3.011720] (-) TimerEvent: {}
+[3.112089] (-) TimerEvent: {}
+[3.212412] (-) TimerEvent: {}
+[3.312887] (-) TimerEvent: {}
+[3.413380] (-) TimerEvent: {}
+[3.513794] (-) TimerEvent: {}
+[3.614133] (-) TimerEvent: {}
+[3.714472] (-) TimerEvent: {}
+[3.814897] (-) TimerEvent: {}
+[3.915309] (-) TimerEvent: {}
+[4.015772] (-) TimerEvent: {}
+[4.116242] (-) TimerEvent: {}
+[4.217096] (-) TimerEvent: {}
+[4.317459] (-) TimerEvent: {}
+[4.417808] (-) TimerEvent: {}
+[4.518125] (-) TimerEvent: {}
+[4.618466] (-) TimerEvent: {}
+[4.718773] (-) TimerEvent: {}
+[4.819117] (-) TimerEvent: {}
+[4.919454] (-) TimerEvent: {}
+[5.019796] (-) TimerEvent: {}
+[5.120220] (-) TimerEvent: {}
+[5.220572] (-) TimerEvent: {}
+[5.320909] (-) TimerEvent: {}
+[5.421249] (-) TimerEvent: {}
+[5.521554] (-) TimerEvent: {}
+[5.621963] (-) TimerEvent: {}
+[5.722379] (-) TimerEvent: {}
+[5.822796] (-) TimerEvent: {}
+[5.923190] (-) TimerEvent: {}
+[6.023540] (-) TimerEvent: {}
+[6.123938] (-) TimerEvent: {}
+[6.224377] (-) TimerEvent: {}
+[6.324761] (-) TimerEvent: {}
+[6.425179] (-) TimerEvent: {}
+[6.525510] (-) TimerEvent: {}
+[6.625785] (-) TimerEvent: {}
+[6.726155] (-) TimerEvent: {}
+[6.826476] (-) TimerEvent: {}
+[6.845814] (driver_ultrasonic) StderrLine: {'line': b'In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:\n'}
+[6.846173] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:36: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.846553] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.846812] (driver_ultrasonic) StderrLine: {'line': b'      |                                    ^~~~~\n'}
+[6.847061] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:41: error: template argument 1 is invalid\n'}
+[6.847268] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.847517] (driver_ultrasonic) StderrLine: {'line': b'      |                                         ^\n'}
+[6.847891] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: error: expected \xe2\x80\x98;\xe2\x80\x99 at end of member declaration\n'}
+[6.848229] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.848596] (driver_ultrasonic) StderrLine: {'line': b'      |                                            ^~~~~~~~~\n'}
+[6.848976] (driver_ultrasonic) StderrLine: {'line': b'      |                                                     ;\n'}
+[6.852696] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:54: error: \xe2\x80\x98pub_front_\xe2\x80\x99 does not name a type\n'}
+[6.853337] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.854042] (driver_ultrasonic) StderrLine: {'line': b'      |                                                      ^~~~~~~~~~\n'}
+[6.856074] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:36: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.856421] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.856723] (driver_ultrasonic) StderrLine: {'line': b'      |                                    ^~~~~\n'}
+[6.857050] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:41: error: template argument 1 is invalid\n'}
+[6.857349] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.857589] (driver_ultrasonic) StderrLine: {'line': b'      |                                         ^\n'}
+[6.857862] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: expected \xe2\x80\x98;\xe2\x80\x99 at end of member declaration\n'}
+[6.858090] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.858315] (driver_ultrasonic) StderrLine: {'line': b'      |                                            ^~~~~~~~~\n'}
+[6.858591] (driver_ultrasonic) StderrLine: {'line': b'      |                                                     ;\n'}
+[6.858947] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: redeclaration of \xe2\x80\x98int driver_ultrasonic::UltrasonicDriverBase::SharedPtr\xe2\x80\x99\n'}
+[6.859212] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: note: previous declaration \xe2\x80\x98int driver_ultrasonic::UltrasonicDriverBase::SharedPtr\xe2\x80\x99\n'}
+[6.859894] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.860311] (driver_ultrasonic) StderrLine: {'line': b'      |                                            ^~~~~~~~~\n'}
+[6.862564] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:54: error: \xe2\x80\x98pub_rear_\xe2\x80\x99 does not name a type\n'}
+[6.863042] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.863732] (driver_ultrasonic) StderrLine: {'line': b'      |                                                      ^~~~~~~~~\n'}
+[6.866193] (driver_ultrasonic) StderrLine: {'line': b'In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:\n'}
+[6.866618] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:36: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.866940] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.867120] (driver_ultrasonic) StderrLine: {'line': b'      |                                    ^~~~~\n'}
+[6.867388] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:41: error: template argument 1 is invalid\n'}
+[6.867674] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.867942] (driver_ultrasonic) StderrLine: {'line': b'      |                                         ^\n'}
+[6.868267] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: error: expected \xe2\x80\x98;\xe2\x80\x99 at end of member declaration\n'}
+[6.868632] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.868808] (driver_ultrasonic) StderrLine: {'line': b'      |                                            ^~~~~~~~~\n'}
+[6.868915] (driver_ultrasonic) StderrLine: {'line': b'      |                                                     ;\n'}
+[6.871043] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:54: error: \xe2\x80\x98pub_front_\xe2\x80\x99 does not name a type\n'}
+[6.871319] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.871468] (driver_ultrasonic) StderrLine: {'line': b'      |                                                      ^~~~~~~~~~\n'}
+[6.872216] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:36: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.872394] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.872490] (driver_ultrasonic) StderrLine: {'line': b'      |                                    ^~~~~\n'}
+[6.872580] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:41: error: template argument 1 is invalid\n'}
+[6.872677] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.872903] (driver_ultrasonic) StderrLine: {'line': b'      |                                         ^\n'}
+[6.873115] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: expected \xe2\x80\x98;\xe2\x80\x99 at end of member declaration\n'}
+[6.873356] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.873558] (driver_ultrasonic) StderrLine: {'line': b'      |                                            ^~~~~~~~~\n'}
+[6.873777] (driver_ultrasonic) StderrLine: {'line': b'      |                                                     ;\n'}
+[6.873932] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:44: error: redeclaration of \xe2\x80\x98int driver_ultrasonic::UltrasonicDriverBase::SharedPtr\xe2\x80\x99\n'}
+[6.874068] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:42:44: note: previous declaration \xe2\x80\x98int driver_ultrasonic::UltrasonicDriverBase::SharedPtr\xe2\x80\x99\n'}
+[6.874206] (driver_ultrasonic) StderrLine: {'line': b'   42 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_front_;\n'}
+[6.874309] (driver_ultrasonic) StderrLine: {'line': b'      |                                            ^~~~~~~~~\n'}
+[6.874770] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:43:54: error: \xe2\x80\x98pub_rear_\xe2\x80\x99 does not name a type\n'}
+[6.874994] (driver_ultrasonic) StderrLine: {'line': b'   43 |   rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr pub_rear_;\n'}
+[6.875238] (driver_ultrasonic) StderrLine: {'line': b'      |                                                      ^~~~~~~~~\n'}
+[6.875912] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In constructor \xe2\x80\x98driver_ultrasonic::UltrasonicDriverBase::UltrasonicDriverBase(const string&)\xe2\x80\x99:\n'}
+[6.876241] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:5: error: \xe2\x80\x98pub_front_\xe2\x80\x99 was not declared in this scope\n'}
+[6.876358] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.876452] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~~\n'}
+[6.876963] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:56: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.877596] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.877749] (driver_ultrasonic) StderrLine: {'line': b'      |                                                        ^~~~~\n'}
+[6.877896] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: no matching function for call to \xe2\x80\x98driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [18], int)\xe2\x80\x99\n'}
+[6.878005] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.878175] (driver_ultrasonic) StderrLine: {'line': b'      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.878336] (driver_ultrasonic) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[6.878626] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[6.878792] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[6.878948] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,\n'}
+[6.879107] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:\n'}
+[6.879288] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: \xe2\x80\x98template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\xe2\x80\x99\n'}
+[6.879445] (driver_ultrasonic) StderrLine: {'line': b'  195 |   create_publisher(\n'}
+[6.879591] (driver_ultrasonic) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~\n'}
+[6.879823] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:\n'}
+[6.879927] (driver_ultrasonic) StderrLine: {'line': b'In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:\n'}
+[6.880020] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: template argument 1 is invalid\n'}
+[6.880111] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.880249] (driver_ultrasonic) StderrLine: {'line': b'      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.889121] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In constructor \xe2\x80\x98driver_ultrasonic::UltrasonicDriverBase::UltrasonicDriverBase(const string&)\xe2\x80\x99:\n'}
+[6.889816] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:5: error: \xe2\x80\x98pub_front_\xe2\x80\x99 was not declared in this scope\n'}
+[6.891194] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.891377] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~~\n'}
+[6.891477] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:5: error: \xe2\x80\x98pub_rear_\xe2\x80\x99 was not declared in this scope\n'}
+[6.891573] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.891822] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~\n'}
+[6.891930] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:56: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.892026] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.892116] (driver_ultrasonic) StderrLine: {'line': b'      |                                                        ^~~~~\n'}
+[6.892224] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: no matching function for call to \xe2\x80\x98driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [18], int)\xe2\x80\x99\n'}
+[6.892374] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.892482] (driver_ultrasonic) StderrLine: {'line': b'      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.892573] (driver_ultrasonic) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[6.892702] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[6.892866] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[6.892966] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,\n'}
+[6.893059] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:\n'}
+[6.893150] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: \xe2\x80\x98template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\xe2\x80\x99\n'}
+[6.893246] (driver_ultrasonic) StderrLine: {'line': b'  195 |   create_publisher(\n'}
+[6.893338] (driver_ultrasonic) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~\n'}
+[6.893481] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:\n'}
+[6.893664] (driver_ultrasonic) StderrLine: {'line': b'In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:\n'}
+[6.893779] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:19:62: error: template argument 1 is invalid\n'}
+[6.893925] (driver_ultrasonic) StderrLine: {'line': b'   19 |     pub_front_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/front", 10);\n'}
+[6.894021] (driver_ultrasonic) StderrLine: {'line': b'      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.894181] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:55: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.894286] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.894445] (driver_ultrasonic) StderrLine: {'line': b'      |                                                       ^~~~~\n'}
+[6.894594] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: no matching function for call to \xe2\x80\x98driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [17], int)\xe2\x80\x99\n'}
+[6.894695] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.894811] (driver_ultrasonic) StderrLine: {'line': b'      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.894936] (driver_ultrasonic) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[6.895030] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[6.895121] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[6.895211] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,\n'}
+[6.895303] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:\n'}
+[6.895391] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: \xe2\x80\x98template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\xe2\x80\x99\n'}
+[6.895485] (driver_ultrasonic) StderrLine: {'line': b'  195 |   create_publisher(\n'}
+[6.895573] (driver_ultrasonic) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~\n'}
+[6.895893] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:\n'}
+[6.896066] (driver_ultrasonic) StderrLine: {'line': b'In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_stub_impl.cpp:1:\n'}
+[6.896173] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: template argument 1 is invalid\n'}
+[6.896266] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.896358] (driver_ultrasonic) StderrLine: {'line': b'      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.901901] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:5: error: \xe2\x80\x98pub_rear_\xe2\x80\x99 was not declared in this scope\n'}
+[6.902412] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.903489] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~\n'}
+[6.904806] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:55: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.905089] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.905295] (driver_ultrasonic) StderrLine: {'line': b'      |                                                       ^~~~~\n'}
+[6.905481] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: no matching function for call to \xe2\x80\x98driver_ultrasonic::UltrasonicDriverBase::create_publisher<<expression error> >(const char [17], int)\xe2\x80\x99\n'}
+[6.905587] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.905681] (driver_ultrasonic) StderrLine: {'line': b'      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.905772] (driver_ultrasonic) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[6.905914] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[6.906011] (driver_ultrasonic) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[6.906104] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:4,\n'}
+[6.906211] (driver_ultrasonic) StderrLine: {'line': b'                 from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:\n'}
+[6.906343] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: \xe2\x80\x98template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\xe2\x80\x99\n'}
+[6.906476] (driver_ultrasonic) StderrLine: {'line': b'  195 |   create_publisher(\n'}
+[6.906569] (driver_ultrasonic) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~\n'}
+[6.906658] (driver_ultrasonic) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:\n'}
+[6.906750] (driver_ultrasonic) StderrLine: {'line': b'In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/src/ultrasonic_hw_impl.cpp:1:\n'}
+[6.906896] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:20:61: error: template argument 1 is invalid\n'}
+[6.906998] (driver_ultrasonic) StderrLine: {'line': b'   20 |     pub_rear_ = this->create_publisher<std_msgs::msg::UInt8>("/ultrasonic/rear", 10);\n'}
+[6.907092] (driver_ultrasonic) StderrLine: {'line': b'      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.917508] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In member function \xe2\x80\x98void driver_ultrasonic::UltrasonicDriverBase::publish_loop()\xe2\x80\x99:\n'}
+[6.918179] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:33:20: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.918671] (driver_ultrasonic) StderrLine: {'line': b'   33 |     std_msgs::msg::UInt8 msg_f;\n'}
+[6.919460] (driver_ultrasonic) StderrLine: {'line': b'      |                    ^~~~~\n'}
+[6.926630] (-) TimerEvent: {}
+[6.928650] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:34:5: error: \xe2\x80\x98msg_f\xe2\x80\x99 was not declared in this scope\n'}
+[6.929020] (driver_ultrasonic) StderrLine: {'line': b'   34 |     msg_f.data = front;\n'}
+[6.929324] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~\n'}
+[6.932088] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp: In member function \xe2\x80\x98void driver_ultrasonic::UltrasonicDriverBase::publish_loop()\xe2\x80\x99:\n'}
+[6.933082] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:33:20: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.933467] (driver_ultrasonic) StderrLine: {'line': b'   33 |     std_msgs::msg::UInt8 msg_f;\n'}
+[6.933806] (driver_ultrasonic) StderrLine: {'line': b'      |                    ^~~~~\n'}
+[6.941891] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:35:5: error: \xe2\x80\x98pub_front_\xe2\x80\x99 was not declared in this scope\n'}
+[6.942795] (driver_ultrasonic) StderrLine: {'line': b'   35 |     pub_front_->publish(msg_f);\n'}
+[6.943395] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~~\n'}
+[6.943544] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:34:5: error: \xe2\x80\x98msg_f\xe2\x80\x99 was not declared in this scope\n'}
+[6.943756] (driver_ultrasonic) StderrLine: {'line': b'   34 |     msg_f.data = front;\n'}
+[6.943869] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~\n'}
+[6.944018] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:37:20: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.944127] (driver_ultrasonic) StderrLine: {'line': b'   37 |     std_msgs::msg::UInt8 msg_r;\n'}
+[6.944220] (driver_ultrasonic) StderrLine: {'line': b'      |                    ^~~~~\n'}
+[6.954760] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:38:5: error: \xe2\x80\x98msg_r\xe2\x80\x99 was not declared in this scope\n'}
+[6.955337] (driver_ultrasonic) StderrLine: {'line': b'   38 |     msg_r.data = rear;\n'}
+[6.955608] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~\n'}
+[6.956410] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:35:5: error: \xe2\x80\x98pub_front_\xe2\x80\x99 was not declared in this scope\n'}
+[6.956677] (driver_ultrasonic) StderrLine: {'line': b'   35 |     pub_front_->publish(msg_f);\n'}
+[6.956812] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~~\n'}
+[6.957313] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:37:20: error: \xe2\x80\x98UInt8\xe2\x80\x99 is not a member of \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[6.957445] (driver_ultrasonic) StderrLine: {'line': b'   37 |     std_msgs::msg::UInt8 msg_r;\n'}
+[6.957665] (driver_ultrasonic) StderrLine: {'line': b'      |                    ^~~~~\n'}
+[6.966923] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:38:5: error: \xe2\x80\x98msg_r\xe2\x80\x99 was not declared in this scope\n'}
+[6.967841] (driver_ultrasonic) StderrLine: {'line': b'   38 |     msg_r.data = rear;\n'}
+[6.968319] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~\n'}
+[6.968770] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:39:5: error: \xe2\x80\x98pub_rear_\xe2\x80\x99 was not declared in this scope\n'}
+[6.969437] (driver_ultrasonic) StderrLine: {'line': b'   39 |     pub_rear_->publish(msg_r);\n'}
+[6.970133] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~\n'}
+[6.978107] (driver_ultrasonic) StderrLine: {'line': b'/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_ultrasonic/include/ultrasonic_driver_base.hpp:39:5: error: \xe2\x80\x98pub_rear_\xe2\x80\x99 was not declared in this scope\n'}
+[6.978422] (driver_ultrasonic) StderrLine: {'line': b'   39 |     pub_rear_->publish(msg_r);\n'}
+[6.978545] (driver_ultrasonic) StderrLine: {'line': b'      |     ^~~~~~~~~\n'}
+[7.026809] (-) TimerEvent: {}
+[7.127106] (-) TimerEvent: {}
+[7.227377] (-) TimerEvent: {}
+[7.327706] (-) TimerEvent: {}
+[7.428061] (-) TimerEvent: {}
+[7.528397] (-) TimerEvent: {}
+[7.628712] (-) TimerEvent: {}
+[7.729004] (-) TimerEvent: {}
+[7.829309] (-) TimerEvent: {}
+[7.830720] (driver_ultrasonic) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/driver_ultrasonic_hw.dir/build.make:90: CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o] Error 1\n'}
+[7.831535] (driver_ultrasonic) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/driver_ultrasonic_hw.dir/all] Error 2\n'}
+[7.831923] (driver_ultrasonic) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[7.921632] (driver_ultrasonic) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/driver_ultrasonic_stub.dir/build.make:90: CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o] Error 1\n'}
+[7.922442] (driver_ultrasonic) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/driver_ultrasonic_stub.dir/all] Error 2\n'}
+[7.922719] (driver_ultrasonic) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.924952] (driver_ultrasonic) CommandEnded: {'returncode': 2}
+[7.929670] (-) TimerEvent: {}
+[7.939779] (driver_ultrasonic) JobEnded: {'identifier': 'driver_ultrasonic', 'rc': 2}
+[7.950685] (-) EventReactorShutdown: {}

@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robot_msgs/msg/ChassisState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module robot_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "底盘反馈")
+    struct ChassisState {
+      std_msgs::msg::Header header;
+
+      float odom_x;
+
+      float odom_y;
+
+      float odom_theta;
+
+      float vel_linear;
+
+      float vel_angular;
+
+      @verbatim (language="comment", text=
+        "0=IDLE 1=RUNNING 2=ERROR")
+      uint8 state;
+
+      @verbatim (language="comment", text=
+        "cm")
+      uint8 ultrasonic_front;
+
+      @verbatim (language="comment", text=
+        "cm")
+      uint8 ultrasonic_rear;
+    };
+  };
+};

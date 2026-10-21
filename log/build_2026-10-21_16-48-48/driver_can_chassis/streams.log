@@ -1,0 +1,35 @@
+[0.080s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis
+[0.100s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.241s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.315s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.318s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.324s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.333s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.346s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.379s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.380s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.383s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.436s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[2.519s] -- Configuring done
+[2.535s] -- Generating done
+[2.541s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis
+[2.548s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis
+[2.549s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis -- -j8 -l8
+[2.598s] [ 33%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_driver_base.cpp.o
+[2.598s] [ 33%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o
+[2.599s] [ 66%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_driver_base.cpp.o
+[2.600s] [ 66%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_stub_impl.cpp.o
+[6.147s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis/src/chassis_hw_impl.cpp: In member function ‘void driver_can_chassis::ChassisHw::open_can(const string&)’:
+[6.147s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis/src/chassis_hw_impl.cpp:55:20: error: ‘SIOCGIFINDEX’ was not declared in this scope
+[6.147s]    55 |     ioctl(can_fd_, SIOCGIFINDEX, &ifr);
+[6.147s]       |                    ^~~~~~~~~~~~
+[6.154s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_can_chassis/src/chassis_hw_impl.cpp:55:5: error: ‘ioctl’ was not declared in this scope
+[6.155s]    55 |     ioctl(can_fd_, SIOCGIFINDEX, &ifr);
+[6.155s]       |     ^~~~~
+[11.219s] gmake[2]: *** [CMakeFiles/driver_can_chassis_hw.dir/build.make:90: CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o] Error 1
+[11.219s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/driver_can_chassis_hw.dir/all] Error 2
+[11.219s] gmake[1]: *** Waiting for unfinished jobs....
+[16.442s] [ 83%] Linking CXX executable driver_can_chassis_stub
+[17.011s] [ 83%] Built target driver_can_chassis_stub
+[17.012s] gmake: *** [Makefile:146: all] Error 2
+[17.015s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis -- -j8 -l8

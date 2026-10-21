@@ -1,0 +1,63 @@
+[0.063s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio -- -j8 -l8
+[0.210s] [ 16%] Building CXX object CMakeFiles/driver_gpio_stub.dir/src/gpio_driver_base.cpp.o
+[0.225s] [ 33%] Building CXX object CMakeFiles/driver_gpio_hw.dir/src/gpio_driver_base.cpp.o
+[0.227s] [ 50%] Building CXX object CMakeFiles/driver_gpio_hw.dir/src/gpio_hw_impl.cpp.o
+[0.231s] [ 66%] Building CXX object CMakeFiles/driver_gpio_stub.dir/src/gpio_stub_impl.cpp.o
+[24.450s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[24.456s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[24.456s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[24.457s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[24.457s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[24.457s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[24.466s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[24.466s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[24.467s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[24.467s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[24.467s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[24.468s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/include/gpio_driver_base.hpp:4,
+[24.468s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:1:
+[24.469s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp: In constructor ‘driver_gpio::GpioHw::GpioHw()’:
+[24.469s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:11:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+[24.481s]    11 |     RCLCPP_INFO(this->get_logger(), "driver_gpio_hw pins: out=%d, in=%d",
+[24.482s]       |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[24.482s]    12 |       this->get_parameter("output_pin").as_int(),
+[24.483s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[24.483s]       |                                               |
+[24.483s]       |                                               int64_t {aka long int}
+[24.483s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:11:64: note: format string is defined here
+[24.484s]    11 |     RCLCPP_INFO(this->get_logger(), "driver_gpio_hw pins: out=%d, in=%d",
+[24.484s]       |                                                               ~^
+[24.484s]       |                                                                |
+[24.484s]       |                                                                int
+[24.485s]       |                                                               %ld
+[24.485s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[24.485s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[24.494s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[24.494s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[24.495s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[24.495s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[24.495s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[24.496s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[24.496s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[24.497s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[24.497s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[24.502s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/include/gpio_driver_base.hpp:4,
+[24.502s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:1:
+[24.502s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:11:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+[24.503s]    11 |     RCLCPP_INFO(this->get_logger(), "driver_gpio_hw pins: out=%d, in=%d",
+[24.503s]       |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[24.503s]    12 |       this->get_parameter("output_pin").as_int(),
+[24.503s]    13 |       this->get_parameter("input_pin").as_int());
+[24.504s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[24.510s]       |                                              |
+[24.511s]       |                                              int64_t {aka long int}
+[24.511s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:11:71: note: format string is defined here
+[24.512s]    11 |     RCLCPP_INFO(this->get_logger(), "driver_gpio_hw pins: out=%d, in=%d",
+[24.512s]       |                                                                      ~^
+[24.512s]       |                                                                       |
+[24.513s]       |                                                                       int
+[24.513s]       |                                                                      %ld
+[44.869s] [ 83%] Linking CXX executable driver_gpio_hw
+[44.910s] [100%] Linking CXX executable driver_gpio_stub
+[45.731s] [100%] Built target driver_gpio_hw
+[45.775s] [100%] Built target driver_gpio_stub

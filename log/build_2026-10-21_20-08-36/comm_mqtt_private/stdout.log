@@ -1,0 +1,4 @@
+Consolidate compiler generated dependencies of target comm_mqtt_private
+[ 50%] Building CXX object CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o
+[100%] Linking CXX executable comm_mqtt_private
+[100%] Built target comm_mqtt_private

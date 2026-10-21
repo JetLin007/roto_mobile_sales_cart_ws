@@ -1,0 +1,4 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In member function ‘virtual void RemoteHandle::delivery_complete(mqtt::delivery_token_ptr)’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:63:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+   63 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~

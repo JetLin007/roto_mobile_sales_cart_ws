@@ -1,0 +1,11 @@
+[0.076s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8
+[0.200s] Consolidate compiler generated dependencies of target comm_remote_handle
+[0.232s] [ 50%] Building CXX object CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o
+[8.428s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In constructor ‘RemoteHandle::RemoteHandle()’:
+[8.428s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:55:25: error: ‘cb’ was not declared in this scope
+[8.429s]    55 |     callback_handler_ = cb;
+[8.429s]       |                         ^~
+[12.995s] gmake[2]: *** [CMakeFiles/comm_remote_handle.dir/build.make:76: CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o] Error 1
+[12.995s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_remote_handle.dir/all] Error 2
+[12.995s] gmake: *** [Makefile:146: all] Error 2
+[13.000s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8

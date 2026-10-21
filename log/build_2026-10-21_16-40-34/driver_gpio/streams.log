@@ -1,0 +1,43 @@
+[0.047s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio -- -j8 -l8
+[0.069s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.189s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.261s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.264s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.270s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.279s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.292s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.323s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.325s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.853s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.928s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[2.956s] -- Found std_srvs: 4.9.2 (/opt/ros/humble/share/std_srvs/cmake)
+[3.066s] -- Configuring done
+[3.069s] CMake Error at CMakeLists.txt:16 (add_executable):
+[3.070s]   Cannot find source file:
+[3.070s] 
+[3.070s]     gpio_stub_impl.cpp
+[3.070s] 
+[3.070s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[3.070s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[3.070s] 
+[3.070s] 
+[3.071s] CMake Error at CMakeLists.txt:22 (add_executable):
+[3.071s]   Cannot find source file:
+[3.071s] 
+[3.072s]     gpio_hw_impl.cpp
+[3.072s] 
+[3.072s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[3.072s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[3.072s] 
+[3.072s] 
+[3.072s] CMake Error at CMakeLists.txt:16 (add_executable):
+[3.072s]   No SOURCES given to target: driver_gpio_stub
+[3.073s] 
+[3.073s] 
+[3.073s] CMake Error at CMakeLists.txt:22 (add_executable):
+[3.073s]   No SOURCES given to target: driver_gpio_hw
+[3.073s] 
+[3.073s] 
+[3.073s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[3.078s] gmake: *** [Makefile:338: cmake_check_build_system] Error 1
+[3.080s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio -- -j8 -l8

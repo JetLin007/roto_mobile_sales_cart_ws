@@ -1,0 +1,28 @@
+Consolidate compiler generated dependencies of target driver_ultrasonic_stub
+Consolidate compiler generated dependencies of target driver_ultrasonic_hw
+[ 16%] Building CXX object CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o
+[ 33%] Building CXX object CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o
+[ 50%] Linking CXX executable driver_ultrasonic_hw
+[ 66%] Linking CXX executable driver_ultrasonic_stub
+[ 83%] Built target driver_ultrasonic_hw
+[100%] Built target driver_ultrasonic_stub
+-- Install configuration: ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_stub
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_stub" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_hw
+-- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/lib/driver_ultrasonic/driver_ultrasonic_hw" to ""
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/package_run_dependencies/driver_ultrasonic
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/parent_prefix_path/driver_ultrasonic
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/ament_prefix_path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/ament_prefix_path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/path.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/environment/path.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.bash
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.sh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.zsh
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/local_setup.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.dsv
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/ament_index/resource_index/packages/driver_ultrasonic
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/cmake/driver_ultrasonicConfig.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/cmake/driver_ultrasonicConfig-version.cmake
+-- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_ultrasonic/share/driver_ultrasonic/package.xml

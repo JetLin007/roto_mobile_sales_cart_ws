@@ -1,0 +1,24 @@
+[0.256s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio -- -j8 -l8
+[0.573s] [ 50%] Built target driver_gpio_hw
+[0.612s] [100%] Built target driver_gpio_stub
+[0.729s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio -- -j8 -l8
+[0.731s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio
+[0.841s] -- Install configuration: ""
+[0.845s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/lib/driver_gpio/driver_gpio_stub
+[0.848s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/lib/driver_gpio/driver_gpio_hw
+[0.849s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/ament_index/resource_index/package_run_dependencies/driver_gpio
+[0.850s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/ament_index/resource_index/parent_prefix_path/driver_gpio
+[0.852s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/ament_prefix_path.sh
+[0.854s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/ament_prefix_path.dsv
+[0.855s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/path.sh
+[0.857s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/environment/path.dsv
+[0.857s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.bash
+[0.859s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.sh
+[0.860s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.zsh
+[0.861s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/local_setup.dsv
+[0.862s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/package.dsv
+[0.863s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/ament_index/resource_index/packages/driver_gpio
+[0.864s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/cmake/driver_gpioConfig.cmake
+[0.868s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/cmake/driver_gpioConfig-version.cmake
+[0.870s] -- Up-to-date: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gpio/share/driver_gpio/package.xml
+[0.896s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gpio

@@ -1,0 +1,47 @@
+[0.072s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/app_alarm_warn': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/app_layer/app_alarm_warn_node -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/app_alarm_warn
+[0.227s] -- The C compiler identification is GNU 11.4.0
+[0.595s] -- The CXX compiler identification is GNU 11.4.0
+[0.740s] -- Detecting C compiler ABI info
+[0.935s] -- Detecting C compiler ABI info - done
+[0.975s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.976s] -- Detecting C compile features
+[0.978s] -- Detecting C compile features - done
+[0.994s] -- Detecting CXX compiler ABI info
+[1.232s] -- Detecting CXX compiler ABI info - done
+[1.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.253s] -- Detecting CXX compile features
+[1.256s] -- Detecting CXX compile features - done
+[1.260s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.625s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.846s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[2.188s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.201s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.227s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.273s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.329s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.517s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.525s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.646s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.635s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.571s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.621s] -- Looking for pthread.h
+[8.092s] -- Looking for pthread.h - found
+[8.098s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.656s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.661s] -- Found Threads: TRUE  
+[8.990s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[9.440s] -- Configuring done
+[9.451s] CMake Error at CMakeLists.txt:13 (add_executable):
+[9.451s]   Cannot find source file:
+[9.452s] 
+[9.452s]     src/alarm_warn_node.cpp
+[9.452s] 
+[9.453s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[9.453s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[9.453s] 
+[9.458s] 
+[9.459s] CMake Error at CMakeLists.txt:13 (add_executable):
+[9.459s]   No SOURCES given to target: app_alarm_warn_node
+[9.459s] 
+[9.459s] 
+[9.459s] CMake Generate step failed.  Build files cannot be regenerated correctly.

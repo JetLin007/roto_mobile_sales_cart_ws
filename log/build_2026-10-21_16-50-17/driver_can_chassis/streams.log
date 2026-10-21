@@ -1,0 +1,30 @@
+[0.062s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis -- -j8 -l8
+[0.125s] Consolidate compiler generated dependencies of target driver_can_chassis_stub
+[0.126s] Consolidate compiler generated dependencies of target driver_can_chassis_hw
+[0.152s] [ 50%] Built target driver_can_chassis_stub
+[0.153s] [ 66%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o
+[13.477s] [ 83%] Linking CXX executable driver_can_chassis_hw
+[14.142s] [100%] Built target driver_can_chassis_hw
+[14.156s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis -- -j8 -l8
+[14.169s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis
+[14.180s] -- Install configuration: ""
+[14.181s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/lib/driver_can_chassis/driver_can_chassis_stub
+[14.186s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/lib/driver_can_chassis/driver_can_chassis_stub" to ""
+[14.186s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/lib/driver_can_chassis/driver_can_chassis_hw
+[14.193s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/lib/driver_can_chassis/driver_can_chassis_hw" to ""
+[14.194s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/ament_index/resource_index/package_run_dependencies/driver_can_chassis
+[14.194s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/ament_index/resource_index/parent_prefix_path/driver_can_chassis
+[14.196s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/environment/ament_prefix_path.sh
+[14.197s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/environment/ament_prefix_path.dsv
+[14.198s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/environment/path.sh
+[14.198s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/environment/path.dsv
+[14.198s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/local_setup.bash
+[14.198s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/local_setup.sh
+[14.199s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/local_setup.zsh
+[14.199s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/local_setup.dsv
+[14.199s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/package.dsv
+[14.199s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/ament_index/resource_index/packages/driver_can_chassis
+[14.200s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/cmake/driver_can_chassisConfig.cmake
+[14.200s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/cmake/driver_can_chassisConfig-version.cmake
+[14.200s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_can_chassis/share/driver_can_chassis/package.xml
+[14.203s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis

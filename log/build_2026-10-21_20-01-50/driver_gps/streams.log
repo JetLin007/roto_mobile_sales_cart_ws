@@ -1,0 +1,73 @@
+[0.088s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gps': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps
+[0.283s] -- The C compiler identification is GNU 11.4.0
+[0.901s] -- The CXX compiler identification is GNU 11.4.0
+[1.204s] -- Detecting C compiler ABI info
+[1.503s] -- Detecting C compiler ABI info - done
+[1.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.580s] -- Detecting C compile features
+[1.580s] -- Detecting C compile features - done
+[1.589s] -- Detecting CXX compiler ABI info
+[2.349s] -- Detecting CXX compiler ABI info - done
+[2.501s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.501s] -- Detecting CXX compile features
+[2.508s] -- Detecting CXX compile features - done
+[2.509s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.810s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.592s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[5.104s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.144s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.236s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.367s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.543s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.930s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.956s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.292s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[10.324s] -- Found FastRTPS: /opt/ros/humble/include  
+[15.694s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[15.849s] -- Looking for pthread.h
+[17.280s] -- Looking for pthread.h - found
+[17.281s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[18.712s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[18.720s] -- Found Threads: TRUE  
+[19.596s] -- Found robot_msgs: 0.1.0 (/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/share/robot_msgs/cmake)
+[20.856s] -- Configuring done
+[21.074s] -- Generating done
+[21.115s] -- Build files have been written to: /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gps
+[21.143s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gps' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps
+[21.153s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gps': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_gps -- -j8 -l8
+[21.656s] [ 16%] Building CXX object CMakeFiles/driver_gps_stub.dir/src/gps_stub_impl.cpp.o
+[21.663s] [ 33%] Building CXX object CMakeFiles/driver_gps_stub.dir/src/gps_driver_base.cpp.o
+[21.673s] [ 50%] Building CXX object CMakeFiles/driver_gps_hw.dir/src/gps_hw_impl.cpp.o
+[21.712s] [ 66%] Building CXX object CMakeFiles/driver_gps_hw.dir/src/gps_driver_base.cpp.o
+[44.767s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+[44.774s]                  from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[44.774s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[44.775s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[44.775s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[44.776s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[44.776s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[44.776s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[44.776s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[44.776s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[44.777s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[44.777s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps/include/gps_driver_base.hpp:4,
+[44.777s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps/src/gps_hw_impl.cpp:1:
+[44.777s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps/src/gps_hw_impl.cpp: In constructor ‘driver_gps::GpsHw::GpsHw()’:
+[44.777s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps/src/gps_hw_impl.cpp:14:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+[44.778s]    14 |     RCLCPP_INFO(this->get_logger(), "driver_gps_hw opened %s @ %d",
+[44.778s]       |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[44.778s]    15 |       this->get_parameter("serial_port").as_string().c_str(),
+[44.778s]    16 |       this->get_parameter("baud_rate").as_int());
+[44.779s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[44.779s]       |                                              |
+[44.779s]       |                                              int64_t {aka long int}
+[44.779s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gps/src/gps_hw_impl.cpp:14:65: note: format string is defined here
+[44.794s]    14 |     RCLCPP_INFO(this->get_logger(), "driver_gps_hw opened %s @ %d",
+[44.794s]       |                                                                ~^
+[44.795s]       |                                                                 |
+[44.795s]       |                                                                 int
+[44.795s]       |                                                                %ld
+[51.977s] [ 83%] Linking CXX executable driver_gps_hw
+[52.242s] [100%] Linking CXX executable driver_gps_stub
+[52.764s] [100%] Built target driver_gps_hw
+[52.998s] [100%] Built target driver_gps_stub

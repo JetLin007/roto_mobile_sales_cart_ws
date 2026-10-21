@@ -1,0 +1,16 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/lib/comm_webrtc/comm_webrtc
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/package_run_dependencies/comm_webrtc
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/parent_prefix_path/comm_webrtc
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/ament_index/resource_index/packages/comm_webrtc
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/cmake/comm_webrtcConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/cmake/comm_webrtcConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_webrtc/share/comm_webrtc/package.xml

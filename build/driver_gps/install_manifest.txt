@@ -1,0 +1,17 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/lib/driver_gps/driver_gps_stub
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/lib/driver_gps/driver_gps_hw
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/ament_index/resource_index/package_run_dependencies/driver_gps
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/ament_index/resource_index/parent_prefix_path/driver_gps
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/ament_index/resource_index/packages/driver_gps
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/cmake/driver_gpsConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/cmake/driver_gpsConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_gps/share/driver_gps/package.xml

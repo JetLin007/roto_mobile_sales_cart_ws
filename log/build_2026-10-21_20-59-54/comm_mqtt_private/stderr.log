@@ -1,0 +1,13 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In constructor ‘MqttPrivateBridge::MqttPrivateBridge()’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:44:32: error: cannot convert ‘std::shared_ptr<MqttCallbackHandler>’ to ‘mqtt::callback&’
+   44 |     mqtt_client_->set_callback(cb);
+      |                                ^~
+      |                                |
+      |                                std::shared_ptr<MqttCallbackHandler>
+In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:5:
+/usr/local/include/mqtt/async_client.h:265:37: note:   initializing argument 1 of ‘virtual void mqtt::async_client::set_callback(mqtt::callback&)’
+  265 |         void set_callback(callback& cb) override;
+      |                           ~~~~~~~~~~^~
+gmake[2]: *** [CMakeFiles/comm_mqtt_private.dir/build.make:76: CMakeFiles/comm_mqtt_private.dir/mqtt_private_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_private.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

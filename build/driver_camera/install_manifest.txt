@@ -1,0 +1,17 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_stub
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/lib/driver_camera/driver_camera_hw
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/package_run_dependencies/driver_camera
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/parent_prefix_path/driver_camera
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/ament_prefix_path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/ament_prefix_path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/path.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/environment/path.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.bash
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.sh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.zsh
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/local_setup.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/package.dsv
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/ament_index/resource_index/packages/driver_camera
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/cmake/driver_cameraConfig.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/cmake/driver_cameraConfig-version.cmake
+/home/roto/workspace/roto_mobile_sales_cart_ws/install/driver_camera/share/driver_camera/package.xml

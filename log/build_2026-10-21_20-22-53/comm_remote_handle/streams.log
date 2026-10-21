@@ -1,0 +1,44 @@
+[0.075s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8
+[0.199s] Consolidate compiler generated dependencies of target comm_remote_handle
+[0.304s] [ 50%] Building CXX object CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o
+[10.798s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:49:8: error: ‘void RemoteHandle::message_arrived(mqtt::const_message_ptr)’ marked ‘override’, but does not override
+[10.798s]    49 |   void message_arrived(mqtt::const_message_ptr msg) override {
+[10.799s]       |        ^~~~~~~~~~~~~~~
+[10.799s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:65:8: error: ‘void RemoteHandle::connection_lost(const string&)’ marked ‘override’, but does not override
+[10.799s]    65 |   void connection_lost(const std::string & cause) override {
+[10.799s]       |        ^~~~~~~~~~~~~~~
+[10.800s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:69:8: error: ‘void RemoteHandle::delivery_complete(mqtt::delivery_token_ptr)’ marked ‘override’, but does not override
+[10.800s]    69 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[10.801s]       |        ^~~~~~~~~~~~~~~~~
+[10.819s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In constructor ‘RemoteHandle::RemoteHandle()’:
+[10.819s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:31:19: error: ‘using element_type = class mqtt::client’ {aka ‘class mqtt::client’} has no member named ‘set_message_callback’
+[10.820s]    31 |     mqtt_client_->set_message_callback([this](mqtt::const_message_ptr msg) {
+[10.820s]       |                   ^~~~~~~~~~~~~~~~~~~~
+[10.821s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In lambda function:
+[10.821s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:32:13: error: ‘class RemoteHandle’ has no member named ‘on_message’
+[10.821s]    32 |       this->on_message(msg);
+[10.821s]       |             ^~~~~~~~~~
+[10.821s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In constructor ‘RemoteHandle::RemoteHandle()’:
+[10.822s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:34:19: error: ‘using element_type = class mqtt::client’ {aka ‘class mqtt::client’} has no member named ‘set_connection_lost_callback’
+[10.822s]    34 |     mqtt_client_->set_connection_lost_callback([this](const std::string & cause) {
+[10.822s]       |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[10.822s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In lambda function:
+[10.823s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:35:13: error: ‘class RemoteHandle’ has no member named ‘on_connection_lost’; did you mean ‘connection_lost’?
+[10.824s]    35 |       this->on_connection_lost(cause);
+[10.825s]       |             ^~~~~~~~~~~~~~~~~~
+[10.825s]       |             connection_lost
+[10.826s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In constructor ‘RemoteHandle::RemoteHandle()’:
+[10.827s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:41:32: error: base operand of ‘->’ has non-pointer type ‘mqtt::connect_response’
+[10.827s]    41 |     mqtt_client_->connect(opts)->wait();
+[10.828s]       |                                ^~
+[10.828s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:42:50: error: base operand of ‘->’ has non-pointer type ‘mqtt::subscribe_response’
+[10.828s]    42 |     mqtt_client_->subscribe("remote/joystick", 1)->wait();
+[10.828s]       |                                                  ^~
+[10.856s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In member function ‘void RemoteHandle::delivery_complete(mqtt::delivery_token_ptr)’:
+[10.857s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:69:51: warning: unused parameter ‘token’ [-Wunused-parameter]
+[10.857s]    69 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
+[10.858s]       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[16.241s] gmake[2]: *** [CMakeFiles/comm_remote_handle.dir/build.make:76: CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o] Error 1
+[16.241s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_remote_handle.dir/all] Error 2
+[16.242s] gmake: *** [Makefile:146: all] Error 2
+[16.246s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle' returned '2': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8

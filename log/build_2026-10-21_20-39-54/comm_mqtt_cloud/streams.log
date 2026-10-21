@@ -1,0 +1,50 @@
+[0.095s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud -- -j8 -l8
+[0.279s] Consolidate compiler generated dependencies of target comm_mqtt_cloud
+[0.417s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o
+[10.768s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp: In constructor ‘MqttCloudBridge::MqttCloudBridge()’:
+[10.768s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:49:43: error: ‘client’ is not a member of ‘mqtt’
+[10.768s]    49 |     mqtt_client_ = std::make_shared<mqtt::client>(uri, device_id_);
+[10.768s]       |                                           ^~~~~~
+[10.768s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:49:50: error: no matching function for call to ‘make_shared<<expression error> >(std::string&, std::string&)’
+[10.768s]    49 |     mqtt_client_ = std::make_shared<mqtt::client>(uri, device_id_);
+[10.769s]       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[10.769s] In file included from /usr/include/c++/11/memory:77,
+[10.769s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[10.769s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:1:
+[10.769s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+[10.769s]   875 |     make_shared(_Args&&... __args)
+[10.769s]       |     ^~~~~~~~~~~
+[10.769s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+[10.769s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:49:50: error: template argument 1 is invalid
+[10.770s]    49 |     mqtt_client_ = std::make_shared<mqtt::client>(uri, device_id_);
+[10.770s]       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[10.771s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:58:32: error: cannot convert ‘std::shared_ptr<MqttCallbackHandler>’ to ‘mqtt::callback&’
+[10.771s]    58 |     mqtt_client_->set_callback(cb);
+[10.772s]       |                                ^~
+[10.772s]       |                                |
+[10.772s]       |                                std::shared_ptr<MqttCallbackHandler>
+[10.772s] In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:6:
+[10.773s] /usr/local/include/mqtt/async_client.h:265:37: note:   initializing argument 1 of ‘virtual void mqtt::async_client::set_callback(mqtt::callback&)’
+[10.773s]   265 |         void set_callback(callback& cb) override;
+[10.774s]       |                           ~~~~~~~~~~^~
+[10.774s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:66:17: error: no matching function for call to ‘mqtt::connect_options::set_ssl(bool)’
+[10.775s]    66 |     opts.set_ssl(true);
+[10.775s]       |     ~~~~~~~~~~~~^~~~~~
+[10.775s] In file included from /usr/local/include/mqtt/iasync_client.h:33,
+[10.775s]                  from /usr/local/include/mqtt/async_client.h:41,
+[10.775s]                  from /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_cloud/mqtt_cloud_bridge.cpp:6:
+[10.776s] /usr/local/include/mqtt/connect_options.h:223:14: note: candidate: ‘void mqtt::connect_options::set_ssl(const mqtt::ssl_options&)’
+[10.776s]   223 |         void set_ssl(const ssl_options& ssl);
+[10.776s]       |              ^~~~~~~
+[10.777s] /usr/local/include/mqtt/connect_options.h:223:41: note:   no known conversion for argument 1 from ‘bool’ to ‘const mqtt::ssl_options&’
+[10.777s]   223 |         void set_ssl(const ssl_options& ssl);
+[10.777s]       |                      ~~~~~~~~~~~~~~~~~~~^~~
+[10.777s] /usr/local/include/mqtt/connect_options.h:231:14: note: candidate: ‘void mqtt::connect_options::set_ssl(mqtt::ssl_options&&)’
+[10.777s]   231 |         void set_ssl(ssl_options&& ssl);
+[10.777s]       |              ^~~~~~~
+[10.777s] /usr/local/include/mqtt/connect_options.h:231:36: note:   no known conversion for argument 1 from ‘bool’ to ‘mqtt::ssl_options&&’
+[10.777s]   231 |         void set_ssl(ssl_options&& ssl);
+[10.778s]       |                      ~~~~~~~~~~~~~~^~~
+[21.683s] gmake[2]: *** [CMakeFiles/comm_mqtt_cloud.dir/build.make:76: CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o] Error 1
+[21.683s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_mqtt_cloud.dir/all] Error 2
+[21.684s] gmake: *** [Makefile:146: all] Error 2

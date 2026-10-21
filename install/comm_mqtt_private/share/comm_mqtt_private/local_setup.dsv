@@ -1,0 +1,2 @@
+source;share/comm_mqtt_private/environment/ament_prefix_path.sh
+source;share/comm_mqtt_private/environment/path.sh

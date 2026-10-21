@@ -1,0 +1,26 @@
+[0.073s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud -- -j8 -l8
+[0.176s] Consolidate compiler generated dependencies of target comm_mqtt_cloud
+[0.221s] [ 50%] Building CXX object CMakeFiles/comm_mqtt_cloud.dir/mqtt_cloud_bridge.cpp.o
+[26.936s] [100%] Linking CXX executable comm_mqtt_cloud
+[28.643s] [100%] Built target comm_mqtt_cloud
+[28.668s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud -- -j8 -l8
+[28.672s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud
+[28.690s] -- Install configuration: ""
+[28.691s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/lib/comm_mqtt_cloud/comm_mqtt_cloud
+[28.704s] -- Set runtime path of "/home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/lib/comm_mqtt_cloud/comm_mqtt_cloud" to ""
+[28.706s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/ament_index/resource_index/package_run_dependencies/comm_mqtt_cloud
+[28.708s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/ament_index/resource_index/parent_prefix_path/comm_mqtt_cloud
+[28.710s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/ament_prefix_path.sh
+[28.711s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/ament_prefix_path.dsv
+[28.711s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/path.sh
+[28.712s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/environment/path.dsv
+[28.713s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.bash
+[28.714s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.sh
+[28.715s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.zsh
+[28.716s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/local_setup.dsv
+[28.718s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/package.dsv
+[28.719s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/ament_index/resource_index/packages/comm_mqtt_cloud
+[28.720s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/cmake/comm_mqtt_cloudConfig.cmake
+[28.721s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/cmake/comm_mqtt_cloudConfig-version.cmake
+[28.723s] -- Installing: /home/roto/workspace/roto_mobile_sales_cart_ws/install/comm_mqtt_cloud/share/comm_mqtt_cloud/package.xml
+[28.730s] Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud' returned '0': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_mqtt_cloud

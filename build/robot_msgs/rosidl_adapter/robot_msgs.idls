@@ -1,0 +1,6 @@
+/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs/rosidl_adapter/robot_msgs:msg/GpsFix.idl
+/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs/rosidl_adapter/robot_msgs:msg/BmsStatus.idl
+/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs/rosidl_adapter/robot_msgs:msg/OrderEvent.idl
+/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs/rosidl_adapter/robot_msgs:msg/Alarm.idl
+/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs/rosidl_adapter/robot_msgs:msg/ChassisCmd.idl
+/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs/rosidl_adapter/robot_msgs:msg/ChassisState.idl

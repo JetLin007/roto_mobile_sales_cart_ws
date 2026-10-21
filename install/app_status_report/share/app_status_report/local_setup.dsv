@@ -1,0 +1,2 @@
+source;share/app_status_report/environment/ament_prefix_path.sh
+source;share/app_status_report/environment/path.sh

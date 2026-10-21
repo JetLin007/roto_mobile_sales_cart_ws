@@ -1,0 +1,9 @@
+Consolidate compiler generated dependencies of target comm_remote_handle
+[ 50%] Building CXX object CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In constructor ‘RemoteHandle::RemoteHandle()’:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:55:25: error: ‘cb’ was not declared in this scope
+   55 |     callback_handler_ = cb;
+      |                         ^~
+gmake[2]: *** [CMakeFiles/comm_remote_handle.dir/build.make:76: CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comm_remote_handle.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

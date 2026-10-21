@@ -1,0 +1,16 @@
+In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_hw_impl.cpp:1:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/include/gpio_driver_base.hpp:6:10: fatal error: std_srvs/srv/set_bool.hpp: No such file or directory
+    6 | #include "std_srvs/srv/set_bool.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/driver_gpio_hw.dir/build.make:90: CMakeFiles/driver_gpio_hw.dir/src/gpio_hw_impl.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/driver_gpio_hw.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from /home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/src/gpio_stub_impl.cpp:1:
+/home/roto/workspace/roto_mobile_sales_cart_ws/src/driver_layer/driver_gpio/include/gpio_driver_base.hpp:6:10: fatal error: std_srvs/srv/set_bool.hpp: No such file or directory
+    6 | #include "std_srvs/srv/set_bool.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/driver_gpio_stub.dir/build.make:90: CMakeFiles/driver_gpio_stub.dir/src/gpio_stub_impl.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/driver_gpio_stub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
