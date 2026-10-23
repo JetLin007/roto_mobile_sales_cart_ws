@@ -1,9 +1,0 @@
-[0.111s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_can_chassis -- -j8 -l8
-[0.219s] [ 16%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_driver_base.cpp.o
-[0.224s] [ 33%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_driver_base.cpp.o
-[0.236s] [ 50%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o
-[0.240s] [ 66%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_stub_impl.cpp.o
-[56.078s] [ 83%] Linking CXX executable driver_can_chassis_stub
-[57.217s] [ 83%] Built target driver_can_chassis_stub
-[57.422s] [100%] Linking CXX executable driver_can_chassis_hw
-[58.221s] [100%] Built target driver_can_chassis_hw

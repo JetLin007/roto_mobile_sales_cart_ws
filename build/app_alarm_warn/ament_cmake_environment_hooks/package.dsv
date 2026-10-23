@@ -1,4 +1,0 @@
-source;share/app_alarm_warn/local_setup.bash
-source;share/app_alarm_warn/local_setup.dsv
-source;share/app_alarm_warn/local_setup.sh
-source;share/app_alarm_warn/local_setup.zsh

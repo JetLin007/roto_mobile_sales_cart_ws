@@ -11,6 +11,7 @@ find_package(robot_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(MQTT REQUIRED libpaho-mqttpp3)
+pkg_check_modules(PAHO_C REQUIRED libpaho-mqtt3as)
 
 include_directories(include ${MQTT_INCLUDE_DIRS})
 link_directories(${MQTT_LIBRARY_DIRS})
@@ -19,7 +20,7 @@ add_executable(comm_remote_handle
   remote_handle.cpp
 )
 ament_target_dependencies(comm_remote_handle rclcpp robot_msgs std_msgs)
-target_link_libraries(comm_remote_handle ${MQTT_LIBRARIES})
+target_link_libraries(comm_remote_handle ${MQTT_LIBRARIES} ${PAHO_C_LIBRARIES})
 
 install(TARGETS comm_remote_handle
   DESTINATION lib/${PROJECT_NAME}

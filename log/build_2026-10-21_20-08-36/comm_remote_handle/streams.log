@@ -1,9 +1,0 @@
-[0.258s] Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle': AMENT_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_remote_handle -- -j8 -l8
-[0.498s] Consolidate compiler generated dependencies of target comm_remote_handle
-[0.585s] [ 50%] Building CXX object CMakeFiles/comm_remote_handle.dir/remote_handle.cpp.o
-[16.196s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp: In member function ‘virtual void RemoteHandle::delivery_complete(mqtt::delivery_token_ptr)’:
-[16.196s] /home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_remote_handle/remote_handle.cpp:63:51: warning: unused parameter ‘token’ [-Wunused-parameter]
-[16.207s]    63 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
-[16.208s]       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
-[33.979s] [100%] Linking CXX executable comm_remote_handle
-[35.918s] [100%] Built target comm_remote_handle

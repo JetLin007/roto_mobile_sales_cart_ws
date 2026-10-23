@@ -1,8 +1,0 @@
-[ 16%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_driver_base.cpp.o
-[ 33%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_driver_base.cpp.o
-[ 50%] Building CXX object CMakeFiles/driver_can_chassis_hw.dir/src/chassis_hw_impl.cpp.o
-[ 66%] Building CXX object CMakeFiles/driver_can_chassis_stub.dir/src/chassis_stub_impl.cpp.o
-[ 83%] Linking CXX executable driver_can_chassis_stub
-[ 83%] Built target driver_can_chassis_stub
-[100%] Linking CXX executable driver_can_chassis_hw
-[100%] Built target driver_can_chassis_hw

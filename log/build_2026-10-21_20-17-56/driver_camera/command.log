@@ -1,4 +1,0 @@
-Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera -- -j8 -l8
-Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera -- -j8 -l8
-Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera
-Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/driver_camera

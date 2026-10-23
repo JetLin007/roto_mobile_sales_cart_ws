@@ -1,4 +1,0 @@
-source;share/app_status_report/local_setup.bash
-source;share/app_status_report/local_setup.dsv
-source;share/app_status_report/local_setup.sh
-source;share/app_status_report/local_setup.zsh

@@ -1,4 +1,0 @@
-Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc -- -j8 -l8
-Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc -- -j8 -l8
-Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc
-Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/roto/workspace/roto_mobile_sales_cart_ws/build/comm_webrtc

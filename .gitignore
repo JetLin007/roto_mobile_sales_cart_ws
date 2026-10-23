@@ -1,0 +1,11 @@
+# ROS 2 编译产物
+build/
+install/
+log/
+
+# VS Code 配置及数据库文件
+.vscode/
+
+# 系统/编辑器临时文件
+*.swp
+.DS_Store

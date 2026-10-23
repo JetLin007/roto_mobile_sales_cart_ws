@@ -1,4 +1,0 @@
-/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp: In member function ‘virtual void MqttPrivateBridge::delivery_complete(mqtt::delivery_token_ptr)’:
-/home/roto/workspace/roto_mobile_sales_cart_ws/src/comm_layer/comm_mqtt_private/mqtt_private_bridge.cpp:91:51: warning: unused parameter ‘token’ [-Wunused-parameter]
-   91 |   void delivery_complete(mqtt::delivery_token_ptr token) override {}
-      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~

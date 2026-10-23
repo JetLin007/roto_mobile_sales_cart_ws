@@ -1,2 +1,0 @@
-Invoking command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs
-Invoked command in '/home/roto/workspace/roto_mobile_sales_cart_ws/build/robot_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/roto/workspace/roto_mobile_sales_cart_ws -DCMAKE_INSTALL_PREFIX=/home/roto/workspace/roto_mobile_sales_cart_ws/install/robot_msgs

@@ -1,2 +1,0 @@
-Consolidate compiler generated dependencies of target app_status_report_node
-[ 50%] Building CXX object CMakeFiles/app_status_report_node.dir/status_report_node.cpp.o

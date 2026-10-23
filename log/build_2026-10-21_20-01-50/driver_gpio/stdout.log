@@ -1,8 +1,0 @@
-[ 16%] Building CXX object CMakeFiles/driver_gpio_stub.dir/src/gpio_driver_base.cpp.o
-[ 33%] Building CXX object CMakeFiles/driver_gpio_hw.dir/src/gpio_driver_base.cpp.o
-[ 50%] Building CXX object CMakeFiles/driver_gpio_hw.dir/src/gpio_hw_impl.cpp.o
-[ 66%] Building CXX object CMakeFiles/driver_gpio_stub.dir/src/gpio_stub_impl.cpp.o
-[ 83%] Linking CXX executable driver_gpio_hw
-[100%] Linking CXX executable driver_gpio_stub
-[100%] Built target driver_gpio_hw
-[100%] Built target driver_gpio_stub

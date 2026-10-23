@@ -1,4 +1,0 @@
-source;share/app_order_task/local_setup.bash
-source;share/app_order_task/local_setup.dsv
-source;share/app_order_task/local_setup.sh
-source;share/app_order_task/local_setup.zsh

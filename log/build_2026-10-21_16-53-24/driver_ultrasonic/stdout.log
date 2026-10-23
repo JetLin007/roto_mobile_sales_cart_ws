@@ -1,4 +1,0 @@
-Consolidate compiler generated dependencies of target driver_ultrasonic_stub
-Consolidate compiler generated dependencies of target driver_ultrasonic_hw
-[ 16%] Building CXX object CMakeFiles/driver_ultrasonic_stub.dir/src/ultrasonic_stub_impl.cpp.o
-[ 33%] Building CXX object CMakeFiles/driver_ultrasonic_hw.dir/src/ultrasonic_hw_impl.cpp.o
