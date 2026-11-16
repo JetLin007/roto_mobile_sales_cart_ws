@@ -1,8 +1,0 @@
-source;share/driver_can_chassis/hook/cmake_prefix_path.ps1
-source;share/driver_can_chassis/hook/cmake_prefix_path.dsv
-source;share/driver_can_chassis/hook/cmake_prefix_path.sh
-source;share/driver_can_chassis/local_setup.bash
-source;share/driver_can_chassis/local_setup.dsv
-source;share/driver_can_chassis/local_setup.ps1
-source;share/driver_can_chassis/local_setup.sh
-source;share/driver_can_chassis/local_setup.zsh
