@@ -1,0 +1,8 @@
+# /chassis/ota/enter：NORMAL → OTA_MODE（停车、暂停 20ms 轮询）
+string firmware_sha256
+uint32 image_size
+uint32 baudrate              # 115200/230400/460800，最终值待 Q8 实测
+---
+bool accepted
+string error_code
+string message

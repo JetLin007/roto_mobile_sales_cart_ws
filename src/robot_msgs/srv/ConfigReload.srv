@@ -1,0 +1,6 @@
+string config_path           # 默认 /opt/roto_ws/config/cart_config.json
+bool validate_only
+---
+bool accepted
+string error_code
+string config_version

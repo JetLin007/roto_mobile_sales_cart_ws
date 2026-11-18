@@ -1,0 +1,7 @@
+uint8 target_state
+string reason
+string requester             # 节点名，用于审计
+---
+bool accepted
+string error_code
+uint8 current_state          # 拒绝时返回实际当前状态

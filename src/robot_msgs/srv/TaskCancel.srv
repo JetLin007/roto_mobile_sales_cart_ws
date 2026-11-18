@@ -1,0 +1,10 @@
+uint8 REASON_CLOUD_CANCEL=0
+uint8 REASON_USER_CANCEL=1
+
+string task_id
+string[] action_ids          # 空=整任务
+uint8 reason
+---
+bool accepted
+CancelResult[] results
+string error_code

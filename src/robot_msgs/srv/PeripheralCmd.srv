@@ -1,0 +1,15 @@
+# 唯一 485 外设动作入口（app_order_task_node → driver_rs485_dev）
+# 参数结构与协议 2.2.1 actions[].params 对齐，避免 JSON 透传
+uint8 ACTION_MAKE=0
+uint8 ACTION_UNLOCK=1
+
+string module_id
+string action_id
+uint8 action_type            # ACTION_*
+string sku
+ActionParams params
+uint32 timeout_ms            # 驱动层单次等待上限，超时即 FAILED(TIMEOUT)
+---
+bool accepted
+string error_code
+PeripheralResult result

@@ -1,0 +1,6 @@
+# 内部查询（service_local_comm / service_cloud_comm → app_order_task_node）
+string task_id
+---
+bool found
+TaskEvent event              # found 时携带全量最新结果
+string error_code            # found=false 时 TASK_NOT_FOUND

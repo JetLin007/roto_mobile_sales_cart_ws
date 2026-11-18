@@ -1,3 +1,4 @@
+# 最终版（M2-c 完成后用）：44 msg + 9 srv = 53 个接口
 cmake_minimum_required(VERSION 3.8)
 project(robot_msgs)
 
@@ -11,13 +12,61 @@ find_package(std_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/GpsFix.msg"
-  "msg/BmsStatus.msg"
-  "msg/OrderEvent.msg"
-  "msg/Alarm.msg"
-  "msg/ChassisCmd.msg"
-  "msg/ChassisState.msg"
+  "msg/ActionParams.msg"
+  "msg/AlarmEvent.msg"
+  "msg/AlarmLightCmd.msg"
+  "msg/BatteryStatus.msg"
+  "msg/CancelResult.msg"
+  "msg/CartState.msg"
+  "msg/ChassisHealth.msg"
+  "msg/ChassisIoCmd.msg"
+  "msg/ChassisIoStatus.msg"
+  "msg/ChassisMode.msg"
+  "msg/ChassisStatus.msg"
+  "msg/CmdVel.msg"
+  "msg/CommandAck.msg"
+  "msg/ConfigUpdate.msg"
+  "msg/DeviceCommand.msg"
+  "msg/ErrorCode.msg"
+  "msg/GeoLocation.msg"
+  "msg/HealthStatus.msg"
+  "msg/InventoryModule.msg"
+  "msg/LocalOrderCancel.msg"
+  "msg/LocalOrderStart.msg"
+  "msg/LocalUiHeartbeat.msg"
+  "msg/LocalUiStatus.msg"
+  "msg/MotionCommand.msg"
+  "msg/OrderAction.msg"
+  "msg/OrderCancel.msg"
+  "msg/OrderCommand.msg"
+  "msg/OtaCommand.msg"
+  "msg/OtaStatus.msg"
+  "msg/PeripheralHealth.msg"
+  "msg/PeripheralMaterial.msg"
+  "msg/PeripheralResult.msg"
+  "msg/PeripheralStatus.msg"
+  "msg/ProtocolHeader.msg"
+  "msg/RemoteSession.msg"
+  "msg/RfidDiff.msg"
+  "msg/RfidInventory.msg"
+  "msg/SkuStock.msg"
+  "msg/TaskAction.msg"
+  "msg/TaskEvent.msg"
+  "msg/TaskQuery.msg"
+  "msg/TimeSyncRequest.msg"
+  "msg/TimeSyncResponse.msg"
+  "msg/VoicePlay.msg"
+  "srv/ChassisOtaEnter.srv"
+  "srv/ChassisOtaExit.srv"
+  "srv/ConfigReload.srv"
+  "srv/DeviceControl.srv"
+  "srv/PeripheralCmd.srv"
+  "srv/StateGet.srv"
+  "srv/StateSet.srv"
+  "srv/TaskCancel.srv"
+  "srv/TaskQuery.srv"
   DEPENDENCIES std_msgs builtin_interfaces
 )
 
+ament_export_dependencies(rosidl_default_runtime)
 ament_package()

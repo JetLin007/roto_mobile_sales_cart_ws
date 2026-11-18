@@ -1,0 +1,6 @@
+# /chassis/ota/exit：OTA_MODE → NORMAL
+bool force
+---
+bool accepted
+string error_code
+string message
