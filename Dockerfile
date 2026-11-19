@@ -8,9 +8,11 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
     sed -i 's/security.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 COPY ./src ./src
+COPY ./third_party ./third_party
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-cyclonedds \
+    ros-humble-rmw-cyclonedds-cpp \
     ros-humble-ros2launch \
     python3-colcon-common-extensions \
     build-essential \
@@ -29,8 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # 编译安装 Paho MQTT C 库（C++ 库依赖它）
-RUN git clone https://github.com/eclipse/paho.mqtt.c.git /tmp/paho.mqtt.c && \
-    cd /tmp/paho.mqtt.c && \
+RUN cd /opt/roto_ws/third_party/paho.mqtt.c && \
     mkdir build && cd build && \
     cmake -DPAHO_BUILD_STATIC=ON -DPAHO_BUILD_SHARED=ON \
           -DPAHO_BUILD_DOCUMENTATION=OFF -DPAHO_BUILD_SAMPLES=OFF \
@@ -39,8 +40,7 @@ RUN git clone https://github.com/eclipse/paho.mqtt.c.git /tmp/paho.mqtt.c && \
     ldconfig
 
 # 编译安装 Paho MQTT C++ 库
-RUN git clone https://github.com/eclipse/paho.mqtt.cpp.git /tmp/paho.mqtt.cpp && \
-    cd /tmp/paho.mqtt.cpp && \
+RUN cd /opt/roto_ws/third_party/paho.mqtt.cpp && \
     mkdir build && cd build && \
     cmake -DPAHO_BUILD_DOCUMENTATION=OFF -DPAHO_BUILD_SAMPLES=OFF \
           -DPAHO_WITH_SSL=TRUE .. && \
@@ -78,6 +78,9 @@ RUN printf '%s\n' \
 RUN pkg-config --modversion libpaho-mqtt3as && \
     pkg-config --modversion libpaho-mqttpp3
 
+# 清理可能残留的旧构建产物，确保干净构建
+RUN rm -rf /opt/roto_ws/build /opt/roto_ws/install
+
 RUN . /opt/ros/humble/setup.sh && \
     colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --event-handlers console_direct+
 
@@ -91,11 +94,13 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
     sed -i 's/security.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && \
     apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-cyclonedds \
+    ros-humble-rmw-cyclonedds-cpp \
     ros-humble-ros2launch \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/roto_ws
 COPY --from=builder /opt/roto_ws/install ./install
+COPY launch_all_sim.launch.py ./launch_all_sim.launch.py
 
 # 显式 source 底层 ROS 环境 + 工作空间
-CMD [ "bash", "-c", "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch roto_launch all.launch.py" ]
+CMD [ "bash", "-c", "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch /opt/roto_ws/launch_all_sim.launch.py" ]
