@@ -1,3 +1,11 @@
+"""本机仿真启动文件（WSL2 / amd64 开发机）。
+
+包含 sim_chassis / sim_tablet 仿真工具，用于无硬件时的联调。
+板端镜像不使用此文件，板端请用 launch/launch_board.launch.py。
+
+sim 包位于 tools/sim/，本机构建需显式包含：
+    colcon build --paths src/* tools/sim/sim_chassis tools/sim/sim_tablet
+"""
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
