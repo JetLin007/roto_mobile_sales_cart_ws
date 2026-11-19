@@ -100,7 +100,7 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
 
 WORKDIR /opt/roto_ws
 COPY --from=builder /opt/roto_ws/install ./install
-COPY launch_all_sim.launch.py ./launch_all_sim.launch.py
+COPY launch ./launch
 
-# 显式 source 底层 ROS 环境 + 工作空间
-CMD [ "bash", "-c", "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch /opt/roto_ws/launch_all_sim.launch.py" ]
+# 显式 source 底层 ROS 环境 + 工作空间，启动板端 launch（不含 sim 工具）
+CMD [ "bash", "-c", "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch /opt/roto_ws/launch/launch_board.launch.py" ]
