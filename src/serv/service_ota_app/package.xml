@@ -3,14 +3,18 @@
 <package format="3">
   <name>service_ota_app</name>
   <version>0.1.0</version>
-  <description>OTA update manager for remote firmware/package updates</description>
+  <description>OTA update manager: container image + chassis firmware upgrade</description>
   <maintainer email="roto@example.com">roto</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>rclcpp</depend>
   <depend>robot_msgs</depend>
-  <depend>std_msgs</depend>
+
+  <!-- OTA 核心依赖：libcurl 下载、OpenSSL 哈希+Ed25519 签名、nlohmann/json 握手文件 -->
+  <depend>libcurl4-openssl-dev</depend>
+  <depend>libssl-dev</depend>
+  <depend>nlohmann-json3-dev</depend>
 
   <export>
     <build_type>ament_cmake</build_type>

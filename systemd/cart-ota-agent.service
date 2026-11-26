@@ -1,0 +1,29 @@
+[Unit]
+Description=Roto Mobile Sales Cart OTA Agent
+# 必须在 docker 启动后运行，且需要 ota 数据目录就绪
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=roto
+Group=docker
+# 握手目录与容器共享，必须与容器内 service_ota_app 的 work_dir 参数一致
+Environment=OTA_DIR=/opt/roto_ws/data/ota
+Environment=OTA_CONTAINER=roto-cart
+Environment=OTA_IMAGE_CURRENT=roto-cart:current
+Environment=OTA_IMAGE_PREVIOUS=roto-cart:previous
+Environment=OTA_HEALTH_WAIT=30
+Environment=OTA_POLL_INTERVAL=2
+ExecStart=/usr/bin/python3 /opt/roto_ws/scripts/cart_ota_agent.py
+Restart=always
+RestartSec=5
+# 只读系统目录，只允许写 OTA_DIR 与 docker socket
+ProtectSystem=strict
+ReadWritePaths=/opt/roto_ws/data/ota
+# 日志走 journald
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

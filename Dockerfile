@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     libssl-dev \
+    libcurl4-openssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # 编译安装 Paho MQTT C 库（C++ 库依赖它）
@@ -96,6 +97,7 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
     ros-humble-cyclonedds \
     ros-humble-rmw-cyclonedds-cpp \
     ros-humble-ros2launch \
+    libcurl4 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/roto_ws
