@@ -40,6 +40,7 @@ bool OtaCore::run(const OtaRequest & req) {
   p.ota_task_id    = req.ota_task_id;
   p.target_module  = req.target_module;
   p.target_version = req.target_version;
+  ctx_ = p;  // 下载进度回调需要完整的任务标识
   emit(p, Stage::kDownloading, 0, Result::kNone, "ota start");
 
   // --- 2. 下载 ---
@@ -109,7 +110,7 @@ bool OtaCore::do_download(const OtaRequest & req, std::string & local_path,
       auto * self = static_cast<OtaCore *>(clientp);
       if (dltotal > 0) {
         uint8_t pct = static_cast<uint8_t>(dlnow * 50 / dltotal);
-        OtaProgress prog;
+        OtaProgress prog = self->ctx_;
         prog.stage = Stage::kDownloading;
         prog.progress = pct;
         prog.message = "downloading";

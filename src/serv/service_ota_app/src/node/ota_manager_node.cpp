@@ -55,7 +55,14 @@ public:
                 core_ ? "ok" : "fail");
 
     // 启动时尝试读取上次 OTA 结果（容器重启后补报最终状态）
-    report_last_result();
+    // 注意：用 timer 延迟 200ms，确保 DDS Discovery 完成后再 publish
+    // 否则 RELIABLE 消息可能在对端 sub 还没 Discovery 到时被丢弃。
+    last_result_timer_ = this->create_wall_timer(
+        std::chrono::milliseconds(200),
+        [this]() {
+          report_last_result();
+          last_result_timer_->cancel();
+        });
   }
 
   ~OtaManagerNode() {
@@ -106,6 +113,9 @@ private:
       return;
     }
     OtaRequest req = to_request(*c);
+    // 上一任务已跑完（running_==false）时，worker_ 仍是 joinable 的旧线程；
+    // 必须先 join，否则重新赋值会析构 joinable 的 std::thread 触发 terminate。
+    if (worker_ && worker_->joinable()) worker_->join();
     running_ = true;
     worker_ = std::make_unique<std::thread>([this, req]() {
       core_->run(req);
@@ -137,6 +147,7 @@ private:
   std::string cart_id_;
   rclcpp::Publisher<robot_msgs::msg::OtaStatus>::SharedPtr pub_status_;
   rclcpp::Subscription<robot_msgs::msg::OtaCommand>::SharedPtr sub_cmd_;
+  rclcpp::TimerBase::SharedPtr last_result_timer_;
 };
 
 int main(int argc, char ** argv) {

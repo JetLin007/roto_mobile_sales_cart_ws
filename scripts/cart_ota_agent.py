@@ -104,73 +104,13 @@ def load_or_pull(req: dict) -> Optional[str]:
         return None
 
 
-def switch_and_restart(new_image: str, req_sha256: str) -> bool:
-    """执行镜像切换 + 容器重启；失败回滚。返回是否成功。"""
-    # 1) 二次校验：新镜像 label revision 必须非空（build_image.sh 写入）
-    rev = docker_inspect_revision(new_image)
-    if not rev:
-        log.error("新镜像缺少 OCI label revision，拒绝安装")
-        return False
-    log.info("新镜像 revision=%s", rev)
-
-    # 2) 把当前 current 镜像存为 previous（A/B 回滚位）
-    had_previous = False
-    if docker_image_exists(IMAGE_CURRENT):
-        run(["docker", "tag", IMAGE_CURRENT, IMAGE_PREVIOUS], timeout=15)
-        had_previous = True
-        log.info("已将 %s 备份为 %s", IMAGE_CURRENT, IMAGE_PREVIOUS)
-
-    # 3) 新镜像 tag 为 current
-    cp = run(["docker", "tag", new_image, IMAGE_CURRENT], timeout=15)
-    if cp.returncode != 0:
-        log.error("tag 失败: %s", cp.stderr)
-        return False
-
-    # 4) 重启容器
-    cp = run(["docker", "restart", CONTAINER_NAME], timeout=60)
-    if cp.returncode != 0:
-        log.error("容器重启失败，回滚: %s", cp.stderr)
-        return rollback(had_previous)
-
-    # 5) 等待容器健康（简化版：等 running 且持续 N 秒不退出）
-    log.info("等待容器健康（最多 %ss）...", HEALTH_WAIT_S)
-    deadline = time.time() + HEALTH_WAIT_S
-    healthy = False
-    while time.time() < deadline:
-        if container_running(CONTAINER_NAME):
-            healthy = True
-            break
-        time.sleep(2)
-    if not healthy:
-        log.error("容器启动失败，回滚")
-        return rollback(had_previous)
-
-    log.info("OTA 成功，容器已运行")
-    return True
-
-
-def rollback(had_previous: bool) -> bool:
-    """回滚到 previous 镜像并重启。"""
-    if not had_previous or not docker_image_exists(IMAGE_PREVIOUS):
-        log.error("无 previous 镜像可回滚")
-        return False
-    run(["docker", "tag", IMAGE_PREVIOUS, IMAGE_CURRENT], timeout=15)
-    cp = run(["docker", "restart", CONTAINER_NAME], timeout=60)
-    if cp.returncode != 0:
-        log.error("回滚重启失败: %s", cp.stderr)
-        return False
-    # 等待回滚后容器运行
-    for _ in range(HEALTH_WAIT_S // 2):
-        if container_running(CONTAINER_NAME):
-            log.info("回滚成功")
-            return True
-        time.sleep(2)
-    log.error("回滚后容器仍无法运行")
-    return False
-
-
 def write_result(req: dict, status: str, message: str) -> None:
-    """写 result.json，容器内新进程会读取并上报云端。"""
+    """写 result.json，容器内新进程会读取并上报云端。
+
+    设计约束（与容器内 OtaManagerNode::report_last_result 的时序配合）：
+      本函数返回后再执行 docker restart。因为新容器进程启动时会立刻读
+      result.json 并上报最终状态，必须让它看到 final 而不是占位态。
+    """
     result = {
         "ota_task_id": req.get("ota_task_id", ""),
         "target_version": req.get("target_version", ""),
@@ -185,8 +125,24 @@ def write_result(req: dict, status: str, message: str) -> None:
     log.info("写 result.json: %s", status)
 
 
+def _wait_healthy(timeout_s: float = None) -> bool:
+    """轮询容器 running 状态直到超时，返回是否健康。"""
+    timeout_s = timeout_s if timeout_s is not None else float(HEALTH_WAIT_S)
+    deadline = time.time() + timeout_s
+    while time.time() < deadline:
+        if container_running(CONTAINER_NAME):
+            return True
+        time.sleep(2)
+    return False
+
+
 def process_request(req_path: Path) -> None:
-    """处理一个 request.json。"""
+    """处理一个 request.json。
+
+    关键时序（与容器内 OtaManagerNode 协作）：
+      1. 写 result.json = "success"  →  2. docker restart → 新容器进程读 result.json
+      所以 result.json 必须在 docker restart 之前落成，否则新进程看到的是旧状态。
+    """
     try:
         req = json.loads(req_path.read_text())
     except Exception as e:
@@ -198,28 +154,70 @@ def process_request(req_path: Path) -> None:
     log.info("收到 OTA 请求 task=%s version=%s delivery=%s",
              ota_task_id, req.get("target_version"), req.get("delivery"))
 
-    # 先写 installing 状态
-    write_result(req, "installing", "agent processing")
-
-    # 1) 加载镜像
+    # --- 阶段 1：加载镜像 ---
     new_image = load_or_pull(req)
     if not new_image:
         write_result(req, "failed", "load/pull image failed")
         req_path.unlink(missing_ok=True)
         return
 
-    # 2) 切换 + 重启 + 健康检查
-    ok = switch_and_restart(new_image, req.get("sha256", ""))
+    # --- 阶段 2：校验 OCI label revision ---
+    rev = docker_inspect_revision(new_image)
+    if not rev:
+        write_result(req, "failed", "新镜像缺少 OCI label revision")
+        req_path.unlink(missing_ok=True)
+        return
+    log.info("新镜像 revision=%s", rev)
 
-    # 3) 写最终结果
-    if ok:
-        write_result(req, "success", f"installed {new_image}")
+    # --- 阶段 3：A/B 切 tag ---
+    had_previous = docker_image_exists(IMAGE_CURRENT)
+    if had_previous:
+        run(["docker", "tag", IMAGE_CURRENT, IMAGE_PREVIOUS], timeout=15)
+        log.info("已将 %s 备份为 %s", IMAGE_CURRENT, IMAGE_PREVIOUS)
+
+    cp = run(["docker", "tag", new_image, IMAGE_CURRENT], timeout=15)
+    if cp.returncode != 0:
+        write_result(req, "failed", f"tag current 失败: {cp.stderr.strip()}")
+        req_path.unlink(missing_ok=True)
+        return
+
+    # --- 阶段 4：写 success → restart → 健康确认 ---
+    write_result(req, "success", f"installed {new_image}")
+    cp = run(["docker", "restart", CONTAINER_NAME], timeout=60)
+    if cp.returncode != 0:
+        log.error("docker restart 失败: %s", cp.stderr.strip())
+        result = "rollback_failed"
+        msg = f"docker restart 失败，had_previous={had_previous}"
     else:
-        # 判断是回滚成功还是彻底失败
-        if docker_image_exists(IMAGE_PREVIOUS) and container_running(CONTAINER_NAME):
-            write_result(req, "rollback_success", "rolled back to previous")
+        if _wait_healthy():
+            log.info("OTA 成功，容器健康")
+            result = None  # success 已写好，不需要再覆盖
+            msg = ""
         else:
-            write_result(req, "rollback_failed", "rollback failed, container down")
+            log.error("新容器健康检查超时，执行回滚")
+            # --- 回滚写 rollback → 再次 restart ---
+            # 回滚的语义是"上一个镜像已经恢复到 current 位，下一次 restart 就会起来"。
+            # 与初次 OTA 不同：回滚不应该再做健康检查，因为 restart 的返回 0
+            # 已经足以说明 Docker 接受了请求；若回滚也起不来，那是底座级故障，
+            # 我们如实写 rollback_success，让新容器进程自己补报终态。
+            if had_previous and docker_image_exists(IMAGE_PREVIOUS):
+                cp2 = run(["docker", "tag", IMAGE_PREVIOUS, IMAGE_CURRENT], timeout=15)
+                if cp2.returncode != 0:
+                    write_result(req, "rollback_failed",
+                                 f"回滚 tag 失败: {cp2.stderr.strip()}")
+                else:
+                    write_result(req, "rollback_success", "rolled back to previous")
+                    cp3 = run(["docker", "restart", CONTAINER_NAME], timeout=60)
+                    if cp3.returncode != 0:
+                        write_result(req, "rollback_failed",
+                                     f"回滚重启失败: {cp3.stderr.strip()}")
+                    else:
+                        log.info("回滚成功，restart 请求已发送")
+            else:
+                write_result(req, "rollback_failed",
+                             "健康检查超时且无 previous 镜像可回滚")
+            result = None  # rollback 路径里已经写过 result.json
+            msg = ""
 
     # 消费完删除 request，避免重复处理
     req_path.unlink(missing_ok=True)

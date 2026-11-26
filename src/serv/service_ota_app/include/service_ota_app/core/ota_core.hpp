@@ -70,6 +70,9 @@ private:
   Options opts_;
   std::string request_json_path_;   // work_dir/request.json
   std::string result_json_path_;    // work_dir/result.json
+  // 当前任务的标识字段（ota_task_id/target_module/target_version），
+  // 供 libcurl 下载进度回调补全 OtaProgress，避免中途上报空任务号。
+  OtaProgress ctx_;
 };
 
 }  // namespace core

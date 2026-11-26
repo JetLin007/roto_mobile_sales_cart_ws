@@ -42,4 +42,20 @@ install(DIRECTORY include/
   DESTINATION include
 )
 
+# core 层单测（L1 回归：sha256 / Ed25519 / 下载校验 / result 解析）
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  ament_add_gtest(test_ota_core
+    test/test_ota_core.cpp
+    src/core/crypto.cpp
+    src/core/ota_core.cpp
+  )
+  target_link_libraries(test_ota_core
+    OpenSSL::SSL
+    OpenSSL::Crypto
+    CURL::libcurl
+    nlohmann_json::nlohmann_json
+  )
+endif()
+
 ament_package()
