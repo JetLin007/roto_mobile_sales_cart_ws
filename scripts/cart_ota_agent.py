@@ -37,6 +37,13 @@ IMAGE_PREVIOUS = os.getenv("OTA_IMAGE_PREVIOUS", "roto-cart:previous")
 HEALTH_WAIT_S  = int(os.getenv("OTA_HEALTH_WAIT", "30"))
 POLL_INTERVAL  = float(os.getenv("OTA_POLL_INTERVAL", "2"))
 
+# ---- 开发调试：无 docker 环境可用的 MOCK 模式 ----
+# OTA_MOCK_MODE=1  跳过所有 docker 操作，走纯文件握手
+# OTA_MOCK_RESULT  可选: success / failed / rollback_success / rollback_failed
+#                   控制 agent 最终写什么 result.json（默认 success）
+MOCK_MODE      = os.getenv("OTA_MOCK_MODE", "0") == "1"
+MOCK_RESULT    = os.getenv("OTA_MOCK_RESULT", "success")
+
 REQUEST_FILE = OTA_DIR / "request.json"
 RESULT_FILE  = OTA_DIR / "result.json"
 
@@ -56,6 +63,9 @@ def run(cmd: list, timeout: int = 120) -> subprocess.CompletedProcess:
 
 def docker_inspect_revision(image: str) -> Optional[str]:
     """读取镜像的 OCI label org.opencontainers.image.revision。"""
+    if MOCK_MODE:
+        log.info("[MOCK] inspect revision -> mock-rev-001")
+        return "mock-rev-001"
     cp = run(["docker", "inspect", "-f",
               "{{index .Config.Labels \"org.opencontainers.image.revision\"}}",
               image], timeout=30)
@@ -66,16 +76,25 @@ def docker_inspect_revision(image: str) -> Optional[str]:
 
 
 def docker_image_exists(image: str) -> bool:
+    if MOCK_MODE:
+        return True
     return run(["docker", "image", "inspect", image], timeout=15).returncode == 0
 
 
 def container_running(name: str) -> bool:
+    if MOCK_MODE:
+        return True
     cp = run(["docker", "inspect", "-f", "{{.State.Running}}", name], timeout=15)
     return cp.returncode == 0 and cp.stdout.strip() == "true"
 
 
 def load_or_pull(req: dict) -> Optional[str]:
     """根据 delivery 字段加载镜像，返回新镜像的引用名。"""
+    if MOCK_MODE:
+        ver = req.get("target_version", "unknown")
+        mock_img = f"roto-cart:{ver}-mock"
+        log.info("[MOCK] load_or_pull -> %s", mock_img)
+        return mock_img
     delivery = req.get("delivery", "tar")
     if delivery == "pull":
         image_ref = req.get("image_ref", "")
@@ -172,59 +191,79 @@ def process_request(req_path: Path) -> None:
     # --- 阶段 3：A/B 切 tag ---
     had_previous = docker_image_exists(IMAGE_CURRENT)
     if had_previous:
-        run(["docker", "tag", IMAGE_CURRENT, IMAGE_PREVIOUS], timeout=15)
+        if MOCK_MODE:
+            log.info("[MOCK] docker tag %s -> %s", IMAGE_CURRENT, IMAGE_PREVIOUS)
+        else:
+            run(["docker", "tag", IMAGE_CURRENT, IMAGE_PREVIOUS], timeout=15)
         log.info("已将 %s 备份为 %s", IMAGE_CURRENT, IMAGE_PREVIOUS)
 
-    cp = run(["docker", "tag", new_image, IMAGE_CURRENT], timeout=15)
-    if cp.returncode != 0:
-        write_result(req, "failed", f"tag current 失败: {cp.stderr.strip()}")
+    if MOCK_MODE:
+        log.info("[MOCK] docker tag %s -> %s", new_image, IMAGE_CURRENT)
+        tag_ok = True
+        tag_err = ""
+    else:
+        cp = run(["docker", "tag", new_image, IMAGE_CURRENT], timeout=15)
+        tag_ok = cp.returncode == 0
+        tag_err = cp.stderr.strip()
+    if not tag_ok:
+        write_result(req, "failed", f"tag current 失败: {tag_err}")
         req_path.unlink(missing_ok=True)
         return
 
-    # --- 阶段 4：写 success → restart → 健康确认 ---
-    write_result(req, "success", f"installed {new_image}")
-    cp = run(["docker", "restart", CONTAINER_NAME], timeout=60)
-    if cp.returncode != 0:
-        log.error("docker restart 失败: %s", cp.stderr.strip())
-        result = "rollback_failed"
-        msg = f"docker restart 失败，had_previous={had_previous}"
+    # --- 阶段 4：restart → 模拟耗时 → 写 result.json（或根据 MOCK_RESULT 覆盖）---
+    if MOCK_MODE:
+        # 模拟 restart + 健康检查的耗时
+        log.info("[MOCK] docker restart %s", CONTAINER_NAME)
+        time.sleep(1)
+        # 根据 MOCK_RESULT 决定最终结果
+        final_status = MOCK_RESULT if MOCK_RESULT in (
+            "success", "failed", "rollback_success", "rollback_failed"
+        ) else "success"
+        # success 路径已经提前在前面写过 result.json 了，这里覆盖即可
+        log.info("[MOCK] 健康检查通过 (final_status=%s)", final_status)
+        write_result(req, final_status, f"[MOCK] installed {new_image}")
     else:
-        if _wait_healthy():
-            log.info("OTA 成功，容器健康")
-            result = None  # success 已写好，不需要再覆盖
-            msg = ""
+        write_result(req, "success", f"installed {new_image}")
+        cp = run(["docker", "restart", CONTAINER_NAME], timeout=60)
+        if cp.returncode != 0:
+            log.error("docker restart 失败: %s", cp.stderr.strip())
+            result = "rollback_failed"
+            msg = f"docker restart 失败，had_previous={had_previous}"
         else:
-            log.error("新容器健康检查超时，执行回滚")
-            # --- 回滚写 rollback → 再次 restart ---
-            # 回滚的语义是"上一个镜像已经恢复到 current 位，下一次 restart 就会起来"。
-            # 与初次 OTA 不同：回滚不应该再做健康检查，因为 restart 的返回 0
-            # 已经足以说明 Docker 接受了请求；若回滚也起不来，那是底座级故障，
-            # 我们如实写 rollback_success，让新容器进程自己补报终态。
-            if had_previous and docker_image_exists(IMAGE_PREVIOUS):
-                cp2 = run(["docker", "tag", IMAGE_PREVIOUS, IMAGE_CURRENT], timeout=15)
-                if cp2.returncode != 0:
-                    write_result(req, "rollback_failed",
-                                 f"回滚 tag 失败: {cp2.stderr.strip()}")
-                else:
-                    write_result(req, "rollback_success", "rolled back to previous")
-                    cp3 = run(["docker", "restart", CONTAINER_NAME], timeout=60)
-                    if cp3.returncode != 0:
-                        write_result(req, "rollback_failed",
-                                     f"回滚重启失败: {cp3.stderr.strip()}")
-                    else:
-                        log.info("回滚成功，restart 请求已发送")
+            if _wait_healthy():
+                log.info("OTA 成功，容器健康")
+                result = None  # success 已写好，不需要再覆盖
+                msg = ""
             else:
-                write_result(req, "rollback_failed",
-                             "健康检查超时且无 previous 镜像可回滚")
-            result = None  # rollback 路径里已经写过 result.json
-            msg = ""
+                log.error("新容器健康检查超时，执行回滚")
+                # --- 回滚写 rollback → 再次 restart ---
+                if had_previous and docker_image_exists(IMAGE_PREVIOUS):
+                    cp2 = run(["docker", "tag", IMAGE_PREVIOUS, IMAGE_CURRENT], timeout=15)
+                    if cp2.returncode != 0:
+                        write_result(req, "rollback_failed",
+                                     f"回滚 tag 失败: {cp2.stderr.strip()}")
+                    else:
+                        write_result(req, "rollback_success", "rolled back to previous")
+                        cp3 = run(["docker", "restart", CONTAINER_NAME], timeout=60)
+                        if cp3.returncode != 0:
+                            write_result(req, "rollback_failed",
+                                         f"回滚重启失败: {cp3.stderr.strip()}")
+                        else:
+                            log.info("回滚成功，restart 请求已发送")
+                else:
+                    write_result(req, "rollback_failed",
+                                 "健康检查超时且无 previous 镜像可回滚")
+                result = None  # rollback 路径里已经写过 result.json
+                msg = ""
 
     # 消费完删除 request，避免重复处理
     req_path.unlink(missing_ok=True)
 
 
 def main() -> None:
-    log.info("cart-ota-agent 启动，监听 %s", REQUEST_FILE)
+    log.info("cart-ota-agent 启动，监听 %s (MOCK_MODE=%s)", REQUEST_FILE, MOCK_MODE)
+    if MOCK_MODE:
+        log.info("  MOCK_RESULT=%s (可通过 OTA_MOCK_RESULT 环境变量控制)", MOCK_RESULT)
     OTA_DIR.mkdir(parents=True, exist_ok=True)
     while True:
         if REQUEST_FILE.is_file():
