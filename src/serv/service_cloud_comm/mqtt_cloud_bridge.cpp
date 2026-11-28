@@ -9,6 +9,9 @@
 #include "std_msgs/msg/string.hpp"
 #include <mqtt/async_client.h>
 #include <nlohmann/json.hpp>
+#include <chrono>
+#include <thread>
+#include <atomic>
 
 using json = nlohmann::json;
 
@@ -31,6 +34,7 @@ class MqttCloudBridge : public rclcpp::Node {
 public:
   MqttCloudBridge() : Node("comm_mqtt_cloud") {
     this->declare_parameter("cloud_broker", "mqtt.example.com");
+    this->declare_parameter("cloud_tls", true);  // mock broker 时传 false
     this->declare_parameter("cloud_port", 8883);
     this->declare_parameter("cloud_username", "cart001");
     this->declare_parameter("cloud_password", "");
@@ -56,30 +60,68 @@ public:
       "/ota/status", 10,
       std::bind(&MqttCloudBridge::ota_status_callback, this, std::placeholders::_1));
 
-    std::string uri = "ssl://" + broker + ":" + std::to_string(port);
+    bool tls = get_parameter("cloud_tls").as_bool();
+    std::string uri = (tls ? "ssl://" : "tcp://") + broker + ":" + std::to_string(port);
     mqtt_client_ = std::make_shared<mqtt::async_client>(uri, device_id_);
 
-    callback_handler_ = std::make_unique<MqttCallbackHandler>(
-      [this](mqtt::const_message_ptr msg) { this->on_mqtt_message(msg); },
-      [this](const std::string & cause) {
-        RCLCPP_WARN(this->get_logger(), "Cloud MQTT lost: %s", cause.c_str());
-      });
-    mqtt_client_->set_callback(*callback_handler_);
-
+    // ===== MQTT 连接（paho-mqttpp3 1.5.0 可用 API）=====
     mqtt::connect_options opts;
     opts.set_user_name(username);
     opts.set_password(password);
-    opts.set_keep_alive_interval(30);
+    opts.set_keep_alive_interval(60);
     opts.set_clean_session(true);
+    // TODO: paho.mqtt.cpp 1.5.0 未暴露 set_will / set_automatic_reconnect，
+    //       这两项需要用底层 C API 或升级到 paho.mqtt.cpp 1.2.x 的 MQTTv5 版本
+    //       （当前 C 库 1.3.14 支持，但 C++ wrapper 未封装）
+
     mqtt::ssl_options ssl_opts;
+    ssl_opts.set_enable_server_cert_auth(true);
     opts.set_ssl(ssl_opts);
-    mqtt_client_->connect(opts)->wait();
 
-    RCLCPP_INFO(this->get_logger(), "Connected to cloud MQTT %s", uri.c_str());
+    // 首次 connect 失败不 terminate，让 connection_lost 回调兜底手动重连
+    try {
+      mqtt_client_->connect(opts)->wait_for(std::chrono::seconds(10));
+      RCLCPP_INFO(this->get_logger(), "Connected to cloud MQTT %s", uri.c_str());
+    } catch (const mqtt::exception & e) {
+      RCLCPP_WARN(this->get_logger(),
+                  "Initial connect failed: %s — connection_lost will retry",
+                  e.what());
+    }
 
-    // 订阅 OTA 下行指令（协议 v1.3 §2.2.9 / §2.2.10）
-    mqtt_client_->subscribe(ota_app_topic_, 1)->wait();
-    mqtt_client_->subscribe(ota_chassis_topic_, 1)->wait();
+    // 订阅函数（clean_session=true，重连后 paho 不会自动恢复订阅）
+    auto subscribe_ota = [this]() {
+      try {
+        mqtt_client_->subscribe(ota_app_topic_, 1);
+        mqtt_client_->subscribe(ota_chassis_topic_, 1);
+        RCLCPP_INFO(this->get_logger(), "OTA topics subscribed");
+      } catch (const std::exception & e) {
+        RCLCPP_ERROR(this->get_logger(), "subscribe failed: %s", e.what());
+      }
+    };
+    subscribe_ota();
+
+    // connection_lost 后手动指数退避重连 + 重订阅
+    static const int kBackoffMs[] = {1000, 2000, 5000, 10000, 30000};
+    static std::atomic<int> backoff_idx{0};
+    callback_handler_ = std::make_unique<MqttCallbackHandler>(
+      [this](mqtt::const_message_ptr msg) { this->on_mqtt_message(msg); },
+      [this, subscribe_ota](const std::string & cause) {
+        RCLCPP_WARN(this->get_logger(), "Cloud MQTT lost: %s", cause.c_str());
+        int idx = backoff_idx++ % 5;
+        int delay_ms = 1000 << idx;  // 1s, 2s, 4s, 8s, 16s
+        std::thread([this, subscribe_ota, delay_ms]() {
+          std::this_thread::sleep_for(std::chrono::milliseconds(delay_ms));
+          try {
+            mqtt_client_->connect(mqtt::connect_options())->wait_for(std::chrono::seconds(10));
+            RCLCPP_INFO(this->get_logger(), "Cloud MQTT reconnected");
+            subscribe_ota();
+            backoff_idx.store(0);  // 重连成功后重置退避
+          } catch (const std::exception & e) {
+            RCLCPP_ERROR(this->get_logger(), "Reconnect failed: %s", e.what());
+          }
+        }).detach();
+      });
+    mqtt_client_->set_callback(*callback_handler_);
 
     sub_bms_ = this->create_subscription<robot_msgs::msg::BatteryStatus>(
       "/battery/status", 10,

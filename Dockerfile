@@ -47,34 +47,6 @@ RUN cd /opt/roto_ws/third_party/paho.mqtt.cpp && \
           -DPAHO_WITH_SSL=TRUE .. && \
     make -j2 && make install && \
     ldconfig
-    
-RUN mkdir -p /usr/local/lib/pkgconfig && \
-    printf '%s\n' \
-    'prefix=/usr/local' \
-    'exec_prefix=${prefix}' \
-    'libdir=${exec_prefix}/lib' \
-    'includedir=${prefix}/include' \
-    '' \
-    'Name: paho-mqttpp3' \
-    'Description: Eclipse Paho MQTT C++ Client Library' \
-    'Version: 1.5.0' \
-    'Libs: -L${libdir} -lpaho-mqttpp3' \
-    'Cflags: -I${includedir}' \
-    > /usr/local/lib/pkgconfig/libpaho-mqttpp3.pc
-
-# 在验证 pkg-config 之前，手动为 paho-mqtt3as 创建 .pc 文件
-RUN printf '%s\n' \
-    'prefix=/usr/local' \
-    'exec_prefix=${prefix}' \
-    'libdir=${exec_prefix}/lib' \
-    'includedir=${prefix}/include' \
-    '' \
-    'Name: paho-mqtt3as' \
-    'Description: Eclipse Paho MQTT C Async Client Library (with SSL)' \
-    'Version: 1.3.13' \
-    'Libs: -L${libdir} -lpaho-mqtt3as' \
-    'Cflags: -I${includedir}' \
-    > /usr/local/lib/pkgconfig/libpaho-mqtt3as.pc
 
 RUN pkg-config --modversion libpaho-mqtt3as && \
     pkg-config --modversion libpaho-mqttpp3
@@ -97,12 +69,23 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &&
     ros-humble-cyclonedds \
     ros-humble-rmw-cyclonedds-cpp \
     ros-humble-ros2launch \
-    libcurl4 \
+    libcurl4-openssl \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
+
+# 从 builder 拷编译好的 paho-mqtt 运行库
+COPY --from=builder /usr/local/lib/libpaho-mqtt3as* /usr/local/lib/
+COPY --from=builder /usr/local/lib/libpaho-mqtt3cs* /usr/local/lib/
+COPY --from=builder /usr/local/lib/libpaho-mqttpp3* /usr/local/lib/
+RUN ldconfig
 
 WORKDIR /opt/roto_ws
 COPY --from=builder /opt/roto_ws/install ./install
 COPY launch ./launch
+COPY scripts/cart_ota_agent.py ./scripts/
+
+# OTA 握手目录（宿主通过 docker -v 挂载对齐）
+RUN mkdir -p /opt/roto_ws/data/ota /opt/roto_ws/data/ota/cache
 
 # 显式 source 底层 ROS 环境 + 工作空间，启动板端 launch（不含 sim 工具）
 CMD [ "bash", "-c", "source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch /opt/roto_ws/launch/launch_board.launch.py" ]
