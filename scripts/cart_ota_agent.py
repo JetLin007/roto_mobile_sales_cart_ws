@@ -20,6 +20,7 @@
 # 安全：仅消费本代理自己的 request.json，不执行任意命令；tar 必须通过容器内
 #       sha256 校验，本代理再二次校验 docker images 的 digest。
 # =============================================================================
+import argparse
 import json
 import os
 import subprocess
@@ -37,15 +38,38 @@ IMAGE_PREVIOUS = os.getenv("OTA_IMAGE_PREVIOUS", "roto-cart:previous")
 HEALTH_WAIT_S  = int(os.getenv("OTA_HEALTH_WAIT", "30"))
 POLL_INTERVAL  = float(os.getenv("OTA_POLL_INTERVAL", "2"))
 
-# ---- 开发调试：无 docker 环境可用的 MOCK 模式 ----
-# OTA_MOCK_MODE=1  跳过所有 docker 操作，走纯文件握手
-# OTA_MOCK_RESULT  可选: success / failed / rollback_success / rollback_failed
-#                   控制 agent 最终写什么 result.json（默认 success）
-MOCK_MODE      = os.getenv("OTA_MOCK_MODE", "0") == "1"
-MOCK_RESULT    = os.getenv("OTA_MOCK_RESULT", "success")
-
 REQUEST_FILE = OTA_DIR / "request.json"
 RESULT_FILE  = OTA_DIR / "result.json"
+
+# ---- CLI 参数解析（覆盖环境变量，生产 systemd 启动不传任何参数）----
+VALID_MOCK_RESULTS = ("success", "failed", "rollback_success", "rollback_failed")
+
+
+def _parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(
+        prog="cart_ota_agent.py",
+        description="宿主侧 OTA 执行代理；生产走 docker，开发可 -m mock 模式跳过所有 docker 操作",
+    )
+    p.add_argument("-m", "--mock", action="store_true",
+                   help="启用 mock 模式（等价 OTA_MOCK_MODE=1）")
+    p.add_argument("-r", "--mock-result", metavar="STATUS",
+                   choices=VALID_MOCK_RESULTS,
+                   help="mock 模式下写的 result.json status 值"
+                        f" ({'/'.join(VALID_MOCK_RESULTS)}, 覆盖 OTA_MOCK_RESULT)")
+    p.add_argument("-d", "--ota-dir", metavar="DIR",
+                   help="OTA 握手目录（覆盖 OTA_DIR）")
+    return p.parse_args()
+
+
+_args = _parse_args()
+MOCK_MODE   = _args.mock or os.getenv("OTA_MOCK_MODE", "0") == "1"
+MOCK_RESULT = (_args.mock_result
+               or os.getenv("OTA_MOCK_RESULT", "success")
+               or "success")
+if _args.ota_dir:
+    OTA_DIR = Path(_args.ota_dir)
+    REQUEST_FILE = OTA_DIR / "request.json"
+    RESULT_FILE  = OTA_DIR / "result.json"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -261,9 +285,11 @@ def process_request(req_path: Path) -> None:
 
 
 def main() -> None:
-    log.info("cart-ota-agent 启动，监听 %s (MOCK_MODE=%s)", REQUEST_FILE, MOCK_MODE)
     if MOCK_MODE:
-        log.info("  MOCK_RESULT=%s (可通过 OTA_MOCK_RESULT 环境变量控制)", MOCK_RESULT)
+        log.info("cart-ota-agent [MOCK MODE] 启动，监听 %s", REQUEST_FILE)
+        log.info("  MOCK_RESULT=%s  (可通过 -r 或 OTA_MOCK_RESULT 覆盖)", MOCK_RESULT)
+    else:
+        log.info("cart-ota-agent 启动，监听 %s", REQUEST_FILE)
     OTA_DIR.mkdir(parents=True, exist_ok=True)
     while True:
         if REQUEST_FILE.is_file():
